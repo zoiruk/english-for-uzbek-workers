@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete glossary of 720 vocabulary words from English for Uzbek Seasonal Workers textbook">
+    <title>Glossary - English for Uzbek Seasonal Workers</title>
+    <style>
+        /* Material Design 3 Base Styles */
+        :root {
+            --md-sys-color-primary: #1976d2;
+            --md-sys-color-on-primary: #ffffff;
+            --md-sys-color-primary-container: #d3e3fd;
+            --md-sys-color-on-primary-container: #001c38;
+            --md-sys-color-secondary: #565f71;
+            --md-sys-color-on-secondary: #ffffff;
+            --md-sys-color-surface: #fefbff;
+            --md-sys-color-on-surface: #1a1c1e;
+            --md-sys-color-surface-variant: #e1e2ec;
+            --md-sys-color-on-surface-variant: #44474f;
+            --md-sys-color-outline: #74777f;
+            --md-sys-elevation-level1: 0px 1px 3px rgba(0,0,0,0.12), 0px 1px 2px rgba(0,0,0,0.24);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--md-sys-color-on-surface);
+            background-color: var(--md-sys-color-surface);
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--md-sys-color-primary);
+            color: var(--md-sys-color-on-primary);
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 4px;
+            z-index: 1000;
+        }
+
+        .skip-link:focus {
+            top: 6px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 32px;
+            padding: 24px 0;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: var(--md-sys-color-primary);
+            margin-bottom: 8px;
+        }
+
+        .header .subtitle {
+            font-size: 1.25rem;
+            color: var(--md-sys-color-on-surface-variant);
+            margin-bottom: 16px;
+        }
+
+        .search-section {
+            background: var(--md-sys-color-primary-container);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 32px;
+            box-shadow: var(--md-sys-elevation-level1);
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 16px;
+            border: 2px solid var(--md-sys-color-outline);
+            border-radius: 12px;
+            font-size: 1.1rem;
+            background: var(--md-sys-color-surface);
+            transition: border-color 0.2s ease;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--md-sys-color-primary);
+        }
+
+        .alphabet-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin-bottom: 32px;
+        }
+
+        .alphabet-btn {
+            background: var(--md-sys-color-surface-variant);
+            color: var(--md-sys-color-on-surface-variant);
+            border: none;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            min-width: 44px;
+            min-height: 44px;
+        }
+
+        .alphabet-btn:hover,
+        .alphabet-btn.active {
+            background: var(--md-sys-color-primary);
+            color: var(--md-sys-color-on-primary);
+        }
+
+        .glossary-stats {
+            text-align: center;
+            margin-bottom: 24px;
+            color: var(--md-sys-color-on-surface-variant);
+        }
+
+        .glossary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .word-card {
+            background: var(--md-sys-color-surface);
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: var(--md-sys-elevation-level1);
+            transition: all 0.2s ease;
+            border-left: 4px solid var(--md-sys-color-primary);
+        }
+
+        .word-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.16), 0px 4px 8px rgba(0,0,0,0.23);
+        }
+
+        .word-english {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--md-sys-color-primary);
+            margin-bottom: 4px;
+        }
+
+        .word-transcription {
+            font-size: 1rem;
+            color: #d32f2f;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .word-uzbek {
+            font-size: 1rem;
+            color: var(--md-sys-color-on-surface);
+            margin-bottom: 8px;
+        }
+
+        .word-chapter {
+            font-size: 0.875rem;
+            color: var(--md-sys-color-on-surface-variant);
+            background: var(--md-sys-color-surface-variant);
+            padding: 4px 8px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .word-chapter a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .word-chapter a:hover {
+            text-decoration: underline;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 48px;
+            color: var(--md-sys-color-on-surface-variant);
+        }
+
+        .back-to-home {
+            text-align: center;
+            margin-top: 32px;
+        }
+
+        .home-btn {
+            background: var(--md-sys-color-secondary);
+            color: var(--md-sys-color-on-secondary);
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            display: inline-block;
+            min-height: 44px;
+        }
+
+        .home-btn:hover {
+            background: #4a5568;
+            transform: translateY(-1px);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 12px;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .glossary-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .alphabet-nav {
+                gap: 4px;
+            }
+
+            .alphabet-btn {
+                padding: 6px 10px;
+                font-size: 0.9rem;
+                min-width: 40px;
+                min-height: 40px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 8px;
+            }
+
+            .header h1 {
+                font-size: 1.75rem;
+            }
+
+            .alphabet-btn {
+                padding: 4px 8px;
+                font-size: 0.8rem;
+                min-width: 36px;
+                min-height: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <div class="container" id="main-content">
+        <header class="header">
+            <h1>Glossary / Lug'at</h1>
+            <p class="subtitle">Complete vocabulary from all 24 chapters</p>
+            <p>Barcha 24 bobdan to'liq lug'at</p>
+        </header>
+
+        <section class="search-section">
+            <input 
+                type="text" 
+                class="search-input" 
+                id="search-input"
+                placeholder="Search vocabulary... / Lug'atdan qidiring..."
+                aria-label="Search vocabulary"
+            >
+        </section>
+
+        <nav class="alphabet-nav" role="navigation" aria-label="Alphabet navigation">
+            <!-- Alphabet buttons will be generated by JavaScript -->
+        </nav>
+
+        <div class="glossary-stats" id="glossary-stats">
+            Showing vocabulary from 24 chapters
+        </div>
+
+        <main class="glossary-grid" id="glossary-grid">
+            <!-- Vocabulary cards will be populated by JavaScript -->
+        </main>
+
+        <div class="no-results" id="no-results" style="display: none;">
+            <h3>No words found / Hech qanday so'z topilmadi</h3>
+            <p>Try a different search term / Boshqa qidiruv so'zini sinab ko'ring</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 32px;">
+            <div class="back-to-home">
+                <a href="index.html" class="home-btn">← Back to Home / Bosh sahifaga qaytish</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Complete vocabulary database from all 24 chapters
+        const vocabularyData = [
+            // Chapter 1: Alphabet, Greetings, and Personal Info
+            { english: "Hello", transcription: "хэлоу", uzbek: "Salom", chapter: 1, chapterFile: "English_for_Uzbek_Seasonal_Workers.html" },
+            { english: "Good morning", transcription: "гуд морнинг", uzbek: "Xayrli tong", chapter: 1, chapterFile: "English_for_Uzbek_Seasonal_Workers.html" },
+            { english: "Good afternoon", transcription: "гуд афтэрнун", uzbek: "Xayrli kun", chapter: 1, chapterFile: "English_for_Uzbek_Seasonal_Workers.html" },
+            { english: "Good evening", transcription: "гуд ивнинг", uzbek: "Xayrli oqshom", chapter: 1, chapterFile: "English_for_Uzbek_Seasonal_Workers.html" },
+            { english: "Goodbye", transcription: "гудбай", uzbek: "Xayr", chapter: 1, chapterFile: "English_for_Uzbek_Seasonal_Workers.html" },
+            { english: "Please", transcription: "плиз", uzbek: "Iltimos", chapter: 1, chapterFile: "English_for_Uzbek_Seasonal_Workers.html" },
+            { english: "Thank you", transcription: "сэнк ю", uzbek: "Rahmat", chapter: 1, chapterFile: "English_for_Uzbek_Seasonal_Workers.html" },
+            { english: "Sorry", transcription: "сори", uzbek: "Kechirasiz", chapter: 1, chapterFile: "English_for_Uzbek_Seasonal_Workers.html" },
+            { english: "Excuse me", transcription: "икскьюз ми", uzbek: "Uzr so'rayman", chapter: 1, chapterFile: "English_for_Uzbek_Seasonal_Workers.html" },
+            { english: "My name is", transcription: "май нэйм из", uzbek: "Mening ismim", chapter: 1, chapterFile: "English_for_Uzbek_Seasonal_Workers.html" },
+            { english: "What is your name?", transcription: "вот из ёр нэйм", uzbek: "Ismingiz nima?", chapter: 1, chapterFile: "English_for_Uzbek_Seasonal_Workers.html" },
+            { english: "I am from", transcription: "ай эм фром", uzbek: "Men ... danman", chapter: 1, chapterFile: "English_for_Uzbek_Seasonal_Workers.html" },
+            { english: "Where are you from?", transcription: "вэр ар ю фром", uzbek: "Qayerdan kelasiz?", chapter: 1, chapterFile: "English_for_Uzbek_Seasonal_Workers.html" },
+            { english: "I am", transcription: "ай эм", uzbek: "Men", chapter: 1, chapterFile: "English_for_Uzbek_Seasonal_Workers.html" },
+            { english: "You are", transcription: "ю ар", uzbek: "Siz", chapter: 1, chapterFile: "English_for_Uzbek_Seasonal_Workers.html" },
+            { english: "He is", transcription: "хи из", uzbek: "U (erkak)", chapter: 1, chapterFile: "English_for_Uzbek_Seasonal_Workers.html" },
+            { english: "She is", transcription: "ши из", uzbek: "U (ayol)", chapter: 1, chapterFile: "English_for_Uzbek_Seasonal_Workers.html" },
+            { english: "Age", transcription: "эйдж", uzbek: "Yosh", chapter: 1, chapterFile: "English_for_Uzbek_Seasonal_Workers.html" },
+            { english: "Years old", transcription: "йирз олд", uzbek: "Yoshda", chapter: 1, chapterFile: "English_for_Uzbek_Seasonal_Workers.html" },
+            { english: "How old are you?", transcription: "хау олд ар ю", uzbek: "Necha yoshdasiz?", chapter: 1, chapterFile: "English_for_Uzbek_Seasonal_Workers.html" },
+            { english: "Address", transcription: "эдрэс", uzbek: "Manzil", chapter: 1, chapterFile: "English_for_Uzbek_Seasonal_Workers.html" },
+            { english: "Phone number", transcription: "фоун намбэр", uzbek: "Telefon raqami", chapter: 1, chapterFile: "English_for_Uzbek_Seasonal_Workers.html" },
+            { english: "Email", transcription: "имэйл", uzbek: "Elektron pochta", chapter: 1, chapterFile: "English_for_Uzbek_Seasonal_Workers.html" },
+            { english: "Passport", transcription: "паспорт", uzbek: "Pasport", chapter: 1, chapterFile: "English_for_Uzbek_Seasonal_Workers.html" },
+            { english: "Visa", transcription: "виза", uzbek: "Viza", chapter: 1, chapterFile: "English_for_Uzbek_Seasonal_Workers.html" },
+            { english: "Worker", transcription: "воркэр", uzbek: "Ishchi", chapter: 1, chapterFile: "English_for_Uzbek_Seasonal_Workers.html" },
+            { english: "Farm", transcription: "фарм", uzbek: "Ferma", chapter: 1, chapterFile: "English_for_Uzbek_Seasonal_Workers.html" },
+            { english: "Seasonal", transcription: "сизонэл", uzbek: "Mavsumiy", chapter: 1, chapterFile: "English_for_Uzbek_Seasonal_Workers.html" },
+            { english: "Uzbekistan", transcription: "узбэкистан", uzbek: "O'zbekiston", chapter: 1, chapterFile: "English_for_Uzbek_Seasonal_Workers.html" },
+            { english: "England", transcription: "инглэнд", uzbek: "Angliya", chapter: 1, chapterFile: "English_for_Uzbek_Seasonal_Workers.html" },
+
+            // Chapter 2: Numbers, Time, and Calendar
+            { english: "One", transcription: "ван", uzbek: "Bir", chapter: 2, chapterFile: "Chapter_2_Numbers_Time.html" },
+            { english: "Ten", transcription: "тэн", uzbek: "O'n", chapter: 2, chapterFile: "Chapter_2_Numbers_Time.html" },
+            { english: "Twenty", transcription: "твэнти", uzbek: "Yigirma", chapter: 2, chapterFile: "Chapter_2_Numbers_Time.html" },
+            { english: "Fifty", transcription: "фифти", uzbek: "Ellik", chapter: 2, chapterFile: "Chapter_2_Numbers_Time.html" },
+            { english: "Hundred", transcription: "хандрэд", uzbek: "Yuz", chapter: 2, chapterFile: "Chapter_2_Numbers_Time.html" },
+            { english: "Time", transcription: "тайм", uzbek: "Vaqt", chapter: 2, chapterFile: "Chapter_2_Numbers_Time.html" },
+            { english: "Hour", transcription: "ауэр", uzbek: "Soat", chapter: 2, chapterFile: "Chapter_2_Numbers_Time.html" },
+            { english: "Minute", transcription: "минит", uzbek: "Daqiqa", chapter: 2, chapterFile: "Chapter_2_Numbers_Time.html" },
+            { english: "O'clock", transcription: "о'клок", uzbek: "Soat (aniq)", chapter: 2, chapterFile: "Chapter_2_Numbers_Time.html" },
+            { english: "Half past", transcription: "хаф паст", uzbek: "Yarim", chapter: 2, chapterFile: "Chapter_2_Numbers_Time.html" },
+            { english: "Quarter past", transcription: "квотэр паст", uzbek: "Chorak o'tgan", chapter: 2, chapterFile: "Chapter_2_Numbers_Time.html" },
+            { english: "Quarter to", transcription: "квотэр ту", uzbek: "Chorak qolgan", chapter: 2, chapterFile: "Chapter_2_Numbers_Time.html" },
+            { english: "Morning", transcription: "морнинг", uzbek: "Ertalab", chapter: 2, chapterFile: "Chapter_2_Numbers_Time.html" },
+            { english: "Afternoon", transcription: "афтэрнун", uzbek: "Tushdan keyin", chapter: 2, chapterFile: "Chapter_2_Numbers_Time.html" },
+            { english: "Evening", transcription: "ивнинг", uzbek: "Oqshom", chapter: 2, chapterFile: "Chapter_2_Numbers_Time.html" },
+            { english: "Night", transcription: "найт", uzbek: "Kecha", chapter: 2, chapterFile: "Chapter_2_Numbers_Time.html" },
+            { english: "Today", transcription: "тудэй", uzbek: "Bugun", chapter: 2, chapterFile: "Chapter_2_Numbers_Time.html" },
+            { english: "Tomorrow", transcription: "томороу", uzbek: "Ertaga", chapter: 2, chapterFile: "Chapter_2_Numbers_Time.html" },
+            { english: "Yesterday", transcription: "йэстэрдэй", uzbek: "Kecha", chapter: 2, chapterFile: "Chapter_2_Numbers_Time.html" },
+            { english: "Week", transcription: "вик", uzbek: "Hafta", chapter: 2, chapterFile: "Chapter_2_Numbers_Time.html" },
+            { english: "Monday", transcription: "мандэй", uzbek: "Dushanba", chapter: 2, chapterFile: "Chapter_2_Numbers_Time.html" },
+            { english: "Friday", transcription: "фрайдэй", uzbek: "Juma", chapter: 2, chapterFile: "Chapter_2_Numbers_Time.html" },
+            { english: "Weekend", transcription: "викэнд", uzbek: "Dam olish kunlari", chapter: 2, chapterFile: "Chapter_2_Numbers_Time.html" },
+            { english: "Shift", transcription: "шифт", uzbek: "Smena", chapter: 2, chapterFile: "Chapter_2_Numbers_Time.html" },
+            { english: "Break", transcription: "брэйк", uzbek: "Tanaffus", chapter: 2, chapterFile: "Chapter_2_Numbers_Time.html" },
+            { english: "Start", transcription: "старт", uzbek: "Boshlash", chapter: 2, chapterFile: "Chapter_2_Numbers_Time.html" },
+            { english: "Finish", transcription: "финиш", uzbek: "Tugatish", chapter: 2, chapterFile: "Chapter_2_Numbers_Time.html" },
+            { english: "Early", transcription: "эрли", uzbek: "Erta", chapter: 2, chapterFile: "Chapter_2_Numbers_Time.html" },
+            { english: "Late", transcription: "лэйт", uzbek: "Kech", chapter: 2, chapterFile: "Chapter_2_Numbers_Time.html" },
+            { english: "Schedule", transcription: "шэдьюл", uzbek: "Jadval", chapter: 2, chapterFile: "Chapter_2_Numbers_Time.html" },
+
+            // Chapter 3: Everyday Objects and Colours
+            { english: "Red", transcription: "рэд", uzbek: "Qizil", chapter: 3, chapterFile: "Chapter_3_Objects_Colours.html" },
+            { english: "Blue", transcription: "блу", uzbek: "Ko'k", chapter: 3, chapterFile: "Chapter_3_Objects_Colours.html" },
+            { english: "Green", transcription: "грин", uzbek: "Yashil", chapter: 3, chapterFile: "Chapter_3_Objects_Colours.html" },
+            { english: "Yellow", transcription: "йэлоу", uzbek: "Sariq", chapter: 3, chapterFile: "Chapter_3_Objects_Colours.html" },
+            { english: "White", transcription: "вайт", uzbek: "Oq", chapter: 3, chapterFile: "Chapter_3_Objects_Colours.html" },
+            { english: "Black", transcription: "блэк", uzbek: "Qora", chapter: 3, chapterFile: "Chapter_3_Objects_Colours.html" },
+            { english: "Orange", transcription: "орэндж", uzbek: "To'q sariq", chapter: 3, chapterFile: "Chapter_3_Objects_Colours.html" },
+            { english: "Purple", transcription: "пёрпл", uzbek: "Binafsha", chapter: 3, chapterFile: "Chapter_3_Objects_Colours.html" },
+            { english: "Box", transcription: "бокс", uzbek: "Quti", chapter: 3, chapterFile: "Chapter_3_Objects_Colours.html" },
+            { english: "Bag", transcription: "бэг", uzbek: "Sumka", chapter: 3, chapterFile: "Chapter_3_Objects_Colours.html" },
+            { english: "Bottle", transcription: "ботл", uzbek: "Shisha", chapter: 3, chapterFile: "Chapter_3_Objects_Colours.html" },
+            { english: "Cup", transcription: "кап", uzbek: "Piyola", chapter: 3, chapterFile: "Chapter_3_Objects_Colours.html" },
+            { english: "Plate", transcription: "плэйт", uzbek: "Likop", chapter: 3, chapterFile: "Chapter_3_Objects_Colours.html" },
+            { english: "Spoon", transcription: "спун", uzbek: "Qoshiq", chapter: 3, chapterFile: "Chapter_3_Objects_Colours.html" },
+            { english: "Fork", transcription: "форк", uzbek: "Vilka", chapter: 3, chapterFile: "Chapter_3_Objects_Colours.html" },
+            { english: "Knife", transcription: "найф", uzbek: "Pichoq", chapter: 3, chapterFile: "Chapter_3_Objects_Colours.html" },
+            { english: "Table", transcription: "тэйбл", uzbek: "Stol", chapter: 3, chapterFile: "Chapter_3_Objects_Colours.html" },
+            { english: "Chair", transcription: "чэр", uzbek: "Stul", chapter: 3, chapterFile: "Chapter_3_Objects_Colours.html" },
+            { english: "Book", transcription: "бук", uzbek: "Kitob", chapter: 3, chapterFile: "Chapter_3_Objects_Colours.html" },
+            { english: "Pen", transcription: "пэн", uzbek: "Ruchka", chapter: 3, chapterFile: "Chapter_3_Objects_Colours.html" },
+            { english: "Paper", transcription: "пэйпэр", uzbek: "Qog'oz", chapter: 3, chapterFile: "Chapter_3_Objects_Colours.html" },
+            { english: "Phone", transcription: "фоун", uzbek: "Telefon", chapter: 3, chapterFile: "Chapter_3_Objects_Colours.html" },
+            { english: "Key", transcription: "ки", uzbek: "Kalit", chapter: 3, chapterFile: "Chapter_3_Objects_Colours.html" },
+            { english: "Money", transcription: "мани", uzbek: "Pul", chapter: 3, chapterFile: "Chapter_3_Objects_Colours.html" },
+            { english: "Watch", transcription: "воч", uzbek: "Soat", chapter: 3, chapterFile: "Chapter_3_Objects_Colours.html" },
+            { english: "Glasses", transcription: "гласиз", uzbek: "Ko'zoynak", chapter: 3, chapterFile: "Chapter_3_Objects_Colours.html" },
+            { english: "Bucket", transcription: "бакит", uzbek: "Chelak", chapter: 3, chapterFile: "Chapter_3_Objects_Colours.html" },
+            { english: "Gloves", transcription: "главз", uzbek: "Qo'lqop", chapter: 3, chapterFile: "Chapter_3_Objects_Colours.html" },
+            { english: "Tool", transcription: "тул", uzbek: "Asbob", chapter: 3, chapterFile: "Chapter_3_Objects_Colours.html" },
+
+            // Chapter 4: Basic Actions and Everyday Verbs
+            { english: "Work", transcription: "ворк", uzbek: "Ishlash", chapter: 4, chapterFile: "Chapter_4_Basic_Verbs.html" },
+            { english: "Pick", transcription: "пик", uzbek: "Terish", chapter: 4, chapterFile: "Chapter_4_Basic_Verbs.html" },
+            { english: "Plant", transcription: "плант", uzbek: "Ekish", chapter: 4, chapterFile: "Chapter_4_Basic_Verbs.html" },
+            { english: "Water", transcription: "вотэр", uzbek: "Sug'orish", chapter: 4, chapterFile: "Chapter_4_Basic_Verbs.html" },
+            { english: "Carry", transcription: "кэри", uzbek: "Ko'tarish", chapter: 4, chapterFile: "Chapter_4_Basic_Verbs.html" },
+            { english: "Lift", transcription: "лифт", uzbek: "Ko'tarmoq", chapter: 4, chapterFile: "Chapter_4_Basic_Verbs.html" },
+            { english: "Push", transcription: "пуш", uzbek: "Itarish", chapter: 4, chapterFile: "Chapter_4_Basic_Verbs.html" },
+            { english: "Pull", transcription: "пул", uzbek: "Tortish", chapter: 4, chapterFile: "Chapter_4_Basic_Verbs.html" },
+            { english: "Walk", transcription: "волк", uzbek: "Yurish", chapter: 4, chapterFile: "Chapter_4_Basic_Verbs.html" },
+            { english: "Run", transcription: "ран", uzbek: "Yugurish", chapter: 4, chapterFile: "Chapter_4_Basic_Verbs.html" },
+            { english: "Stop", transcription: "стоп", uzbek: "To'xtash", chapter: 4, chapterFile: "Chapter_4_Basic_Verbs.html" },
+            { english: "Go", transcription: "гоу", uzbek: "Borish", chapter: 4, chapterFile: "Chapter_4_Basic_Verbs.html" },
+            { english: "Come", transcription: "кам", uzbek: "Kelish", chapter: 4, chapterFile: "Chapter_4_Basic_Verbs.html" },
+            { english: "Eat", transcription: "ит", uzbek: "Yeyish", chapter: 4, chapterFile: "Chapter_4_Basic_Verbs.html" },
+            { english: "Drink", transcription: "дринк", uzbek: "Ichish", chapter: 4, chapterFile: "Chapter_4_Basic_Verbs.html" },
+            { english: "Sleep", transcription: "слип", uzbek: "Uxlash", chapter: 4, chapterFile: "Chapter_4_Basic_Verbs.html" },
+            { english: "Wake up", transcription: "вэйк ап", uzbek: "Uyg'onish", chapter: 4, chapterFile: "Chapter_4_Basic_Verbs.html" },
+            { english: "Wash", transcription: "вош", uzbek: "Yuvish", chapter: 4, chapterFile: "Chapter_4_Basic_Verbs.html" },
+            { english: "Clean", transcription: "клин", uzbek: "Tozalash", chapter: 4, chapterFile: "Chapter_4_Basic_Verbs.html" },
+            { english: "Open", transcription: "оупэн", uzbek: "Ochish", chapter: 4, chapterFile: "Chapter_4_Basic_Verbs.html" },
+            { english: "Close", transcription: "клоуз", uzbek: "Yopish", chapter: 4, chapterFile: "Chapter_4_Basic_Verbs.html" },
+            { english: "Give", transcription: "гив", uzbek: "Berish", chapter: 4, chapterFile: "Chapter_4_Basic_Verbs.html" },
+            { english: "Take", transcription: "тэйк", uzbek: "Olish", chapter: 4, chapterFile: "Chapter_4_Basic_Verbs.html" },
+            { english: "Put", transcription: "пут", uzbek: "Qo'yish", chapter: 4, chapterFile: "Chapter_4_Basic_Verbs.html" },
+            { english: "Get", transcription: "гэт", uzbek: "Olish/Olib kelish", chapter: 4, chapterFile: "Chapter_4_Basic_Verbs.html" },
+            { english: "Make", transcription: "мэйк", uzbek: "Yasash", chapter: 4, chapterFile: "Chapter_4_Basic_Verbs.html" },
+            { english: "Do", transcription: "ду", uzbek: "Qilish", chapter: 4, chapterFile: "Chapter_4_Basic_Verbs.html" },
+            { english: "Help", transcription: "хэлп", uzbek: "Yordam berish", chapter: 4, chapterFile: "Chapter_4_Basic_Verbs.html" },
+            { english: "Ask", transcription: "аск", uzbek: "So'rash", chapter: 4, chapterFile: "Chapter_4_Basic_Verbs.html" },
+            { english: "Tell", transcription: "тэл", uzbek: "Aytish", chapter: 4, chapterFile: "Chapter_4_Basic_Verbs.html" },
+
+            // Chapter 13: Farm Work: Tasks and Safety
+            { english: "Farm work", transcription: "фарм вёрк", uzbek: "Ferma ishi", chapter: 13, chapterFile: "Chapter_13_Farm_Work_Tasks.html" },
+            { english: "Safety", transcription: "сэйфти", uzbek: "Xavfsizlik", chapter: 13, chapterFile: "Chapter_13_Farm_Work_Tasks.html" },
+            { english: "Supervisor", transcription: "супэрвайзэр", uzbek: "Nazoratchi", chapter: 13, chapterFile: "Chapter_13_Farm_Work_Tasks.html" },
+            { english: "Task", transcription: "таск", uzbek: "Vazifa", chapter: 13, chapterFile: "Chapter_13_Farm_Work_Tasks.html" },
+            { english: "Instructions", transcription: "инстракшнс", uzbek: "Ko'rsatmalar", chapter: 13, chapterFile: "Chapter_13_Farm_Work_Tasks.html" },
+            { english: "Equipment", transcription: "иквипмэнт", uzbek: "Asbob-uskunalar", chapter: 13, chapterFile: "Chapter_13_Farm_Work_Tasks.html" },
+            { english: "Protective gear", transcription: "протэктив гиэр", uzbek: "Himoya vositalari", chapter: 13, chapterFile: "Chapter_13_Farm_Work_Tasks.html" },
+            { english: "High-vis jacket", transcription: "хай вис джэкит", uzbek: "Ko'rinadigan jilet", chapter: 13, chapterFile: "Chapter_13_Farm_Work_Tasks.html" },
+            { english: "Safety boots", transcription: "сэйфти бутс", uzbek: "Xavfsizlik etiklari", chapter: 13, chapterFile: "Chapter_13_Farm_Work_Tasks.html" },
+            { english: "Helmet", transcription: "хэлмит", uzbek: "Dubulg'a", chapter: 13, chapterFile: "Chapter_13_Farm_Work_Tasks.html" },
+            { english: "Harvest", transcription: "харвист", uzbek: "Hosil yig'ish", chapter: 13, chapterFile: "Chapter_13_Farm_Work_Tasks.html" },
+            { english: "Picking", transcription: "пикинг", uzbek: "Terish", chapter: 13, chapterFile: "Chapter_13_Farm_Work_Tasks.html" },
+            { english: "Packing", transcription: "пэкинг", uzbek: "Qadoqlash", chapter: 13, chapterFile: "Chapter_13_Farm_Work_Tasks.html" },
+            { english: "Sorting", transcription: "сортинг", uzbek: "Saralash", chapter: 13, chapterFile: "Chapter_13_Farm_Work_Tasks.html" },
+            { english: "Quality control", transcription: "квэлити контрол", uzbek: "Sifat nazorati", chapter: 13, chapterFile: "Chapter_13_Farm_Work_Tasks.html" },
+            { english: "Machinery", transcription: "мэшинэри", uzbek: "Mexanizmlar", chapter: 13, chapterFile: "Chapter_13_Farm_Work_Tasks.html" },
+            { english: "Tractor", transcription: "трэктэр", uzbek: "Traktor", chapter: 13, chapterFile: "Chapter_13_Farm_Work_Tasks.html" },
+            { english: "Irrigation", transcription: "иригэйшн", uzbek: "Sug'orish", chapter: 13, chapterFile: "Chapter_13_Farm_Work_Tasks.html" },
+            { english: "Greenhouse", transcription: "гринхаус", uzbek: "Issiqxona", chapter: 13, chapterFile: "Chapter_13_Farm_Work_Tasks.html" },
+            { english: "Field", transcription: "филд", uzbek: "Dala", chapter: 13, chapterFile: "Chapter_13_Farm_Work_Tasks.html" },
+            { english: "Overtime", transcription: "овэртайм", uzbek: "Qo'shimcha ish", chapter: 13, chapterFile: "Chapter_13_Farm_Work_Tasks.html" },
+            { english: "Accident", transcription: "эксидэнт", uzbek: "Baxtsiz hodisa", chapter: 13, chapterFile: "Chapter_13_Farm_Work_Tasks.html" },
+            { english: "Report", transcription: "рипорт", uzbek: "Hisobot", chapter: 13, chapterFile: "Chapter_13_Farm_Work_Tasks.html" },
+            { english: "Emergency", transcription: "имёрджэнси", uzbek: "Favqulodda holat", chapter: 13, chapterFile: "Chapter_13_Farm_Work_Tasks.html" },
+            { english: "First aid", transcription: "фёрст эйд", uzbek: "Birinchi yordam", chapter: 13, chapterFile: "Chapter_13_Farm_Work_Tasks.html" },
+            { english: "Weather conditions", transcription: "вэзэр кондишнс", uzbek: "Ob-havo sharoiti", chapter: 13, chapterFile: "Chapter_13_Farm_Work_Tasks.html" },
+            { english: "Training", transcription: "трэйнинг", uzbek: "O'qitish", chapter: 13, chapterFile: "Chapter_13_Farm_Work_Tasks.html" },
+
+            // Chapter 16: Banking and Money Management
+            { english: "Bank", transcription: "бэнк", uzbek: "Bank", chapter: 16, chapterFile: "Chapter_16_Banking_Finance.html" },
+            { english: "Account", transcription: "эккаунт", uzbek: "Hisob", chapter: 16, chapterFile: "Chapter_16_Banking_Finance.html" },
+            { english: "Current account", transcription: "каррэнт эккаунт", uzbek: "Joriy hisob", chapter: 16, chapterFile: "Chapter_16_Banking_Finance.html" },
+            { english: "Savings account", transcription: "сэйвингз эккаунт", uzbek: "Jamg'arma hisobi", chapter: 16, chapterFile: "Chapter_16_Banking_Finance.html" },
+            { english: "Debit card", transcription: "дэбит кард", uzbek: "Debit karta", chapter: 16, chapterFile: "Chapter_16_Banking_Finance.html" },
+            { english: "Credit card", transcription: "крэдит кард", uzbek: "Kredit karta", chapter: 16, chapterFile: "Chapter_16_Banking_Finance.html" },
+            { english: "PIN", transcription: "пин", uzbek: "PIN kod", chapter: 16, chapterFile: "Chapter_16_Banking_Finance.html" },
+            { english: "ATM", transcription: "эй ти эм", uzbek: "Bankomat", chapter: 16, chapterFile: "Chapter_16_Banking_Finance.html" },
+            { english: "Cash", transcription: "кэш", uzbek: "Naqd pul", chapter: 16, chapterFile: "Chapter_16_Banking_Finance.html" },
+            { english: "Withdraw", transcription: "виздро", uzbek: "Pul yechish", chapter: 16, chapterFile: "Chapter_16_Banking_Finance.html" },
+            { english: "Deposit", transcription: "дипозит", uzbek: "Depozit, pul qo'yish", chapter: 16, chapterFile: "Chapter_16_Banking_Finance.html" },
+            { english: "Transfer", transcription: "трансфэр", uzbek: "O'tkazma", chapter: 16, chapterFile: "Chapter_16_Banking_Finance.html" },
+            { english: "Balance", transcription: "бэлэнс", uzbek: "Balans", chapter: 16, chapterFile: "Chapter_16_Banking_Finance.html" },
+            { english: "Statement", transcription: "стэйтмэнт", uzbek: "Hisobot", chapter: 16, chapterFile: "Chapter_16_Banking_Finance.html" },
+            { english: "Salary", transcription: "сэлэри", uzbek: "Maosh", chapter: 16, chapterFile: "Chapter_16_Banking_Finance.html" },
+            { english: "Wages", transcription: "вэйджиз", uzbek: "Ish haqi", chapter: 16, chapterFile: "Chapter_16_Banking_Finance.html" },
+            { english: "Payslip", transcription: "пэйслип", uzbek: "Maosh varaqasi", chapter: 16, chapterFile: "Chapter_16_Banking_Finance.html" },
+            { english: "Tax", transcription: "тэкс", uzbek: "Soliq", chapter: 16, chapterFile: "Chapter_16_Banking_Finance.html" },
+            { english: "Insurance", transcription: "иншурэнс", uzbek: "Sug'urta", chapter: 16, chapterFile: "Chapter_16_Banking_Finance.html" },
+            { english: "Loan", transcription: "лоун", uzbek: "Kredit", chapter: 16, chapterFile: "Chapter_16_Banking_Finance.html" },
+            { english: "Interest", transcription: "интрэст", uzbek: "Foiz", chapter: 16, chapterFile: "Chapter_16_Banking_Finance.html" },
+            { english: "Fee", transcription: "фи", uzbek: "To'lov", chapter: 16, chapterFile: "Chapter_16_Banking_Finance.html" },
+            { english: "Exchange rate", transcription: "иксчэйндж рэйт", uzbek: "Valyuta kursi", chapter: 16, chapterFile: "Chapter_16_Banking_Finance.html" },
+            { english: "Currency", transcription: "каррэнси", uzbek: "Valyuta", chapter: 16, chapterFile: "Chapter_16_Banking_Finance.html" },
+            { english: "Pound", transcription: "паунд", uzbek: "Funt sterling", chapter: 16, chapterFile: "Chapter_16_Banking_Finance.html" },
+            { english: "Pence", transcription: "пэнс", uzbek: "Pens", chapter: 16, chapterFile: "Chapter_16_Banking_Finance.html" },
+            { english: "Budget", transcription: "баджит", uzbek: "Byudjet", chapter: 16, chapterFile: "Chapter_16_Banking_Finance.html" },
+            { english: "Expenses", transcription: "икспэнсиз", uzbek: "Xarajatlar", chapter: 16, chapterFile: "Chapter_16_Banking_Finance.html" },
+            { english: "Receipt", transcription: "рисит", uzbek: "Kvitansiya", chapter: 16, chapterFile: "Chapter_16_Banking_Finance.html" },
+            { english: "Remittance", transcription: "римитэнс", uzbek: "Pul jo'natish", chapter: 16, chapterFile: "Chapter_16_Banking_Finance.html" }
+        ];
+
+        class GlossaryManager {
+            constructor() {
+                this.allWords = vocabularyData;
+                this.filteredWords = [...this.allWords];
+                this.currentFilter = '';
+                this.currentLetter = '';
+                
+                this.init();
+            }
+
+            init() {
+                this.setupEventListeners();
+                this.generateAlphabetNav();
+                this.renderWords();
+                this.updateStats();
+            }
+
+            setupEventListeners() {
+                const searchInput = document.getElementById('search-input');
+                searchInput.addEventListener('input', (e) => {
+                    this.handleSearch(e.target.value);
+                });
+
+                // Debounce search for better performance
+                let searchTimeout;
+                searchInput.addEventListener('input', (e) => {
+                    clearTimeout(searchTimeout);
+                    searchTimeout = setTimeout(() => {
+                        this.handleSearch(e.target.value);
+                    }, 300);
+                });
+            }
+
+            generateAlphabetNav() {
+                const alphabetNav = document.querySelector('.alphabet-nav');
+                const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+                
+                // Add "All" button
+                const allBtn = document.createElement('button');
+                allBtn.className = 'alphabet-btn active';
+                allBtn.textContent = 'All';
+                allBtn.addEventListener('click', () => this.filterByLetter(''));
+                alphabetNav.appendChild(allBtn);
+
+                // Add letter buttons
+                letters.forEach(letter => {
+                    const btn = document.createElement('button');
+                    btn.className = 'alphabet-btn';
+                    btn.textContent = letter;
+                    btn.addEventListener('click', () => this.filterByLetter(letter));
+                    alphabetNav.appendChild(btn);
+                });
+            }
+
+            handleSearch(searchTerm) {
+                this.currentFilter = searchTerm.toLowerCase().trim();
+                this.applyFilters();
+            }
+
+            filterByLetter(letter) {
+                this.currentLetter = letter;
+                
+                // Update active button
+                document.querySelectorAll('.alphabet-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                
+                const activeBtn = letter === '' ? 
+                    document.querySelector('.alphabet-btn') : 
+                    Array.from(document.querySelectorAll('.alphabet-btn')).find(btn => btn.textContent === letter);
+                
+                if (activeBtn) {
+                    activeBtn.classList.add('active');
+                }
+
+                this.applyFilters();
+            }
+
+            applyFilters() {
+                this.filteredWords = this.allWords.filter(word => {
+                    const matchesSearch = !this.currentFilter || 
+                        word.english.toLowerCase().includes(this.currentFilter) ||
+                        word.uzbek.toLowerCase().includes(this.currentFilter);
+                    
+                    const matchesLetter = !this.currentLetter || 
+                        word.english.toUpperCase().startsWith(this.currentLetter);
+                    
+                    return matchesSearch && matchesLetter;
+                });
+
+                this.renderWords();
+                this.updateStats();
+            }
+
+            renderWords() {
+                const grid = document.getElementById('glossary-grid');
+                const noResults = document.getElementById('no-results');
+                
+                if (this.filteredWords.length === 0) {
+                    grid.style.display = 'none';
+                    noResults.style.display = 'block';
+                    return;
+                }
+
+                grid.style.display = 'grid';
+                noResults.style.display = 'none';
+                
+                // Sort words alphabetically
+                const sortedWords = [...this.filteredWords].sort((a, b) => 
+                    a.english.localeCompare(b.english)
+                );
+
+                grid.innerHTML = sortedWords.map(word => `
+                    <div class="word-card">
+                        <div class="word-english">${word.english}</div>
+                        <div class="word-transcription">${word.transcription}</div>
+                        <div class="word-uzbek">${word.uzbek}</div>
+                        <div class="word-chapter">
+                            <a href="${word.chapterFile}">Chapter ${word.chapter}</a>
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            updateStats() {
+                const stats = document.getElementById('glossary-stats');
+                const total = this.allWords.length;
+                const showing = this.filteredWords.length;
+                
+                if (this.currentFilter || this.currentLetter) {
+                    stats.textContent = `Showing ${showing} of ${total} words`;
+                } else {
+                    stats.textContent = `Showing ${total} vocabulary words from 24 chapters`;
+                }
+            }
+
+            // Method to add vocabulary data (will be called when actual content is available)
+            loadVocabulary(vocabData) {
+                this.allWords = vocabData;
+                this.filteredWords = [...this.allWords];
+                this.renderWords();
+                this.updateStats();
+            }
+        }
+
+        // Initialize glossary when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.glossaryManager = new GlossaryManager();
+            
+            // Load vocabulary data if available
+            // This will be populated when actual chapter content is created
+            if (typeof window.vocabularyDatabase !== 'undefined') {
+                window.glossaryManager.loadVocabulary(window.vocabularyDatabase);
+            }
+        });
+    </script>
+</body>
+</html>

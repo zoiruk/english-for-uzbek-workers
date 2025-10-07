@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kurs va sertifikat haqida ma'lumot - O'zbek mavsumiy ishchilari uchun ingliz tili darsligi">
+    <title>Kurs va Sertifikat Haqida - Ingliz Tili Darsligi</title>
+    <style>
+        /* Material Design 3 Base Styles */
+        :root {
+            --md-sys-color-primary: #1976d2;
+            --md-sys-color-on-primary: #ffffff;
+            --md-sys-color-primary-container: #d3e3fd;
+            --md-sys-color-on-primary-container: #001c38;
+            --md-sys-color-secondary: #565f71;
+            --md-sys-color-on-secondary: #ffffff;
+            --md-sys-color-surface: #fefbff;
+            --md-sys-color-on-surface: #1a1c1e;
+            --md-sys-color-surface-variant: #e1e2ec;
+            --md-sys-color-on-surface-variant: #44474f;
+            --md-sys-color-outline: #74777f;
+            --md-sys-color-success: #2e7d32;
+            --md-sys-color-error: #d32f2f;
+            --md-sys-elevation-level1: 0px 1px 3px rgba(0,0,0,0.12), 0px 1px 2px rgba(0,0,0,0.24);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--md-sys-color-on-surface);
+            background-color: var(--md-sys-color-surface);
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--md-sys-color-primary);
+            color: var(--md-sys-color-on-primary);
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 4px;
+            z-index: 1000;
+        }
+
+        .skip-link:focus {
+            top: 6px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 32px;
+            padding: 24px 0;
+            background: linear-gradient(135deg, var(--md-sys-color-primary-container), var(--md-sys-color-surface-variant));
+            border-radius: 16px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: var(--md-sys-color-primary);
+            margin-bottom: 8px;
+        }
+
+        .header .subtitle {
+            font-size: 1.25rem;
+            color: var(--md-sys-color-on-surface-variant);
+            margin-bottom: 16px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin: 24px 0;
+        }
+
+        .stat-card {
+            background: var(--md-sys-color-surface);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: var(--md-sys-elevation-level1);
+            border-left: 4px solid var(--md-sys-color-primary);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--md-sys-color-primary);
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            color: var(--md-sys-color-on-surface-variant);
+            font-weight: 500;
+        }
+
+        .info-section {
+            background: var(--md-sys-color-surface);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: var(--md-sys-elevation-level1);
+            border-left: 4px solid var(--md-sys-color-primary);
+        }
+
+        .info-section h2 {
+            color: var(--md-sys-color-primary);
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+        }
+
+        .info-section h3 {
+            color: var(--md-sys-color-on-surface);
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+            margin-top: 20px;
+        }
+
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+            margin: 20px 0;
+        }
+
+        .feature-item {
+            background: var(--md-sys-color-surface-variant);
+            border-radius: 8px;
+            padding: 16px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .feature-icon {
+            font-size: 1.5rem;
+            margin-top: 4px;
+        }
+
+        .feature-content {
+            flex: 1;
+        }
+
+        .feature-title {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .feature-description {
+            color: var(--md-sys-color-on-surface-variant);
+            font-size: 0.9rem;
+        }
+
+        .curriculum-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 16px;
+            margin: 20px 0;
+        }
+
+        .curriculum-part {
+            background: var(--md-sys-color-surface-variant);
+            border-radius: 8px;
+            padding: 16px;
+        }
+
+        .part-title {
+            font-weight: 600;
+            color: var(--md-sys-color-primary);
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+
+        .part-chapters {
+            list-style: none;
+        }
+
+        .part-chapters li {
+            padding: 4px 0;
+            color: var(--md-sys-color-on-surface-variant);
+            font-size: 0.9rem;
+        }
+
+        .certificate-preview {
+            background: var(--md-sys-color-primary-container);
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .certificate-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--md-sys-color-primary);
+            margin-bottom: 16px;
+        }
+
+        .certificate-content {
+            background: var(--md-sys-color-surface);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 16px 0;
+            border: 2px dashed var(--md-sys-color-outline);
+        }
+
+        .requirements-box {
+            background: #e8f5e8;
+            border-left: 4px solid var(--md-sys-color-success);
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .requirements-title {
+            font-weight: 600;
+            color: var(--md-sys-color-success);
+            margin-bottom: 8px;
+        }
+
+        .timeline {
+            position: relative;
+            margin: 20px 0;
+        }
+
+        .timeline-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .timeline-marker {
+            background: var(--md-sys-color-primary);
+            color: var(--md-sys-color-on-primary);
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.875rem;
+            margin-right: 16px;
+            flex-shrink: 0;
+        }
+
+        .timeline-content {
+            background: var(--md-sys-color-surface-variant);
+            border-radius: 8px;
+            padding: 16px;
+            flex: 1;
+        }
+
+        .timeline-title {
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .back-to-home {
+            text-align: center;
+            margin-top: 32px;
+        }
+
+        .home-btn {
+            background: var(--md-sys-color-secondary);
+            color: var(--md-sys-color-on-secondary);
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            display: inline-block;
+            min-height: 44px;
+        }
+
+        .home-btn:hover {
+            background: #4a5568;
+            transform: translateY(-1px);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 12px;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .feature-list {
+                grid-template-columns: 1fr;
+            }
+
+            .curriculum-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .info-section {
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Asosiy kontentga o'tish</a>
+    
+    <div class="container" id="main-content">
+        <header class="header">
+            <h1>Kurs va Sertifikat Haqida</h1>
+            <p class="subtitle">English for Uzbek Seasonal Workers – CEFR A0–A1</p>
+            <p>O'zbek mavsumiy ishchilari uchun ingliz tili kursi</p>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">24</div>
+                    <div class="stat-label">Bob</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">720</div>
+                    <div class="stat-label">So'z</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">250</div>
+                    <div class="stat-label">Dialog</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">250</div>
+                    <div class="stat-label">Mashq</div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Course Overview -->
+            <section class="info-section">
+                <h2>Kurs Haqida Umumiy Ma'lumot</h2>
+                <p>Ushbu kurs Buyuk Britaniyada Seasonal Worker Visa dasturi bo'yicha ishlaydigan o'zbek fuqarolari uchun ZoirUK tomonidan maxsus ishlab chiqilgan. Kurs CEFR (Common European Framework of Reference for Languages) standartlariga muvofiq A0 (mutlaq boshlang'ich) dan A1 (boshlang'ich) darajasigacha ingliz tilini o'rgatadi.</p>
+
+                <h3>Kursning maqsadlari:</h3>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <div class="feature-icon">🚜</div>
+                        <div class="feature-content">
+                            <div class="feature-title">Ferma ishi</div>
+                            <div class="feature-description">Qishloq xo'jaligi ishlarida kerakli ingliz tili ko'nikmalarini o'rganish</div>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🏠</div>
+                        <div class="feature-content">
+                            <div class="feature-title">Kundalik hayot</div>
+                            <div class="feature-description">Do'konlar, shifoxonalar, transport kabi joylarda muloqot qilish</div>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">👥</div>
+                        <div class="feature-content">
+                            <div class="feature-title">Ish muloqoti</div>
+                            <div class="feature-description">Ish beruvchilar va hamkasblar bilan samarali muloqot</div>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🇬🇧</div>
+                        <div class="feature-content">
+                            <div class="feature-title">Britaniya madaniyati</div>
+                            <div class="feature-description">UK qonunlari, odatlari va madaniyati bilan tanishish</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Curriculum -->
+            <section class="info-section">
+                <h2>O'quv Dasturi</h2>
+                <p>Kurs 24 ta bobdan iborat bo'lib, uch asosiy qismga bo'lingan:</p>
+
+                <div class="curriculum-grid">
+                    <div class="curriculum-part">
+                        <div class="part-title">I qism: Asoslar va turmush (1-12 boblar)</div>
+                        <ul class="part-chapters">
+                            <li>1. Salomlashish, shaxsiy ma'lumotlar</li>
+                            <li>2. Raqamlar, vaqt, kalendar</li>
+                            <li>3. Kundalik buyumlar va ranglar</li>
+                            <li>4. Asosiy fe'llar</li>
+                            <li>5. Sifatlar va ravishlar</li>
+                            <li>6. Turar joy va mebel</li>
+                            <li>7. Transport va sayohat</li>
+                            <li>8. Shahar joylari va yo'l topish</li>
+                            <li>9. Xarid qilish</li>
+                            <li>10. Kiyim va ob-havo</li>
+                            <li>11. Ovqat va tayyorlash</li>
+                            <li>12. Sog'liq va tibbiy yordam</li>
+                        </ul>
+                    </div>
+                    <div class="curriculum-part">
+                        <div class="part-title">II qism: Ish muloqoti (13-18 boblar)</div>
+                        <ul class="part-chapters">
+                            <li>13. Ferma ishi va xavfsizlik</li>
+                            <li>14. Ish beruvchi bilan muloqot</li>
+                            <li>15. So'rov va ruxsatlar</li>
+                            <li>16. Bank va pul boshqaruvi</li>
+                            <li>17. Favqulodda vaziyatlar</li>
+                            <li>18. Muloqot ko'nikmalari</li>
+                        </ul>
+                    </div>
+                    <div class="curriculum-part">
+                        <div class="part-title">III qism: Ijtimoiy hayot (19-24 boblar)</div>
+                        <ul class="part-chapters">
+                            <li>19. Mamlakatlar va tillar</li>
+                            <li>20. Bo'sh vaqt va ijtimoiy hayot</li>
+                            <li>21. Sport va faoliyat</li>
+                            <li>22. Oila va munosabatlar</li>
+                            <li>23. Yozish va shakllarni to'ldirish</li>
+                            <li>24. Ish va kelajak rejalari</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Learning Features -->
+            <section class="info-section">
+                <h2>O'qitish Xususiyatlari</h2>
+                
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <div class="feature-icon">📱</div>
+                        <div class="feature-content">
+                            <div class="feature-title">Mobil moslashuvchan</div>
+                            <div class="feature-description">Telefon, planshet va kompyuterda ishlaydi</div>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🌐</div>
+                        <div class="feature-content">
+                            <div class="feature-title">Offline ishlash</div>
+                            <div class="feature-description">Internet aloqasi bo'lmasa ham foydalanish mumkin</div>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🎯</div>
+                        <div class="feature-content">
+                            <div class="feature-title">Interaktiv mashqlar</div>
+                            <div class="feature-description">Darhol javob va tuzatish bilan</div>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">📊</div>
+                        <div class="feature-content">
+                            <div class="feature-title">Jarayon kuzatuvi</div>
+                            <div class="feature-description">O'qish jarayonini avtomatik kuzatish</div>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🔤</div>
+                        <div class="feature-content">
+                            <div class="feature-title">Uch tilli qo'llab-quvvatlash</div>
+                            <div class="feature-description">Inglizcha, o'zbekcha va kirill talaffuzi</div>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">⚡</div>
+                        <div class="feature-content">
+                            <div class="feature-title">Tez organish</div>
+                            <div class="feature-description">A0-A1 darajasi uchun optimallashtirilgan</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Learning Path -->
+            <section class="info-section">
+                <h2>O'qish Yo'li</h2>
+                <p>Kursni muvaffaqiyatli tugatish uchun quyidagi bosqichlarni bajaring:</p>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">1</div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Boshlang'ich baholash</div>
+                            <p>1-bobdan boshlab o'z darajangizni aniqlang. Agar ba'zi mavzular tanish bo'lsa, tezroq o'tishingiz mumkin.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">2</div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Ketma-ket o'qish</div>
+                            <p>Har bir bobni to'liq o'qing: lug'at → grammatika → misollar → dialoglar → mashqlar.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">3</div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Amaliyot va takrorlash</div>
+                            <p>Mashqlarni bajaring va eski boblarni vaqti-vaqti bilan takrorlang.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">4</div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Sertifikat olish</div>
+                            <p>Barcha 250 ta mashqni bajargach, rasmiy sertifikat oling.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certificate Information -->
+            <section class="info-section">
+                <h2>Sertifikat Haqida</h2>
+
+                <div class="requirements-box">
+                    <div class="requirements-title">Sertifikat olish shartlari:</div>
+                    <ul>
+                        <li>Barcha 25 bobni to'liq o'qish</li>
+                        <li>250 ta mashqning barchasini muvaffaqiyatli bajarish</li>
+                        <li>100% o'qish jarayonini yakunlash</li>
+                        <li>Haqiqiy ism va familiyani kiritish</li>
+                    </ul>
+                </div>
+
+                <h3>Sertifikatning ahamiyati:</h3>
+                <ul>
+                    <li><strong>Rasmiy tan olish:</strong> CEFR A0-A1 darajasini tasdiqlovchi hujjat</li>
+                    <li><strong>Ish beruvchilarga ko'rsatish:</strong> Ingliz tili bilimingizni isbotlash</li>
+                    <li><strong>Karyera rivojlantirish:</strong> Kelajakdagi ish imkoniyatlari uchun</li>
+                    <li><strong>Shaxsiy yutuq:</strong> O'z-o'zini rivojlantirish natijalari</li>
+                </ul>
+            </section>
+        </main>
+
+        <div style="text-align: center; margin-top: 32px;">
+            <a href="index.html" class="home-btn">← Bosh sahifaga qaytish</a>
+        </div>
+    </div>
+
+    <script>
+        // Add some interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate stat numbers on scroll
+            const observerOptions = {
+                threshold: 0.5,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const statNumber = entry.target.querySelector('.stat-number');
+                        if (statNumber && !statNumber.classList.contains('animated')) {
+                            animateNumber(statNumber);
+                            statNumber.classList.add('animated');
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.stat-card').forEach(card => {
+                observer.observe(card);
+            });
+
+            function animateNumber(element) {
+                const finalNumber = parseInt(element.textContent);
+                const duration = 1000;
+                const steps = 30;
+                const increment = finalNumber / steps;
+                let current = 0;
+                let step = 0;
+
+                const timer = setInterval(() => {
+                    current += increment;
+                    step++;
+                    element.textContent = Math.floor(current);
+
+                    if (step >= steps) {
+                        element.textContent = finalNumber;
+                        clearInterval(timer);
+                    }
+                }, duration / steps);
+            }
+
+            // Add hover effects to feature items
+            document.querySelectorAll('.feature-item').forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-2px)';
+                    this.style.transition = 'transform 0.2s ease';
+                });
+
+                item.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

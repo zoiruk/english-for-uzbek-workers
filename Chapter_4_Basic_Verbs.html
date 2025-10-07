@@ -1,0 +1,1389 @@
+﻿<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chapter 4: Basic Actions and Everyday Verbs - English for Uzbek Seasonal Workers">
+    <title>Chapter 4: Basic Actions and Everyday Verbs - Ingliz Tili Darsligi</title>
+    <style>
+        /* Material Design 3 Base Styles */
+        :root {
+            --md-sys-color-primary: #f39c12; /* Chapter 4 Orange */
+            --md-sys-color-on-primary: #ffffff;
+            --md-sys-color-primary-container: #d3e3fd;
+            --md-sys-color-on-primary-container: #001c38;
+            --md-sys-color-secondary: #565f71;
+            --md-sys-color-on-secondary: #ffffff;
+            --md-sys-color-surface: #fefbff;
+            --md-sys-color-on-surface: #1a1c1e;
+            --md-sys-color-surface-variant: #e1e2ec;
+            --md-sys-color-on-surface-variant: #44474f;
+            --md-sys-color-outline: #74777f;
+            --md-sys-color-success: #2e7d32;
+            --md-sys-color-error: #d32f2f;
+            --md-sys-elevation-level1: 0px 1px 3px rgba(0,0,0,0.12), 0px 1px 2px rgba(0,0,0,0.24);
+            --md-sys-elevation-level2: 0px 3px 6px rgba(0,0,0,0.16), 0px 3px 6px rgba(0,0,0,0.23);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--md-sys-color-on-surface);
+            background-color: var(--md-sys-color-surface);
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--md-sys-color-primary);
+            color: var(--md-sys-color-on-primary);
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 4px;
+            z-index: 1000;
+        }
+
+        .skip-link:focus {
+            top: 6px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        /* Header Styles */
+        .chapter-header {
+            text-align: center;
+            margin-bottom: 32px;
+            padding: 24px 0;
+            border-bottom: 2px solid var(--md-sys-color-primary);
+        }
+
+        .chapter-header h1 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: var(--md-sys-color-primary);
+            margin-bottom: 8px;
+        }
+
+        .chapter-subtitle {
+            font-size: 1.25rem;
+            color: var(--md-sys-color-on-surface-variant);
+            margin-bottom: 16px;
+        }
+
+        .chapter-progress {
+            background: var(--md-sys-color-primary-container);
+            color: var(--md-sys-color-on-primary-container);
+            padding: 8px 16px;
+            border-radius: 16px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        /* Section Styles */
+        .section {
+            margin-bottom: 48px;
+            background: var(--md-sys-color-surface);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: var(--md-sys-elevation-level1);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--md-sys-color-primary);
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--md-sys-color-outline);
+        }
+
+        /* Vocabulary Table */
+        .vocab-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+        }
+
+        .vocab-table th,
+        .vocab-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--md-sys-color-outline);
+        }
+
+        .vocab-table th {
+            background: var(--md-sys-color-primary-container);
+            color: var(--md-sys-color-on-primary-container);
+            font-weight: 500;
+        }
+
+        .vocab-table .transcription {
+            color: #d32f2f;
+            font-weight: 500;
+        }
+
+        .vocab-table .uzbek {
+            color: var(--md-sys-color-on-surface-variant);
+        }
+
+        /* Grammar Box */
+        .grammar-box {
+            background: var(--md-sys-color-primary-container);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 16px 0;
+        }
+
+        .grammar-box h3 {
+            color: var(--md-sys-color-on-primary-container);
+            margin-bottom: 12px;
+        }
+
+        .grammar-box p {
+            color: var(--md-sys-color-on-primary-container);
+            margin-bottom: 8px;
+        }
+
+        /* Dialogue Styles */
+        .dialog {
+            background: #e8f5e8;
+            border-left: 4px solid var(--md-sys-color-success);
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .dialog-speaker {
+            font-weight: 600;
+            color: var(--md-sys-color-success);
+            margin-bottom: 4px;
+        }
+
+        .dialog-text {
+            margin-bottom: 8px;
+        }
+
+        .dialog-translation {
+            font-style: italic;
+            color: var(--md-sys-color-on-surface-variant);
+            font-size: 0.9rem;
+        }
+
+        /* Exercise Styles */
+        .exercise {
+            background: #fff8e1;
+            border-left: 4px solid #f39c12;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 16px 0;
+            position: relative;
+        }
+
+        .exercise-question {
+            font-weight: 500;
+            margin-bottom: 12px;
+            color: var(--md-sys-color-on-surface);
+        }
+
+        .exercise-input-group {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .exercise-input {
+            flex: 1;
+            padding: 12px;
+            border: 2px solid var(--md-sys-color-outline);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.2s ease;
+        }
+
+        .exercise-input:focus {
+            outline: none;
+            border-color: var(--md-sys-color-primary);
+        }
+
+        .exercise-input.completed {
+            background: #e8f5e8;
+            border-color: var(--md-sys-color-success);
+        }
+
+        .check-answer-btn {
+            background: var(--md-sys-color-primary);
+            color: var(--md-sys-color-on-primary);
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            min-height: 44px;
+        }
+
+        .check-answer-btn:hover {
+            background: #e67e22;
+            transform: translateY(-1px);
+        }
+
+        .check-answer-btn:active {
+            transform: translateY(0);
+        }
+
+        .exercise-feedback {
+            margin-top: 12px;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+
+        .exercise-feedback.correct {
+            background: #e8f5e8;
+            color: var(--md-sys-color-success);
+            border: 1px solid var(--md-sys-color-success);
+        }
+
+        .exercise-feedback.incorrect {
+            background: #ffebee;
+            color: var(--md-sys-color-error);
+            border: 1px solid var(--md-sys-color-error);
+        }
+
+        .feedback-icon {
+            font-size: 1.2rem;
+            margin-right: 8px;
+        }
+
+        /* Example Styles */
+        .example {
+            background: #f3e5f5;
+            border-left: 4px solid #9c27b0;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .example-english {
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .example-uzbek {
+            font-style: italic;
+            color: var(--md-sys-color-on-surface-variant);
+        }
+
+        /* Breadcrumb Navigation */
+        .breadcrumb-nav {
+            background: var(--md-sys-color-surface-variant);
+            padding: 12px 0;
+            margin-bottom: 24px;
+            border-radius: 8px;
+        }
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.875rem;
+            color: var(--md-sys-color-on-surface-variant);
+        }
+
+        .breadcrumb a {
+            color: var(--md-sys-color-primary);
+            text-decoration: none;
+            padding: 4px 8px;
+            border-radius: 4px;
+            transition: background-color 0.2s ease;
+        }
+
+        .breadcrumb a:hover {
+            background: var(--md-sys-color-primary-container);
+        }
+
+        .breadcrumb a:focus {
+            outline: 2px solid var(--md-sys-color-primary);
+            outline-offset: 2px;
+        }
+
+        .breadcrumb-separator {
+            color: var(--md-sys-color-outline);
+        }
+
+        .breadcrumb-current {
+            font-weight: 500;
+            color: var(--md-sys-color-on-surface);
+        }
+
+        /* Navigation Styles */
+        .chapter-navigation {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 16px;
+            align-items: center;
+            margin-top: 48px;
+            padding: 24px 0;
+            border-top: 1px solid var(--md-sys-color-outline);
+        }
+
+        .nav-btn {
+            background: var(--md-sys-color-primary);
+            color: var(--md-sys-color-on-primary);
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 20px;
+            font-weight: 500;
+            transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: var(--md-sys-elevation-level1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .nav-btn:hover::before {
+            left: 100%;
+        }
+
+        .nav-btn:hover {
+            background: #e67e22;
+            transform: translateY(-2px);
+            box-shadow: var(--md-sys-elevation-level2);
+        }
+
+        .nav-btn:focus {
+            outline: 3px solid var(--md-sys-color-primary);
+            outline-offset: 2px;
+        }
+
+        .nav-btn:active {
+            transform: translateY(0);
+        }
+
+        .nav-btn.disabled {
+            background: var(--md-sys-color-surface-variant);
+            color: var(--md-sys-color-on-surface-variant);
+            pointer-events: none;
+            opacity: 0.6;
+        }
+
+        .nav-btn.prev {
+            justify-self: start;
+        }
+
+        .nav-btn.next {
+            justify-self: end;
+        }
+
+        .home-btn {
+            background: var(--md-sys-color-secondary);
+            color: var(--md-sys-color-on-secondary);
+            justify-self: center;
+        }
+
+        .nav-btn-icon {
+            font-size: 1.2rem;
+        }
+
+        .nav-btn-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .nav-btn-label {
+            font-size: 0.75rem;
+            opacity: 0.8;
+        }
+
+        .nav-btn-title {
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        /* Quick Navigation */
+        .quick-nav {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            z-index: 100;
+        }
+
+        .quick-nav-btn {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: var(--md-sys-color-primary);
+            color: var(--md-sys-color-on-primary);
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: var(--md-sys-elevation-level2);
+            transition: all 0.3s ease;
+        }
+
+        .quick-nav-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 6px 12px rgba(0,0,0,0.2);
+        }
+
+        .quick-nav-btn:focus {
+            outline: 3px solid var(--md-sys-color-primary);
+            outline-offset: 2px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 12px;
+            }
+
+            .chapter-header h1 {
+                font-size: 2rem;
+            }
+
+            .section {
+                padding: 16px;
+                margin-bottom: 24px;
+            }
+
+            /* Enhanced vocabulary table mobile layout */
+            .vocab-table {
+                font-size: 0.875rem;
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .vocab-table thead,
+            .vocab-table tbody,
+            .vocab-table th,
+            .vocab-table td,
+            .vocab-table tr {
+                display: block;
+            }
+
+            .vocab-table thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            .vocab-table tr {
+                border: 1px solid var(--md-sys-color-outline);
+                border-radius: 8px;
+                margin-bottom: 12px;
+                padding: 12px;
+                background: var(--md-sys-color-surface);
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            }
+
+            .vocab-table td {
+                border: none;
+                position: relative;
+                padding: 8px 8px 8px 50% !important;
+                white-space: normal;
+                text-align: left;
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+            }
+
+            .vocab-table td:before {
+                content: attr(data-label) ": ";
+                position: absolute;
+                left: 8px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                font-weight: 500;
+                color: var(--md-sys-color-on-surface-variant);
+                display: flex;
+                align-items: center;
+                min-height: 44px;
+            }
+
+            .exercise-input-group {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .check-answer-btn {
+                width: 100%;
+            }
+
+            .chapter-navigation {
+                grid-template-columns: 1fr;
+                gap: 12px;
+                text-align: center;
+            }
+
+            .nav-btn {
+                width: 100%;
+                justify-content: center;
+                justify-self: center;
+            }
+
+            .nav-btn.prev,
+            .nav-btn.next {
+                justify-self: center;
+            }
+
+            .breadcrumb {
+                flex-wrap: wrap;
+                font-size: 0.75rem;
+            }
+
+            .quick-nav {
+                bottom: 16px;
+                right: 16px;
+            }
+
+            .quick-nav-btn {
+                width: 48px;
+                height: 48px;
+                font-size: 1.25rem;
+            }
+        }
+
+        /* Touch targets for mobile */
+        @media (max-width: 768px) {
+            .exercise-input,
+            .check-answer-btn,
+            .nav-btn,
+            .quick-nav-btn {
+                min-height: 44px;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            .chapter-navigation,
+            .check-answer-btn,
+            .quick-nav {
+                display: none;
+            }
+            
+            .exercise-feedback {
+                display: none;
+            }
+        }
+    
+        /* Small mobile devices */
+        @media (max-width: 480px) {
+            .container {
+                padding: 8px;
+            }
+        }
+</style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <div class="container" id="main-content" data-chapter-id="4">
+        <!-- Breadcrumb Navigation -->
+        <nav class="breadcrumb-nav" aria-label="Breadcrumb navigation">
+            <div class="breadcrumb">
+                <a href="index.html" aria-label="Go to home page">🏠 Home</a>
+                <span class="breadcrumb-separator" aria-hidden="true">›</span>
+                <span class="breadcrumb-current" aria-current="page">Chapter 4: Basic Actions and Everyday Verbs</span>
+            </div>
+        </nav>
+
+        <header class="chapter-header">
+            <h1>Chapter 4: Basic Actions and Everyday Verbs</h1>
+            <p class="chapter-subtitle">Asosiy Harakatlar va Kundalik Fe'llar</p>
+            <div class="chapter-progress">Progress: 0% (0/10)</div>
+        </header>
+
+        <!-- Vocabulary Section -->
+        <section class="section vocabulary-section">
+            <h2 class="section-title">Vocabulary / Lug'at</h2>
+            <table class="vocab-table">
+                <thead>
+                    <tr>
+                        <th>English</th>
+                        <th>Transcription</th>
+                        <th>O'zbek</th>
+                        <th>Context</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td data-label="English">Work</td><td data-label="Transcription" class="transcription">ворк</td><td data-label="O'zbek" class="uzbek">Ishlash</td><td data-label="Context">Main activity</td></tr>
+                    <tr><td data-label="English">Pick</td><td data-label="Transcription" class="transcription">пик</td><td data-label="O'zbek" class="uzbek">Terish</td><td data-label="Context">Farm action</td></tr>
+                    <tr><td data-label="English">Plant</td><td data-label="Transcription" class="transcription">плант</td><td data-label="O'zbek" class="uzbek">Ekish</td><td data-label="Context">Farm action</td></tr>
+                    <tr><td data-label="English">Water</td><td data-label="Transcription" class="transcription">вотэр</td><td data-label="O'zbek" class="uzbek">Sug'orish</td><td data-label="Context">Farm action</td></tr>
+                    <tr><td data-label="English">Carry</td><td data-label="Transcription" class="transcription">кэри</td><td data-label="O'zbek" class="uzbek">Ko'tarish</td><td data-label="Context">Physical action</td></tr>
+                    <tr><td data-label="English">Lift</td><td data-label="Transcription" class="transcription">лифт</td><td data-label="O'zbek" class="uzbek">Ko'tarmoq</td><td data-label="Context">Physical action</td></tr>
+                    <tr><td data-label="English">Push</td><td data-label="Transcription" class="transcription">пуш</td><td data-label="O'zbek" class="uzbek">Itarish</td><td data-label="Context">Physical action</td></tr>
+                    <tr><td data-label="English">Pull</td><td data-label="Transcription" class="transcription">пул</td><td data-label="O'zbek" class="uzbek">Tortish</td><td data-label="Context">Physical action</td></tr>
+                    <tr><td data-label="English">Walk</td><td data-label="Transcription" class="transcription">волк</td><td data-label="O'zbek" class="uzbek">Yurish</td><td data-label="Context">Movement</td></tr>
+                    <tr><td data-label="English">Run</td><td data-label="Transcription" class="transcription">ран</td><td data-label="O'zbek" class="uzbek">Yugurish</td><td data-label="Context">Movement</td></tr>
+                    <tr><td data-label="English">Stop</td><td data-label="Transcription" class="transcription">стоп</td><td data-label="O'zbek" class="uzbek">To'xtash</td><td data-label="Context">Movement</td></tr>
+                    <tr><td data-label="English">Go</td><td data-label="Transcription" class="transcription">гоу</td><td data-label="O'zbek" class="uzbek">Borish</td><td data-label="Context">Movement</td></tr>
+                    <tr><td data-label="English">Come</td><td data-label="Transcription" class="transcription">кам</td><td data-label="O'zbek" class="uzbek">Kelish</td><td data-label="Context">Movement</td></tr>
+                    <tr><td data-label="English">Eat</td><td data-label="Transcription" class="transcription">ит</td><td data-label="O'zbek" class="uzbek">Yeyish</td><td data-label="Context">Daily action</td></tr>
+                    <tr><td data-label="English">Drink</td><td data-label="Transcription" class="transcription">дринк</td><td data-label="O'zbek" class="uzbek">Ichish</td><td data-label="Context">Daily action</td></tr>
+                    <tr><td data-label="English">Sleep</td><td data-label="Transcription" class="transcription">слип</td><td data-label="O'zbek" class="uzbek">Uxlash</td><td data-label="Context">Daily action</td></tr>
+                    <tr><td data-label="English">Wake up</td><td data-label="Transcription" class="transcription">вэйк ап</td><td data-label="O'zbek" class="uzbek">Uyg'onish</td><td data-label="Context">Daily action</td></tr>
+                    <tr><td data-label="English">Wash</td><td data-label="Transcription" class="transcription">вош</td><td data-label="O'zbek" class="uzbek">Yuvish</td><td data-label="Context">Daily action</td></tr>
+                    <tr><td data-label="English">Clean</td><td data-label="Transcription" class="transcription">клин</td><td data-label="O'zbek" class="uzbek">Tozalash</td><td data-label="Context">Daily action</td></tr>
+                    <tr><td data-label="English">Open</td><td data-label="Transcription" class="transcription">оупэн</td><td data-label="O'zbek" class="uzbek">Ochish</td><td data-label="Context">Action</td></tr>
+                    <tr><td data-label="English">Close</td><td data-label="Transcription" class="transcription">клоуз</td><td data-label="O'zbek" class="uzbek">Yopish</td><td data-label="Context">Action</td></tr>
+                    <tr><td data-label="English">Give</td><td data-label="Transcription" class="transcription">гив</td><td data-label="O'zbek" class="uzbek">Berish</td><td data-label="Context">Action</td></tr>
+                    <tr><td data-label="English">Take</td><td data-label="Transcription" class="transcription">тэйк</td><td data-label="O'zbek" class="uzbek">Olish</td><td data-label="Context">Action</td></tr>
+                    <tr><td data-label="English">Put</td><td data-label="Transcription" class="transcription">пут</td><td data-label="O'zbek" class="uzbek">Qo'yish</td><td data-label="Context">Action</td></tr>
+                    <tr><td data-label="English">Get</td><td data-label="Transcription" class="transcription">гэт</td><td data-label="O'zbek" class="uzbek">Olish/Olib kelish</td><td data-label="Context">Action</td></tr>
+                    <tr><td data-label="English">Make</td><td data-label="Transcription" class="transcription">мэйк</td><td data-label="O'zbek" class="uzbek">Yasash</td><td data-label="Context">Action</td></tr>
+                    <tr><td data-label="English">Do</td><td data-label="Transcription" class="transcription">ду</td><td data-label="O'zbek" class="uzbek">Qilish</td><td data-label="Context">Action</td></tr>
+                    <tr><td data-label="English">Help</td><td data-label="Transcription" class="transcription">хэлп</td><td data-label="O'zbek" class="uzbek">Yordam berish</td><td data-label="Context">Action</td></tr>
+                    <tr><td data-label="English">Ask</td><td data-label="Transcription" class="transcription">аск</td><td data-label="O'zbek" class="uzbek">So'rash</td><td data-label="Context">Communication</td></tr>
+                    <tr><td data-label="English">Tell</td><td data-label="Transcription" class="transcription">тэл</td><td data-label="O'zbek" class="uzbek">Aytish</td><td data-label="Context">Communication</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Grammar Section -->
+        <section class="section grammar-section">
+            <h2 class="section-title">Grammar / Grammatika</h2>
+            
+            <div class="grammar-section">
+                <h2>Grammatika - Present Simple harakat fe'llari bilan (Present Simple with everyday verbs)</h2>
+                
+                <!-- Introduction and Purpose -->
+                <div class="grammar-intro">
+                    <h3>Bu grammatika nima uchun kerak? (Why do we need this grammar?)</h3>
+                    <p>Present Simple zamonini harakat fe'llari bilan ishlatib, siz har kuni qiladigan ishlar haqida gapirasiz. Mavsumiy ishchi sifatida bu zamonni ishda, uyda va kundalik hayotda doimiy ishlatasiz - ish vazifalarini tushuntirish, kun tartibini aytish va odatlaringiz haqida gapirish uchun.</p>
+                    <p>Misol: "Men har kuni qulupnay teraman" - "I pick strawberries every day"</p>
+                </div>
+                
+                <!-- Basic Concept Explanation -->
+                <div class="concept-explanation">
+                    <h3>Asosiy tushuncha (Basic Concept)</h3>
+                    <p>Harakat fe'llari bilan Present Simple ishlatganda, biz har kuni takrorlanadigan ishlar va odatlar haqida gapiramiz. Muhim qoidalar:</p>
+                    <ul>
+                        <li><strong>I, You, We, They</strong> bilan fe'lning asosiy shaklini ishlatamiz: work, pick, carry</li>
+                        <li><strong>He, She, It</strong> bilan fe'lga <strong>-s</strong> yoki <strong>-es</strong> qo'shamiz: works, picks, carries</li>
+                        <li><strong>Inkor:</strong> do not (don't) / does not (doesn't) + asosiy fe'l</li>
+                        <li><strong>Savol:</strong> Do/Does + subject + asosiy fe'l</li>
+                    </ul>
+                </div>
+                
+                <!-- Three-Form Structure -->
+                <div class="three-forms">
+                    <h3>Uch shakl (Three Forms)</h3>
+                    
+                    <!-- Positive Form -->
+                    <div class="positive-form" style="background: #e8f5e8; border-left: 4px solid #2e7d32; border-radius: 8px; padding: 16px; margin: 16px 0;">
+                        <h4>1. Tasdiqlovchi shakl (Positive Form)</h4>
+                        <p><strong>Qachon ishlatamiz:</strong> Har kuni qiladigan ishlar va odatlar haqida gapirishda</p>
+                        
+                        <div class="structure-table">
+                            <table style="width: 100%; border-collapse: collapse; margin: 16px 0;">
+                                <thead>
+                                    <tr style="background: #c8e6c9;">
+                                        <th style="padding: 12px; border: 1px solid #4caf50;">Subject</th>
+                                        <th style="padding: 12px; border: 1px solid #4caf50;">Verb Form</th>
+                                        <th style="padding: 12px; border: 1px solid #4caf50;">Example</th>
+                                        <th style="padding: 12px; border: 1px solid #4caf50;">O'zbek ma'nosi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 8px; border: 1px solid #4caf50;">I/You/We/They</td>
+                                        <td style="padding: 8px; border: 1px solid #4caf50;"><strong>pick</strong></td>
+                                        <td style="padding: 8px; border: 1px solid #4caf50;">I pick strawberries</td>
+                                        <td style="padding: 8px; border: 1px solid #4caf50;">Men qulupnay teraman</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px; border: 1px solid #4caf50;">He/She/It</td>
+                                        <td style="padding: 8px; border: 1px solid #4caf50;"><strong>picks</strong></td>
+                                        <td style="padding: 8px; border: 1px solid #4caf50;">She picks strawberries</td>
+                                        <td style="padding: 8px; border: 1px solid #4caf50;">U qulupnay teradi</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="examples">
+                            <h5>Amaliy misollar (Practical Examples):</h5>
+                            <div class="example-sentence" style="margin: 8px 0; padding: 8px; background: #f1f8e9; border-radius: 4px;">
+                                <div class="english" style="font-weight: bold;">I wake up at 6 AM every day.</div>
+                                <div class="transcription" style="color: #d32f2f; font-style: italic;">[Ай вейк ап эт сикс эй эм эври дей]</div>
+                                <div class="uzbek" style="color: #2e7d32;">Men har kuni ertalab 6 da uyg'onaman.</div>
+                                <div class="context" style="font-size: 0.9em; color: #666;">Kun tartibi: Ertalabki odatlar</div>
+                            </div>
+                            
+                            <div class="example-sentence" style="margin: 8px 0; padding: 8px; background: #f1f8e9; border-radius: 4px;">
+                                <div class="english" style="font-weight: bold;">We carry heavy boxes to the truck.</div>
+                                <div class="transcription" style="color: #d32f2f; font-style: italic;">[Ви кэри хэви боксиз ту зэ трак]</div>
+                                <div class="uzbek" style="color: #2e7d32;">Biz og'ir qutilarni yuk mashinasiga ko'taramiz.</div>
+                                <div class="context" style="font-size: 0.9em; color: #666;">Ish vazifasi: Jismoniy ish</div>
+                            </div>
+                            
+                            <div class="example-sentence" style="margin: 8px 0; padding: 8px; background: #f1f8e9; border-radius: 4px;">
+                                <div class="english" style="font-weight: bold;">She plants vegetables in the greenhouse.</div>
+                                <div class="transcription" style="color: #d32f2f; font-style: italic;">[Ши плэнтс веджетэблз ин зэ гринхаус]</div>
+                                <div class="uzbek" style="color: #2e7d32;">U issiqxonada sabzavot ekadi.</div>
+                                <div class="context" style="font-size: 0.9em; color: #666;">Ferma ishi: Ekish jarayoni</div>
+                            </div>
+                            
+                            <div class="example-sentence" style="margin: 8px 0; padding: 8px; background: #f1f8e9; border-radius: 4px;">
+                                <div class="english" style="font-weight: bold;">They help each other with difficult tasks.</div>
+                                <div class="transcription" style="color: #d32f2f; font-style: italic;">[Зей хэлп ич азэр виз дификалт таскс]</div>
+                                <div class="uzbek" style="color: #2e7d32;">Ular bir-birlariga qiyin ishlarda yordam berishadi.</div>
+                                <div class="context" style="font-size: 0.9em; color: #666;">Jamoaviy ish: Hamkorlik</div>
+                            </div>
+                            
+                            <div class="example-sentence" style="margin: 8px 0; padding: 8px; background: #f1f8e9; border-radius: 4px;">
+                                <div class="english" style="font-weight: bold;">He opens the farm gate at 7 AM.</div>
+                                <div class="transcription" style="color: #d32f2f; font-style: italic;">[Хи оупэнз зэ фарм гейт эт севен эй эм]</div>
+                                <div class="uzbek" style="color: #2e7d32;">U ertalab 7 da ferma darvozasini ochadi.</div>
+                                <div class="context" style="font-size: 0.9em; color: #666;">Ish boshlanishi: Kun tartibi</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Negative Form -->
+                    <div class="negative-form" style="background: #ffebee; border-left: 4px solid #d32f2f; border-radius: 8px; padding: 16px; margin: 16px 0;">
+                        <h4>2. Inkorlovchi shakl (Negative Form)</h4>
+                        <p><strong>Qachon ishlatamiz:</strong> Qilmaydigan ishlar yoki yo'q odatlar haqida gapirishda</p>
+                        <p><strong>Qanday yasaymiz:</strong> do not (don't) / does not (doesn't) + asosiy fe'l</p>
+                        
+                        <div class="structure-table">
+                            <table style="width: 100%; border-collapse: collapse; margin: 16px 0;">
+                                <thead>
+                                    <tr style="background: #ffcdd2;">
+                                        <th style="padding: 12px; border: 1px solid #f44336;">Subject</th>
+                                        <th style="padding: 12px; border: 1px solid #f44336;">Do/Does + Not</th>
+                                        <th style="padding: 12px; border: 1px solid #f44336;">Verb</th>
+                                        <th style="padding: 12px; border: 1px solid #f44336;">O'zbek ma'nosi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 8px; border: 1px solid #f44336;">I/You/We/They</td>
+                                        <td style="padding: 8px; border: 1px solid #f44336;"><strong>don't</strong></td>
+                                        <td style="padding: 8px; border: 1px solid #f44336;">work</td>
+                                        <td style="padding: 8px; border: 1px solid #f44336;">ishlamayman/ishlamaysiz</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px; border: 1px solid #f44336;">He/She/It</td>
+                                        <td style="padding: 8px; border: 1px solid #f44336;"><strong>doesn't</strong></td>
+                                        <td style="padding: 8px; border: 1px solid #f44336;">work</td>
+                                        <td style="padding: 8px; border: 1px solid #f44336;">ishlamaydi</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="examples">
+                            <h5>Amaliy misollar (Practical Examples):</h5>
+                            <div class="example-sentence" style="margin: 8px 0; padding: 8px; background: #fce4ec; border-radius: 4px;">
+                                <div class="english" style="font-weight: bold;">I don't work on Sundays.</div>
+                                <div class="transcription" style="color: #d32f2f; font-style: italic;">[Ай донт ворк он Сандейз]</div>
+                                <div class="uzbek" style="color: #d32f2f;">Men yakshanba kunlari ishlamayman.</div>
+                                <div class="context" style="font-size: 0.9em; color: #666;">Dam olish: Haftalik jadval</div>
+                            </div>
+                            
+                            <div class="example-sentence" style="margin: 8px 0; padding: 8px; background: #fce4ec; border-radius: 4px;">
+                                <div class="english" style="font-weight: bold;">We don't pick fruit in the rain.</div>
+                                <div class="transcription" style="color: #d32f2f; font-style: italic;">[Ви донт пик фрут ин зэ рейн]</div>
+                                <div class="uzbek" style="color: #d32f2f;">Biz yomg'irda meva termaymiz.</div>
+                                <div class="context" style="font-size: 0.9em; color: #666;">Ish qoidalari: Ob-havo sharoiti</div>
+                            </div>
+                            
+                            <div class="example-sentence" style="margin: 8px 0; padding: 8px; background: #fce4ec; border-radius: 4px;">
+                                <div class="english" style="font-weight: bold;">She doesn't carry heavy boxes alone.</div>
+                                <div class="transcription" style="color: #d32f2f; font-style: italic;">[Ши дазнт кэри хэви боксиз элоун]</div>
+                                <div class="uzbek" style="color: #d32f2f;">U og'ir qutilarni yolg'iz ko'tarmaydi.</div>
+                                <div class="context" style="font-size: 0.9em; color: #666;">Xavfsizlik: Ish qoidalari</div>
+                            </div>
+                            
+                            <div class="example-sentence" style="margin: 8px 0; padding: 8px; background: #fce4ec; border-radius: 4px;">
+                                <div class="english" style="font-weight: bold;">They don't eat lunch before 12 PM.</div>
+                                <div class="transcription" style="color: #d32f2f; font-style: italic;">[Зей донт ит ланч бифор твелв пи эм]</div>
+                                <div class="uzbek" style="color: #d32f2f;">Ular 12:00 gacha tushlik qilmaydilar.</div>
+                                <div class="context" style="font-size: 0.9em; color: #666;">Ovqat vaqti: Kun tartibi</div>
+                            </div>
+                            
+                            <div class="example-sentence" style="margin: 8px 0; padding: 8px; background: #fce4ec; border-radius: 4px;">
+                                <div class="english" style="font-weight: bold;">He doesn't water plants in the evening.</div>
+                                <div class="transcription" style="color: #d32f2f; font-style: italic;">[Хи дазнт вотэр плэнтс ин зэ ивнинг]</div>
+                                <div class="uzbek" style="color: #d32f2f;">U kechqurun o'simliklarni sug'ormaydi.</div>
+                                <div class="context" style="font-size: 0.9em; color: #666;">Ferma ishi: Vaqt tartibi</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Question Form -->
+                    <div class="question-form" style="background: #e3f2fd; border-left: 4px solid #1976d2; border-radius: 8px; padding: 16px; margin: 16px 0;">
+                        <h4>3. So'roq shakl (Question Form)</h4>
+                        <p><strong>Qachon ishlatamiz:</strong> Ishlar va odatlar haqida savol berishda</p>
+                        <p><strong>Qanday yasaymiz:</strong> Do/Does + subject + asosiy fe'l</p>
+                        
+                        <div class="structure-table">
+                            <table style="width: 100%; border-collapse: collapse; margin: 16px 0;">
+                                <thead>
+                                    <tr style="background: #bbdefb;">
+                                        <th style="padding: 12px; border: 1px solid #2196f3;">Do/Does</th>
+                                        <th style="padding: 12px; border: 1px solid #2196f3;">Subject</th>
+                                        <th style="padding: 12px; border: 1px solid #2196f3;">Verb</th>
+                                        <th style="padding: 12px; border: 1px solid #2196f3;">O'zbek ma'nosi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 8px; border: 1px solid #2196f3;"><strong>Do</strong></td>
+                                        <td style="padding: 8px; border: 1px solid #2196f3;">you/we/they</td>
+                                        <td style="padding: 8px; border: 1px solid #2196f3;">work?</td>
+                                        <td style="padding: 8px; border: 1px solid #2196f3;">ishlaysizmi?</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px; border: 1px solid #2196f3;"><strong>Does</strong></td>
+                                        <td style="padding: 8px; border: 1px solid #2196f3;">he/she/it</td>
+                                        <td style="padding: 8px; border: 1px solid #2196f3;">work?</td>
+                                        <td style="padding: 8px; border: 1px solid #2196f3;">ishlaydimi?</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="examples">
+                            <h5>Amaliy misollar (Practical Examples):</h5>
+                            <div class="example-sentence" style="margin: 8px 0; padding: 8px; background: #e1f5fe; border-radius: 4px;">
+                                <div class="english" style="font-weight: bold;">What do you do at work?</div>
+                                <div class="transcription" style="color: #d32f2f; font-style: italic;">[Вот ду ю ду эт ворк?]</div>
+                                <div class="uzbek" style="color: #1976d2;">Ishda nima qilasiz?</div>
+                                <div class="context" style="font-size: 0.9em; color: #666;">Ish vazifasi: Umumiy savol</div>
+                            </div>
+                            
+                            <div class="example-sentence" style="margin: 8px 0; padding: 8px; background: #e1f5fe; border-radius: 4px;">
+                                <div class="english" style="font-weight: bold;">Do you pick strawberries or raspberries?</div>
+                                <div class="transcription" style="color: #d32f2f; font-style: italic;">[Ду ю пик стробериз ор разбериз?]</div>
+                                <div class="uzbek" style="color: #1976d2;">Qulupnay terasizmi yoki malina terasizmi?</div>
+                                <div class="context" style="font-size: 0.9em; color: #666;">Ish turi: Tanlov savoli</div>
+                            </div>
+                            
+                            <div class="example-sentence" style="margin: 8px 0; padding: 8px; background: #e1f5fe; border-radius: 4px;">
+                                <div class="english" style="font-weight: bold;">Does she help you with heavy work?</div>
+                                <div class="transcription" style="color: #d32f2f; font-style: italic;">[Даз ши хэлп ю виз хэви ворк?]</div>
+                                <div class="uzbek" style="color: #1976d2;">U sizga og'ir ishda yordam beradimi?</div>
+                                <div class="context" style="font-size: 0.9em; color: #666;">Yordam: Hamkorlik haqida</div>
+                            </div>
+                            
+                            <div class="example-sentence" style="margin: 8px 0; padding: 8px; background: #e1f5fe; border-radius: 4px;">
+                                <div class="english" style="font-weight: bold;">How many hours do we work today?</div>
+                                <div class="transcription" style="color: #d32f2f; font-style: italic;">[Хау мени ауэрз ду ви ворк тудей?]</div>
+                                <div class="uzbek" style="color: #1976d2;">Bugun necha soat ishlaymiz?</div>
+                                <div class="context" style="font-size: 0.9em; color: #666;">Ish vaqti: Kunlik reja</div>
+                            </div>
+                            
+                            <div class="example-sentence" style="margin: 8px 0; padding: 8px; background: #e1f5fe; border-radius: 4px;">
+                                <div class="english" style="font-weight: bold;">Do they water plants every morning?</div>
+                                <div class="transcription" style="color: #d32f2f; font-style: italic;">[Ду зей вотэр плэнтс эври морнинг?]</div>
+                                <div class="uzbek" style="color: #1976d2;">Ular har kuni ertalab o'simliklarni sug'oradimi?</div>
+                                <div class="context" style="font-size: 0.9em; color: #666;">Kun tartibi: Odatlar haqida</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Practical Application -->
+                <div class="practical-application" style="background: #f3e5f5; border-left: 4px solid #9c27b0; border-radius: 8px; padding: 16px; margin: 16px 0;">
+                    <h3>Amaliy qo'llash (Practical Application)</h3>
+                    <div class="scenarios">
+                        <h4>Mavsumiy ishchilar uchun real vaziyatlar:</h4>
+                        
+                        <div style="margin: 12px 0; padding: 12px; background: #fce4ec; border-radius: 6px;">
+                            <h5>🌱 Kun tartibini tushuntirish (Explaining daily routine):</h5>
+                            <p><strong>Yangi ishchi:</strong> "What do you do every day at work?"</p>
+                            <p><strong>Siz:</strong> "I wake up at 6 AM, eat breakfast, and start work at 7. I pick strawberries until lunch time."</p>
+                            <p><em>Yangi ishchi: "Ishda har kuni nima qilasiz?" Siz: "Men 6 da uyg'onaman, nonushta qilaman va 7 da ishni boshlayman. Tushlik vaqtigacha qulupnay teraman."</em></p>
+                        </div>
+                        
+                        <div style="margin: 12px 0; padding: 12px; background: #fce4ec; border-radius: 6px;">
+                            <h5>🤝 Ish vazifalarini taqsimlash (Dividing work tasks):</h5>
+                            <p><strong>Supervayzer:</strong> "Do you carry heavy boxes or do you prefer lighter work?"</p>
+                            <p><strong>Siz:</strong> "I carry boxes, but she doesn't. She plants vegetables and waters the plants."</p>
+                            <p><em>Supervayzer: "Og'ir qutilarni ko'tarasizmi yoki yengilroq ishni afzal ko'rasizmi?" Siz: "Men qutilarni ko'taraman, lekin u ko'tarmaydi. U sabzavot ekadi va o'simliklarni sug'oradi."</em></p>
+                        </div>
+                        
+                        <div style="margin: 12px 0; padding: 12px; background: #fce4ec; border-radius: 6px;">
+                            <h5>⏰ Ish vaqtlari haqida (About work hours):</h5>
+                            <p><strong>Hamkasb:</strong> "Does he work overtime on weekends?"</p>
+                            <p><strong>Siz:</strong> "No, he doesn't work overtime. We only work regular hours from Monday to Friday."</p>
+                            <p><em>Hamkasb: "U dam olish kunlari qo'shimcha vaqt ishlaydimi?" Siz: "Yo'q, u qo'shimcha vaqt ishlamaydi. Biz faqat dushanbadan jumagacha oddiy vaqt ishlaymiz."</em></p>
+                        </div>
+                        
+                        <div style="margin: 12px 0; padding: 12px; background: #fce4ec; border-radius: 6px;">
+                            <h5>🍽️ Ovqat vaqtlari (Meal times):</h5>
+                            <p><strong>Siz:</strong> "What time do we eat lunch? Do you bring food from home?"</p>
+                            <p><strong>Hamkasb:</strong> "We eat at 12:30. I bring sandwiches, but some people buy food from the canteen."</p>
+                            <p><em>Siz: "Necha vaqtda tushlik qilamiz? Uydan ovqat olib kelasizmi?" Hamkasb: "12:30 da ovqat qilamiz. Men sendvich olib kelaman, lekin ba'zi odamlar oshxonadan ovqat sotib olishadi."</em></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Common Mistakes -->
+                <div class="common-mistakes" style="background: #fff3e0; border-left: 4px solid #ff9800; border-radius: 8px; padding: 16px; margin: 16px 0;">
+                    <h3>Tez-tez qilinadigan xatolar (Common Mistakes)</h3>
+                    <div class="mistakes-list">
+                        <div style="margin: 12px 0; padding: 12px; background: #ffecb3; border-radius: 6px;">
+                            <h5>❌ Xato (Wrong):</h5>
+                            <p><strong>"He pick strawberries"</strong></p>
+                            <h5>✅ To'g'ri (Correct):</h5>
+                            <p><strong>"He picks strawberries"</strong></p>
+                            <p><em>Tushuntirish: He/She/It bilan fe'lga -s qo'shiladi.</em></p>
+                        </div>
+                        
+                        <div style="margin: 12px 0; padding: 12px; background: #ffecb3; border-radius: 6px;">
+                            <h5>❌ Xato (Wrong):</h5>
+                            <p><strong>"I don't works on Sunday"</strong></p>
+                            <h5>✅ To'g'ri (Correct):</h5>
+                            <p><strong>"I don't work on Sunday"</strong></p>
+                            <p><em>Tushuntirish: "Don't" dan keyin fe'lning asosiy shakli keladi.</em></p>
+                        </div>
+                        
+                        <div style="margin: 12px 0; padding: 12px; background: #ffecb3; border-radius: 6px;">
+                            <h5>❌ Xato (Wrong):</h5>
+                            <p><strong>"Does you carry boxes?"</strong></p>
+                            <h5>✅ To'g'ri (Correct):</h5>
+                            <p><strong>"Do you carry boxes?"</strong></p>
+                            <p><em>Tushuntirish: "You" bilan "Do" ishlatiladi, "Does" emas.</em></p>
+                        </div>
+                        
+                        <div style="margin: 12px 0; padding: 12px; background: #ffecb3; border-radius: 6px;">
+                            <h5>❌ Xato (Wrong):</h5>
+                            <p><strong>"She doesn't picks fruit"</strong></p>
+                            <h5>✅ To'g'ri (Correct):</h5>
+                            <p><strong>"She doesn't pick fruit"</strong></p>
+                            <p><em>Tushuntirish: "Doesn't" dan keyin fe'lning asosiy shakli keladi.</em></p>
+                        </div>
+                        
+                        <div style="margin: 12px 0; padding: 12px; background: #ffecb3; border-radius: 6px;">
+                            <h5>❌ Xato (Wrong):</h5>
+                            <p><strong>"What you do at work?"</strong></p>
+                            <h5>✅ To'g'ri (Correct):</h5>
+                            <p><strong>"What do you do at work?"</strong></p>
+                            <p><em>Tushuntirish: Savolda "do" yoki "does" ishlatish kerak.</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Examples Section -->
+        <section class="section examples-section">
+            <h2 class="section-title">Examples / Misollar</h2>
+            <div class="example">
+                <div class="example-english">I pick strawberries every day.</div>
+                <div class="example-uzbek">Men har kuni qulupnay teraman.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">She carries the heavy boxes.</div>
+                <div class="example-uzbek">U og'ir qutilarni ko'taradi.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">We plant vegetables in the morning.</div>
+                <div class="example-uzbek">Biz ertalab sabzavot ekamiz.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">Do you water the plants?</div>
+                <div class="example-uzbek">Siz o'simliklarni sug'orasizmi?</div>
+            </div>
+            <div class="example">
+                <div class="example-english">He doesn't work on Sundays.</div>
+                <div class="example-uzbek">U yakshanba kunlari ishlamaydi.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">They help each other with the work.</div>
+                <div class="example-uzbek">Ular bir-birlariga ishda yordam berishadi.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">I wake up at 6 o'clock.</div>
+                <div class="example-uzbek">Men soat oltida uyg'onaman.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">She opens the farm gate.</div>
+                <div class="example-uzbek">U ferma darvozasini ochadi.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">We eat lunch at 12:30.</div>
+                <div class="example-uzbek">Biz tushlikni 12:30da yeyamiz.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">What time do you go home?</div>
+                <div class="example-uzbek">Necha vaqtda uyga borasiz?</div>
+            </div>
+        </section>
+
+        <!-- Dialogues Section -->
+        <section class="section dialogues-section">
+            <h2 class="section-title">Dialogues / Suhbatlar</h2>
+            
+            <div class="dialog">
+                <div class="dialog-speaker">Supervisor:</div>
+                <div class="dialog-text">What do you do on the farm?</div>
+                <div class="dialog-translation">Fermada nima qilasiz?</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">I pick strawberries and carry boxes.</div>
+                <div class="dialog-translation">Men qulupnay teraman va qutilarni ko'taraman.</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Team Leader:</div>
+                <div class="dialog-text">Do you work every day?</div>
+                <div class="dialog-translation">Har kuni ishlaysizmi?</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">Yes, I work Monday to Friday.</div>
+                <div class="dialog-translation">Ha, dushanbadan jumagacha ishlayman.</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Worker 1:</div>
+                <div class="dialog-text">Can you help me lift this box?</div>
+                <div class="dialog-translation">Bu qutini ko'tarishda yordam bera olasizmi?</div>
+                <div class="dialog-speaker">Worker 2:</div>
+                <div class="dialog-text">Yes, let's carry it together.</div>
+                <div class="dialog-translation">Ha, birga ko'taraylik.</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Supervisor:</div>
+                <div class="dialog-text">Please water the plants in section 3.</div>
+                <div class="dialog-translation">Iltimos, 3-bo'limdagi o'simliklarni sug'oring.</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">Should I water them now?</div>
+                <div class="dialog-translation">Ularni hozir sug'orishim kerakmi?</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Manager:</div>
+                <div class="dialog-text">What time do you wake up?</div>
+                <div class="dialog-translation">Necha vaqtda uyg'onasiz?</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">I wake up at 5:30 and come to work at 6.</div>
+                <div class="dialog-translation">Men 5:30da uyg'onaman va 6da ishga kelaman.</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">Where do I put these strawberries?</div>
+                <div class="dialog-translation">Bu qulupnaylarni qayerga qo'yaman?</div>
+                <div class="dialog-speaker">Supervisor:</div>
+                <div class="dialog-text">Put them in the red boxes, please.</div>
+                <div class="dialog-translation">Iltimos, ularni qizil qutilarga soling.</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Colleague:</div>
+                <div class="dialog-text">Do you eat lunch here?</div>
+                <div class="dialog-translation">Bu yerda tushlik yeyasizmi?</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">Yes, I eat in the canteen at 12 o'clock.</div>
+                <div class="dialog-translation">Ha, soat 12da oshxonada yeyaman.</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Supervisor:</div>
+                <div class="dialog-text">Please open the greenhouse door.</div>
+                <div class="dialog-translation">Iltimos, issiqxona eshigini oching.</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">Should I close it later?</div>
+                <div class="dialog-translation">Keyinroq yopishim kerakmi?</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Worker 1:</div>
+                <div class="dialog-text">I need to ask the supervisor something.</div>
+                <div class="dialog-translation">Nazoratchi dan bir narsa so'rashim kerak.</div>
+                <div class="dialog-speaker">Worker 2:</div>
+                <div class="dialog-text">He's in the office. Go and ask him.</div>
+                <div class="dialog-translation">U ofisda. Boring va so'rang.</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Manager:</div>
+                <div class="dialog-text">Please clean the tools after work.</div>
+                <div class="dialog-translation">Iltimos, ishdan keyin asboblarni tozalang.</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">I always clean them. Don't worry.</div>
+                <div class="dialog-translation">Men ularni har doim tozalayman. Tashvishlanmang.</div>
+            </div>
+        </section>
+
+        <!-- Exercises Section -->
+        <section class="section exercises-section">
+            <h2 class="section-title">Exercises / Mashqlar</h2>
+            
+            <!-- Exercise Type 1: Daily routine description -->
+            <div class="exercise" data-exercise-id="4-1">
+                <div class="exercise-question">
+                    <strong>1. Kun tartibi: Bo'sh joyni to'ldiring (Daily routine: Fill in the blanks)</strong><br>
+                    <em>Namuna (Example): I _____ up at 6 AM → I <strong>wake</strong> up at 6 AM</em><br><br>
+                    Complete: "Every morning, I _____ strawberries and _____ them in boxes." (pick/put)
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="pick put" placeholder="Type both verbs...">
+                    <button class="check-answer-btn" onclick="checkAnswer(this)">Check</button>
+                </div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <div class="exercise" data-exercise-id="4-2">
+                <div class="exercise-question">
+                    <strong>2. Ish vazifalarini tushunish (Work task comprehension)</strong><br>
+                    <em>Namuna (Example): Supervisor says "Clean the tools" → You understand "Asboblarni tozalang"</em><br><br>
+                    Translate: "Men har kuni sabzavotlarni sug'oraman" → "I _____ vegetables every day."
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="water" placeholder="Complete the translation...">
+                    <button class="check-answer-btn" onclick="checkAnswer(this)">Check</button>
+                </div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <div class="exercise" data-exercise-id="4-3">
+                <div class="exercise-question">
+                    <strong>3. Fe'l shakllari (Verb conjugation)</strong><br>
+                    <em>Namuna (Example): I carry → He carries (3rd person + s)</em><br><br>
+                    Complete: "She _____ heavy boxes, but I _____ light ones." (carry/carry)
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="carries carry" placeholder="Type both verb forms...">
+                    <button class="check-answer-btn" onclick="checkAnswer(this)">Check</button>
+                </div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <div class="exercise" data-exercise-id="4-4">
+                <div class="exercise-question">
+                    <strong>4. So'roq va javob (Question and answer formation)</strong><br>
+                    <em>Namuna (Example): You work → Do you work?</em><br><br>
+                    Make a question: "He helps new workers" → "_____ he _____ new workers?"
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="does help" placeholder="Type question words...">
+                    <button class="check-answer-btn" onclick="checkAnswer(this)">Check</button>
+                </div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <div class="exercise" data-exercise-id="4-5">
+                <div class="exercise-question">
+                    <strong>5. Ish joyida muloqot (Workplace communication)</strong><br>
+                    Complete: "I usually _____ at 6 AM, _____ breakfast, and _____ to work." (wake up/eat/go)
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="wake up eat go" placeholder="Type three verbs...">
+                    <button class="check-answer-btn" onclick="checkAnswer(this)">Check</button>
+                </div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <div class="exercise" data-exercise-id="4-6">
+                <div class="exercise-question">
+                    <strong>6. Inkor shakli (Negative form)</strong><br>
+                    <em>Namuna (Example): I work → I don't work</em><br><br>
+                    Make negative: "We plant vegetables on Sundays" → "We _____ _____ vegetables on Sundays."
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="don't plant" placeholder="Type negative form...">
+                    <button class="check-answer-btn" onclick="checkAnswer(this)">Check</button>
+                </div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <div class="exercise" data-exercise-id="4-7">
+                <div class="exercise-question">
+                    <strong>7. Supervayzer bilan gaplashish (Talking with supervisor)</strong><br>
+                    Complete: "Supervisor, I _____ the greenhouse every morning and _____ the plants." (clean/water)
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="clean water" placeholder="Type both verbs...">
+                    <button class="check-answer-btn" onclick="checkAnswer(this)">Check</button>
+                </div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <div class="exercise" data-exercise-id="4-8">
+                <div class="exercise-question">
+                    <strong>8. Tarjima mashqi (Translation practice)</strong><br>
+                    Translate: "U har kuni eshikni ochadi va yopadi" → "He _____ and _____ the door every day."
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="opens closes" placeholder="Complete the translation...">
+                    <button class="check-answer-btn" onclick="checkAnswer(this)">Check</button>
+                </div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <div class="exercise" data-exercise-id="4-9">
+                <div class="exercise-question">
+                    <strong>9. Ish vaqti haqida so'rash (Asking about work time)</strong><br>
+                    Complete the conversation: "_____ _____ you start work?" "I start at 7 AM."
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="what time" placeholder="Type question words...">
+                    <button class="check-answer-btn" onclick="checkAnswer(this)">Check</button>
+                </div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <div class="exercise" data-exercise-id="4-10">
+                <div class="exercise-question">
+                    <strong>10. Amaliy vazifa: Ish kunini tasvirlash (Practical task: Describe work day)</strong><br>
+                    Complete: "Every day I _____ up early, _____ to the farm, and _____ until evening." (wake/walk/work)
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="wake walk work" placeholder="Type three verbs...">
+                    <button class="check-answer-btn" onclick="checkAnswer(this)">Check</button>
+                </div>
+                <div class="exercise-feedback"></div>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <footer class="chapter-navigation" role="navigation" aria-label="Chapter navigation">
+            <a href="Chapter_3_Objects_Colours.html" class="nav-btn prev" aria-label="Go to previous chapter">
+                <span class="nav-btn-icon">←</span>
+                <div class="nav-btn-text">
+                    <span class="nav-btn-label">Previous</span>
+                    <span class="nav-btn-title">Everyday Objects and Colours</span>
+                </div>
+            </a>
+            
+            <a href="index.html" class="nav-btn home-btn" aria-label="Go to home page">
+                <span class="nav-btn-icon">🏠</span>
+                <span>Home</span>
+            </a>
+            
+            <a href="Chapter_5_Adjectives_Adverbs.html" class="nav-btn next" aria-label="Go to next chapter">
+                <div class="nav-btn-text">
+                    <span class="nav-btn-label">Next</span>
+                    <span class="nav-btn-title">Description: Adjectives and Adverbs</span>
+                </div>
+                <span class="nav-btn-icon">→</span>
+            </a>
+        </footer>
+
+        <!-- Quick Navigation (Floating Action Buttons) -->
+        <div class="quick-nav" role="navigation" aria-label="Quick navigation">
+            <button class="quick-nav-btn" onclick="scrollToTop()" aria-label="Scroll to top" title="Scroll to top">
+                ↑
+            </button>
+            <button class="quick-nav-btn" onclick="window.location.href='index.html'" aria-label="Go to home" title="Go to home">
+                🏠
+            </button>
+        </div>
+    </div>
+
+    <script src="interactive-exercises.js"></script>
+    <script src="progress-tracker.js"></script>
+    <script>
+        // Navigation functions
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Exercise checking function
+        function checkAnswer(button) {
+            const inputGroup = button.parentElement;
+            const input = inputGroup.querySelector('.exercise-input');
+            const feedback = inputGroup.parentElement.querySelector('.exercise-feedback');
+            const exerciseId = inputGroup.parentElement.dataset.exerciseId;
+            
+            const userAnswer = input.value.trim().toLowerCase();
+            const correctAnswer = input.dataset.correct.toLowerCase();
+            
+            if (userAnswer === correctAnswer) {
+                feedback.innerHTML = '<span class="feedback-icon">✓</span>Correct! Well done!';
+                feedback.className = 'exercise-feedback correct';
+                input.classList.add('completed');
+                
+                // Update progress
+                if (typeof ProgressTracker !== 'undefined') {
+                    ProgressTracker.markExerciseComplete(4, exerciseId);
+                }
+            } else {
+                feedback.innerHTML = `<span class="feedback-icon">✗</span>Incorrect. The correct answer is: "${input.dataset.correct}"`;
+                feedback.className = 'exercise-feedback incorrect';
+            }
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize progress tracking
+            if (typeof ProgressTracker !== 'undefined') {
+                ProgressTracker.initializeChapterPage(4);
+            }
+            
+            // Add keyboard navigation
+            document.addEventListener('keydown', function(event) {
+                // Alt + Left Arrow = Previous chapter
+                if (event.altKey && event.key === 'ArrowLeft') {
+                    event.preventDefault();
+                    window.location.href = 'Chapter_3_Objects_Colours.html';
+                }
+                
+                // Alt + Right Arrow = Next chapter
+                if (event.altKey && event.key === 'ArrowRight') {
+                    event.preventDefault();
+                    window.location.href = 'Chapter_5_Adjectives_Adverbs.html';
+                }
+                
+                // Alt + H = Home
+                if (event.altKey && event.key === 'h') {
+                    event.preventDefault();
+                    window.location.href = 'index.html';
+                }
+                
+                // Alt + T = Top of page
+                if (event.altKey && event.key === 't') {
+                    event.preventDefault();
+                    scrollToTop();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

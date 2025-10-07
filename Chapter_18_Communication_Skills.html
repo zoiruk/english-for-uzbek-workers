@@ -1,0 +1,1226 @@
+﻿<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chapter 18: Core Communication Skills - English for Uzbek Seasonal Workers">
+    <title>Chapter 18: Core Communication Skills - Ingliz Tili Darsligi</title>
+    <style>
+        /* Material Design 3 Base Styles */
+        :root {
+            --md-sys-color-primary: #7f8c8d; /* Chapter 18 Grey */
+            --md-sys-color-on-primary: #ffffff;
+            --md-sys-color-primary-container: #f4f6f7;
+            --md-sys-color-on-primary-container: #1c1e20;
+            --md-sys-color-secondary: #565f71;
+            --md-sys-color-on-secondary: #ffffff;
+            --md-sys-color-surface: #fefbff;
+            --md-sys-color-on-surface: #1a1c1e;
+            --md-sys-color-surface-variant: #e1e2ec;
+            --md-sys-color-on-surface-variant: #44474f;
+            --md-sys-color-outline: #74777f;
+            --md-sys-color-success: #2e7d32;
+            --md-sys-color-error: #d32f2f;
+            --md-sys-elevation-level1: 0px 1px 3px rgba(0,0,0,0.12), 0px 1px 2px rgba(0,0,0,0.24);
+            --md-sys-elevation-level2: 0px 3px 6px rgba(0,0,0,0.16), 0px 3px 6px rgba(0,0,0,0.23);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--md-sys-color-on-surface);
+            background-color: var(--md-sys-color-surface);
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--md-sys-color-primary);
+            color: var(--md-sys-color-on-primary);
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 4px;
+            z-index: 1000;
+        }
+
+        .skip-link:focus {
+            top: 6px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        .chapter-header {
+            text-align: center;
+            margin-bottom: 32px;
+            padding: 24px 0;
+            border-bottom: 2px solid var(--md-sys-color-primary);
+        }
+
+        .chapter-header h1 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: var(--md-sys-color-primary);
+            margin-bottom: 8px;
+        }
+
+        .chapter-subtitle {
+            font-size: 1.25rem;
+            color: var(--md-sys-color-on-surface-variant);
+            margin-bottom: 16px;
+        }
+
+        .chapter-progress {
+            background: var(--md-sys-color-primary-container);
+            color: var(--md-sys-color-on-primary-container);
+            padding: 8px 16px;
+            border-radius: 16px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .section {
+            margin-bottom: 48px;
+            background: var(--md-sys-color-surface);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: var(--md-sys-elevation-level1);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--md-sys-color-primary);
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--md-sys-color-outline);
+        }
+
+        .vocab-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+        }
+
+        .vocab-table th,
+        .vocab-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--md-sys-color-outline);
+        }
+
+        .vocab-table th {
+            background: var(--md-sys-color-primary-container);
+            color: var(--md-sys-color-on-primary-container);
+            font-weight: 500;
+        }
+
+        .vocab-table .transcription {
+            color: #d32f2f;
+            font-weight: 500;
+        }
+
+        .vocab-table .uzbek {
+            color: var(--md-sys-color-on-surface-variant);
+        }
+
+        .grammar-box {
+            background: var(--md-sys-color-primary-container);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 16px 0;
+        }
+
+        .grammar-box h3 {
+            color: var(--md-sys-color-on-primary-container);
+            margin-bottom: 12px;
+        }
+
+        .grammar-box p {
+            color: var(--md-sys-color-on-primary-container);
+            margin-bottom: 8px;
+        }
+
+        .communication-box {
+            background: linear-gradient(135deg, #9b59b6, #8e44ad);
+            color: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 16px 0;
+        }
+
+        .communication-box h3 {
+            margin-bottom: 12px;
+        }
+
+        .communication-box p {
+            margin-bottom: 8px;
+        }
+
+        .example {
+            background: #f3e5f5;
+            border-left: 4px solid #9c27b0;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .example-english {
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .example-uzbek {
+            font-style: italic;
+            color: var(--md-sys-color-on-surface-variant);
+        }
+
+        .dialog {
+            background: #e8f5e8;
+            border-left: 4px solid var(--md-sys-color-success);
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .dialog-speaker {
+            font-weight: 600;
+            color: var(--md-sys-color-success);
+            margin-bottom: 4px;
+        }
+
+        .dialog-text {
+            margin-bottom: 8px;
+        }
+
+        .dialog-translation {
+            font-style: italic;
+            color: var(--md-sys-color-on-surface-variant);
+            font-size: 0.9rem;
+        }
+
+        .exercise {
+            background: #fff8e1;
+            border-left: 4px solid #f39c12;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 16px 0;
+            position: relative;
+        }
+
+        .exercise-question {
+            font-weight: 500;
+            margin-bottom: 12px;
+            color: var(--md-sys-color-on-surface);
+        }
+
+        .exercise-input-group {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .exercise-input {
+            flex: 1;
+            padding: 12px;
+            border: 2px solid var(--md-sys-color-outline);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.2s ease;
+        }
+
+        .exercise-input:focus {
+            outline: none;
+            border-color: var(--md-sys-color-primary);
+        }
+
+        .exercise-input.completed {
+            background: #e8f5e8;
+            border-color: var(--md-sys-color-success);
+        }
+
+        .check-answer-btn {
+            background: var(--md-sys-color-primary);
+            color: var(--md-sys-color-on-primary);
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            min-height: 44px;
+        }
+
+        .check-answer-btn:hover {
+            background: #6c7b7d;
+            transform: translateY(-1px);
+        }
+
+        .exercise-feedback {
+            margin-top: 12px;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+
+        .exercise-feedback.correct {
+            background: #e8f5e8;
+            color: var(--md-sys-color-success);
+            border: 1px solid var(--md-sys-color-success);
+        }
+
+        .exercise-feedback.incorrect {
+            background: #ffebee;
+            color: var(--md-sys-color-error);
+            border: 1px solid var(--md-sys-color-error);
+        }
+
+        .breadcrumb-nav {
+            background: var(--md-sys-color-surface-variant);
+            padding: 12px 0;
+            margin-bottom: 24px;
+            border-radius: 8px;
+        }
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.875rem;
+            color: var(--md-sys-color-on-surface-variant);
+        }
+
+        .breadcrumb a {
+            color: var(--md-sys-color-primary);
+            text-decoration: none;
+            padding: 4px 8px;
+            border-radius: 4px;
+            transition: background-color 0.2s ease;
+        }
+
+        .breadcrumb a:hover {
+            background: var(--md-sys-color-primary-container);
+        }
+
+        .breadcrumb-separator {
+            color: var(--md-sys-color-outline);
+        }
+
+        .breadcrumb-current {
+            font-weight: 500;
+            color: var(--md-sys-color-on-surface);
+        }
+
+        .chapter-navigation {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 16px;
+            align-items: center;
+            margin-top: 48px;
+            padding: 24px 0;
+            border-top: 1px solid var(--md-sys-color-outline);
+        }
+
+        .nav-btn {
+            background: var(--md-sys-color-primary);
+            color: var(--md-sys-color-on-primary);
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 20px;
+            font-weight: 500;
+            transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: var(--md-sys-elevation-level1);
+        }
+
+        .nav-btn:hover {
+            background: #6c7b7d;
+            transform: translateY(-2px);
+            box-shadow: var(--md-sys-elevation-level2);
+        }
+
+        .nav-btn.prev {
+            justify-self: start;
+        }
+
+        .nav-btn.next {
+            justify-self: end;
+        }
+
+        .home-btn {
+            background: var(--md-sys-color-secondary);
+            color: var(--md-sys-color-on-secondary);
+            justify-self: center;
+        }
+
+        .nav-btn-icon {
+            font-size: 1.2rem;
+        }
+
+        .nav-btn-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .nav-btn-label {
+            font-size: 0.75rem;
+            opacity: 0.8;
+        }
+
+        .nav-btn-title {
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .quick-nav {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            z-index: 100;
+        }
+
+        .quick-nav-btn {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: var(--md-sys-color-primary);
+            color: var(--md-sys-color-on-primary);
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: var(--md-sys-elevation-level2);
+            transition: all 0.3s ease;
+        }
+
+        .quick-nav-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 6px 12px rgba(0,0,0,0.2);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 12px;
+            }
+
+            .chapter-header h1 {
+                font-size: 2rem;
+            }
+
+            .section {
+                padding: 16px;
+                margin-bottom: 24px;
+            }
+
+            /* Enhanced vocabulary table mobile layout */
+            .vocab-table {
+                font-size: 0.875rem;
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .vocab-table thead,
+            .vocab-table tbody,
+            .vocab-table th,
+            .vocab-table td,
+            .vocab-table tr {
+                display: block;
+            }
+
+            .vocab-table thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            .vocab-table tr {
+                border: 1px solid var(--md-sys-color-outline);
+                border-radius: 8px;
+                margin-bottom: 12px;
+                padding: 12px;
+                background: var(--md-sys-color-surface);
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            }
+
+            .vocab-table td {
+                border: none;
+                position: relative;
+                padding: 8px 8px 8px 50% !important;
+                white-space: normal;
+                text-align: left;
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+            }
+
+            .vocab-table td:before {
+                content: attr(data-label) ": ";
+                position: absolute;
+                left: 8px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                font-weight: 500;
+                color: var(--md-sys-color-on-surface-variant);
+                display: flex;
+                align-items: center;
+                min-height: 44px;
+            }
+
+            .exercise-input-group {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .check-answer-btn {
+                width: 100%;
+            }
+
+            .chapter-navigation {
+                grid-template-columns: 1fr;
+                gap: 12px;
+                text-align: center;
+            }
+
+            .nav-btn {
+                width: 100%;
+                justify-content: center;
+                justify-self: center;
+            }
+
+            .nav-btn.prev,
+            .nav-btn.next {
+                justify-self: center;
+            }
+
+            .quick-nav {
+                bottom: 16px;
+                right: 16px;
+            }
+
+            .quick-nav-btn {
+                width: 48px;
+                height: 48px;
+                font-size: 1.25rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .exercise-input,
+            .check-answer-btn,
+            .nav-btn,
+            .quick-nav-btn {
+                min-height: 44px;
+            }
+        }
+    
+        /* Small mobile devices */
+        @media (max-width: 480px) {
+            .container {
+                padding: 8px;
+            }
+        }
+</style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <div class="container" id="main-content" data-chapter-id="18">
+        <!-- Breadcrumb Navigation -->
+        <nav class="breadcrumb-nav" aria-label="Breadcrumb navigation">
+            <div class="breadcrumb">
+                <a href="index.html" aria-label="Go to home page">🏠 Home</a>
+                <span class="breadcrumb-separator" aria-hidden="true">›</span>
+                <span class="breadcrumb-current" aria-current="page">Chapter 18: Core Communication Skills</span>
+            </div>
+        </nav>
+
+        <header class="chapter-header">
+            <h1>Chapter 18: Core Communication Skills</h1>
+            <p class="chapter-subtitle">Asosiy muloqot ko'nikmalari</p>
+            <div class="chapter-progress">Progress: 0% (0/10)</div>
+        </header>
+
+        <!-- Vocabulary Section -->
+        <section class="section vocabulary-section">
+            <h2 class="section-title">Vocabulary / Lug'at</h2>
+            <table class="vocab-table">
+                <thead>
+                    <tr>
+                        <th>English</th>
+                        <th>Transcription</th>
+                        <th>O'zbek</th>
+                        <th>Context</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td data-label="English">Understand</td><td data-label="Transcription" class="transcription">андэстэнд</td><td data-label="O'zbek" class="uzbek">Tushunmoq</td><td data-label="Context">Comprehend</td></tr>
+                    <tr><td data-label="English">Explain</td><td data-label="Transcription" class="transcription">иксплэйн</td><td data-label="O'zbek" class="uzbek">Tushuntirish</td><td data-label="Context">Make clear</td></tr>
+                    <tr><td data-label="English">Repeat</td><td data-label="Transcription" class="transcription">рипит</td><td data-label="O'zbek" class="uzbek">Takrorlash</td><td data-label="Context">Say again</td></tr>
+                    <tr><td data-label="English">Clarify</td><td data-label="Transcription" class="transcription">клэрифай</td><td data-label="O'zbek" class="uzbek">Aniqlashtirish</td><td data-label="Context">Make clear</td></tr>
+                    <tr><td data-label="English">Confused</td><td data-label="Transcription" class="transcription">конфьюзд</td><td data-label="O'zbek" class="uzbek">Chalkash</td><td data-label="Context">Not understanding</td></tr>
+                    <tr><td data-label="English">Clear</td><td data-label="Transcription" class="transcription">клиэр</td><td data-label="O'zbek" class="uzbek">Aniq</td><td data-label="Context">Easy to understand</td></tr>
+                    <tr><td data-label="English">Meaning</td><td data-label="Transcription" class="transcription">мининг</td><td data-label="O'zbek" class="uzbek">Ma'no</td><td data-label="Context">What something means</td></tr>
+                    <tr><td data-label="English">Pronunciation</td><td data-label="Transcription" class="transcription">пронансиэйшн</td><td data-label="O'zbek" class="uzbek">Talaffuz</td><td data-label="Context">How to say words</td></tr>
+                    <tr><td data-label="English">Spelling</td><td data-label="Transcription" class="transcription">спэлинг</td><td data-label="O'zbek" class="uzbek">Imlo</td><td data-label="Context">Letter order</td></tr>
+                    <tr><td data-label="English">Translate</td><td data-label="Transcription" class="transcription">трэнслэйт</td><td data-label="O'zbek" class="uzbek">Tarjima qilish</td><td data-label="Context">Change language</td></tr>
+                    <tr><td data-label="English">Language</td><td data-label="Transcription" class="transcription">лэнгвидж</td><td data-label="O'zbek" class="uzbek">Til</td><td data-label="Context">Communication system</td></tr>
+                    <tr><td data-label="English">Accent</td><td data-label="Transcription" class="transcription">эксэнт</td><td data-label="O'zbek" class="uzbek">Aksent</td><td data-label="Context">Way of speaking</td></tr>
+                    <tr><td data-label="English">Fluent</td><td data-label="Transcription" class="transcription">флуэнт</td><td data-label="O'zbek" class="uzbek">Ravon</td><td data-label="Context">Smooth speaking</td></tr>
+                    <tr><td data-label="English">Beginner</td><td data-label="Transcription" class="transcription">бигинэр</td><td data-label="O'zbek" class="uzbek">Boshlang'ich</td><td data-label="Context">Starting level</td></tr>
+                    <tr><td data-label="English">Improve</td><td data-label="Transcription" class="transcription">импрув</td><td data-label="O'zbek" class="uzbek">Yaxshilash</td><td data-label="Context">Get better</td></tr>
+                    <tr><td data-label="English">Practice</td><td data-label="Transcription" class="transcription">прэктис</td><td data-label="O'zbek" class="uzbek">Mashq qilish</td><td data-label="Context">Do repeatedly</td></tr>
+                    <tr><td data-label="English">Mistake</td><td data-label="Transcription" class="transcription">мистэйк</td><td data-label="O'zbek" class="uzbek">Xato</td><td data-label="Context">Error</td></tr>
+                    <tr><td data-label="English">Correct</td><td data-label="Transcription" class="transcription">корэкт</td><td data-label="O'zbek" class="uzbek">To'g'ri</td><td data-label="Context">Right</td></tr>
+                    <tr><td data-label="English">Wrong</td><td data-label="Transcription" class="transcription">ронг</td><td data-label="O'zbek" class="uzbek">Noto'g'ri</td><td data-label="Context">Incorrect</td></tr>
+                    <tr><td data-label="English">Patient</td><td data-label="Transcription" class="transcription">пэйшэнт</td><td data-label="O'zbek" class="uzbek">Sabr-toqatli</td><td data-label="Context">Waiting calmly</td></tr>
+                    <tr><td data-label="English">Polite</td><td data-label="Transcription" class="transcription">полайт</td><td data-label="O'zbek" class="uzbek">Xushmuomala</td><td data-label="Context">Courteous</td></tr>
+                    <tr><td data-label="English">Rude</td><td data-label="Transcription" class="transcription">руд</td><td data-label="O'zbek" class="uzbek">Qo'pol</td><td data-label="Context">Impolite</td></tr>
+                    <tr><td data-label="English">Gesture</td><td data-label="Transcription" class="transcription">джэсчэр</td><td data-label="O'zbek" class="uzbek">Imo-ishora</td><td data-label="Context">Hand movement</td></tr>
+                    <tr><td data-label="English">Body language</td><td data-label="Transcription" class="transcription">боди лэнгвидж</td><td data-label="O'zbek" class="uzbek">Tana tili</td><td data-label="Context">Physical communication</td></tr>
+                    <tr><td data-label="English">Eye contact</td><td data-label="Transcription" class="transcription">ай контэкт</td><td data-label="O'zbek" class="uzbek">Ko'z bilan aloqa</td><td data-label="Context">Looking at eyes</td></tr>
+                    <tr><td data-label="English">Listen</td><td data-label="Transcription" class="transcription">лисэн</td><td data-label="O'zbek" class="uzbek">Tinglash</td><td data-label="Context">Pay attention to sound</td></tr>
+                    <tr><td data-label="English">Speak</td><td data-label="Transcription" class="transcription">спик</td><td data-label="O'zbek" class="uzbek">Gapirish</td><td data-label="Context">Use voice</td></tr>
+                    <tr><td data-label="English">Conversation</td><td data-label="Transcription" class="transcription">конвэрсэйшн</td><td data-label="O'zbek" class="uzbek">Suhbat</td><td data-label="Context">Talk between people</td></tr>
+                    <tr><td data-label="English">Discussion</td><td data-label="Transcription" class="transcription">дискашн</td><td data-label="O'zbek" class="uzbek">Muhokama</td><td data-label="Context">Detailed talk</td></tr>
+                    <tr><td data-label="English">Opinion</td><td data-label="Transcription" class="transcription">опиньэн</td><td data-label="O'zbek" class="uzbek">Fikr</td><td data-label="Context">Personal view</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Grammar Section -->
+        <section class="section grammar-section">
+            <h2 class="section-title">Grammar / Grammatika</h2>
+            
+            <!-- Grammar Introduction -->
+            <div class="grammar-intro">
+                <h3>Bu grammatika nima uchun kerak? (Why do we need this grammar?)</h3>
+                <p>Ish joyida va kundalik hayotda siz tez-tez tushunmovchilik bilan duch kelasiz. Ingliz tilini o'rganayotgan paytda bu tabiiy holat. Muhimi - qanday qilib yordam so'rash, aniqlik talab qilish va o'z tushunmasligingizni professional tarzda ifodalashni bilish. Bu ko'nikmalar sizni ishonchli va professional ko'rsatadi.</p>
+            </div>
+
+            <!-- Basic Concept Explanation -->
+            <div class="concept-explanation">
+                <h3>Asosiy tushuncha (Basic Concept)</h3>
+                <p><strong>Communication Strategies (Muloqot strategiyalari)</strong> - bu muloqotda yuzaga keladigan muammolarni hal qilish usullari:</p>
+                <ul style="margin: 12px 0; padding-left: 20px;">
+                    <li><strong>Clarification</strong> - aniqlik so'rash (tushunmagan narsani qayta so'rash)</li>
+                    <li><strong>Confirmation</strong> - tasdiqlash (to'g'ri tushunganimni tekshirish)</li>
+                    <li><strong>Repetition</strong> - takrorlash (qayta aytishni so'rash)</li>
+                    <li><strong>Comprehension check</strong> - tushunish tekshiruvi (boshqalar tushundimi?)</li>
+                </ul>
+            </div>
+
+            <!-- Three Forms Structure -->
+            <div class="three-forms">
+                <h3>Uch shakl (Three Forms)</h3>
+                
+                <!-- Positive Form -->
+                <div class="positive-form" style="background: #e8f5e8; padding: 16px; margin: 12px 0; border-radius: 8px;">
+                    <h4>1. Aniqlik so'rash (Asking for Clarification)</h4>
+                    <div class="structure-table">
+                        <table style="width: 100%; border-collapse: collapse; margin: 12px 0;">
+                            <thead>
+                                <tr style="background: #c8e6c9;">
+                                    <th style="padding: 8px; border: 1px solid #4caf50;">Situation</th>
+                                    <th style="padding: 8px; border: 1px solid #4caf50;">Phrase Type</th>
+                                    <th style="padding: 8px; border: 1px solid #4caf50;">Politeness Level</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 8px; border: 1px solid #4caf50;">Didn't hear</td>
+                                    <td style="padding: 8px; border: 1px solid #4caf50;">Could you repeat...?</td>
+                                    <td style="padding: 8px; border: 1px solid #4caf50;">Polite</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px; border: 1px solid #4caf50;">Didn't understand</td>
+                                    <td style="padding: 8px; border: 1px solid #4caf50;">What do you mean by...?</td>
+                                    <td style="padding: 8px; border: 1px solid #4caf50;">Professional</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px; border: 1px solid #4caf50;">Need slower speech</td>
+                                    <td style="padding: 8px; border: 1px solid #4caf50;">Could you speak slower?</td>
+                                    <td style="padding: 8px; border: 1px solid #4caf50;">Helpful</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="examples">
+                        <p><strong>Misollar (Examples):</strong></p>
+                        <div style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px;">
+                            <strong>Sorry, could you repeat that please?</strong><br>
+                            <span style="color: #d32f2f;">[Сори, куд ю рипит зэт плиз]</span><br>
+                            <span style="color: #27ae60;">Kechirasiz, buni takrorlay olasizmi?</span><br>
+                            <em>Eshitmagan paytda</em>
+                        </div>
+                        <div style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px;">
+                            <strong>I'm sorry, I don't understand. Could you explain?</strong><br>
+                            <span style="color: #d32f2f;">[Айм сори, ай донт андэрстэнд. Куд ю иксплэйн]</span><br>
+                            <span style="color: #27ae60;">Kechirasiz, tushunmayapman. Tushuntirib bera olasizmi?</span><br>
+                            <em>Tushunmagan paytda</em>
+                        </div>
+                        <div style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px;">
+                            <strong>What do you mean by "overtime"?</strong><br>
+                            <span style="color: #d32f2f;">[Вот ду ю мин бай овэртайм]</span><br>
+                            <span style="color: #27ae60;">"Overtime" deganda nimani nazarda tutyapsiz?</span><br>
+                            <em>So'z ma'nosini so'rash</em>
+                        </div>
+                        <div style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px;">
+                            <strong>Could you speak a bit slower, please?</strong><br>
+                            <span style="color: #d32f2f;">[Куд ю спик э бит слоуэр плиз]</span><br>
+                            <span style="color: #27ae60;">Biroz sekinroq gapira olasizmi?</span><br>
+                            <em>Tez gapirgan paytda</em>
+                        </div>
+                        <div style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px;">
+                            <strong>I didn't catch the last part. Could you say it again?</strong><br>
+                            <span style="color: #d32f2f;">[Ай дидэнт кэч зэ ласт парт. Куд ю сэй ит эгэйн]</span><br>
+                            <span style="color: #27ae60;">Oxirgi qismini eshitmadim. Yana ayta olasizmi?</span><br>
+                            <em>Qisman eshitmagan paytda</em>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Negative Form -->
+                <div class="negative-form" style="background: #ffe8e8; padding: 16px; margin: 12px 0; border-radius: 8px;">
+                    <h4>2. Tushunmaslikni ifodalash (Expressing Non-Understanding)</h4>
+                    <div class="structure-table">
+                        <table style="width: 100%; border-collapse: collapse; margin: 12px 0;">
+                            <thead>
+                                <tr style="background: #ffcdd2;">
+                                    <th style="padding: 8px; border: 1px solid #f44336;">Problem Type</th>
+                                    <th style="padding: 8px; border: 1px solid #f44336;">Expression</th>
+                                    <th style="padding: 8px; border: 1px solid #f44336;">Follow-up</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 8px; border: 1px solid #f44336;">Complete confusion</td>
+                                    <td style="padding: 8px; border: 1px solid #f44336;">I'm completely lost</td>
+                                    <td style="padding: 8px; border: 1px solid #f44336;">Could you start again?</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px; border: 1px solid #f44336;">Partial understanding</td>
+                                    <td style="padding: 8px; border: 1px solid #f44336;">I'm not sure I follow</td>
+                                    <td style="padding: 8px; border: 1px solid #f44336;">Could you clarify?</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px; border: 1px solid #f44336;">Technical terms</td>
+                                    <td style="padding: 8px; border: 1px solid #f44336;">I don't know that word</td>
+                                    <td style="padding: 8px; border: 1px solid #f44336;">What does it mean?</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="examples">
+                        <p><strong>Misollar (Examples):</strong></p>
+                        <div style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px;">
+                            <strong>I'm sorry, I'm completely lost. Could you start from the beginning?</strong><br>
+                            <span style="color: #d32f2f;">[Айм сори, айм комплитли лост. Куд ю старт фром зэ бигининг]</span><br>
+                            <span style="color: #27ae60;">Kechirasiz, umuman tushunmayapman. Boshidan boshlaysizmi?</span><br>
+                            <em>Umuman tushunmagan paytda</em>
+                        </div>
+                        <div style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px;">
+                            <strong>I'm not sure I follow. Are you saying that...?</strong><br>
+                            <span style="color: #d32f2f;">[Айм нот шур ай фоллоу. Ар ю сэйинг зэт]</span><br>
+                            <span style="color: #27ae60;">Aniq tushunmayapman. Siz ... demoqchimisiz?</span><br>
+                            <em>Qisman tushунgan paytda</em>
+                        </div>
+                        <div style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px;">
+                            <strong>I don't know that word. What does "shift pattern" mean?</strong><br>
+                            <span style="color: #d32f2f;">[Ай донт ноу зэт вёрд. Вот даз шифт пэтэрн мин]</span><br>
+                            <span style="color: #27ae60;">Bu so'zni bilmayman. "Shift pattern" nimani anglatadi?</span><br>
+                            <em>Yangi so'z uchraganda</em>
+                        </div>
+                        <div style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px;">
+                            <strong>I'm having trouble understanding. Could you use simpler words?</strong><br>
+                            <span style="color: #d32f2f;">[Айм хэвинг трабл андэрстэндинг. Куд ю юз симплэр вёрдс]</span><br>
+                            <span style="color: #27ae60;">Tushunishda qiynalayapman. Oddiyroq so'zlar ishlatа olasizmi?</span><br>
+                            <em>Murakkab so'zlar ishlatilganda</em>
+                        </div>
+                        <div style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px;">
+                            <strong>Sorry, that doesn't make sense to me. Could you explain differently?</strong><br>
+                            <span style="color: #d32f2f;">[Сори, зэт дазэнт мэйк сэнс ту ми. Куд ю иксплэйн дифэрэнтли]</span><br>
+                            <span style="color: #27ae60;">Kechirasiz, bu menga mantiqiy emas. Boshqacha tushuntirib bera olasizmi?</span><br>
+                            <em>Mantiqsiz tuyulganda</em>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question Form -->
+                <div class="question-form" style="background: #e8f0ff; padding: 16px; margin: 12px 0; border-radius: 8px;">
+                    <h4>3. Tushunishni tasdiqlash (Confirming Understanding)</h4>
+                    <div class="structure-table">
+                        <table style="width: 100%; border-collapse: collapse; margin: 12px 0;">
+                            <thead>
+                                <tr style="background: #bbdefb;">
+                                    <th style="padding: 8px; border: 1px solid #2196f3;">Confirmation Type</th>
+                                    <th style="padding: 8px; border: 1px solid #2196f3;">Structure</th>
+                                    <th style="padding: 8px; border: 1px solid #2196f3;">Purpose</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 8px; border: 1px solid #2196f3;">Paraphrasing</td>
+                                    <td style="padding: 8px; border: 1px solid #2196f3;">So you're saying that...?</td>
+                                    <td style="padding: 8px; border: 1px solid #2196f3;">O'z so'zlarim bilan takrorlash</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px; border: 1px solid #2196f3;">Direct confirmation</td>
+                                    <td style="padding: 8px; border: 1px solid #2196f3;">Do you mean...?</td>
+                                    <td style="padding: 8px; border: 1px solid #2196f3;">To'g'ridan-to'g'ri so'rash</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px; border: 1px solid #2196f3;">Understanding check</td>
+                                    <td style="padding: 8px; border: 1px solid #2196f3;">Let me check if I understand...</td>
+                                    <td style="padding: 8px; border: 1px solid #2196f3;">Tushunganimni tekshirish</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="examples">
+                        <p><strong>Misollar (Examples):</strong></p>
+                        <div style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px;">
+                            <strong>So you're saying that I need to work on Saturday?</strong><br>
+                            <span style="color: #d32f2f;">[Соу ёр сэйинг зэт ай нид ту вёрк он сэтэрдэй]</span><br>
+                            <span style="color: #27ae60;">Demak, siz shanba kuni ishlashim kerak deyapsizmi?</span><br>
+                            <em>O'z so'zlarim bilan takrorlash</em>
+                        </div>
+                        <div style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px;">
+                            <strong>Do you mean I should report to the supervisor first?</strong><br>
+                            <span style="color: #d32f2f;">[Ду ю мин ай шуд рипорт ту зэ супэрвайзэр фёрст]</span><br>
+                            <span style="color: #27ae60;">Avval nazoratchi ga xabar berishim kerak demoqchimisiz?</span><br>
+                            <em>Aniq ma'noni so'rash</em>
+                        </div>
+                        <div style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px;">
+                            <strong>Let me check if I understand correctly. You want me to...?</strong><br>
+                            <span style="color: #d32f2f;">[Лет ми чек иф ай андэрстэнд корэктли. Ю вонт ми ту]</span><br>
+                            <span style="color: #27ae60;">To'g'ri tushunganimni tekshirib ko'raman. Siz mendan ... ni xohlaysizmi?</span><br>
+                            <em>Tushunganimni tasdiqlash</em>
+                        </div>
+                        <div style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px;">
+                            <strong>Just to confirm - the meeting is at 2 PM, right?</strong><br>
+                            <span style="color: #d32f2f;">[Джаст ту конфёрм - зэ митинг из эт ту пи эм райт]</span><br>
+                            <span style="color: #27ae60;">Faqat tasdiqlash uchun - yig'ilish 14:00 da, to'g'rimi?</span><br>
+                            <em>Muhim ma'lumotni tasdiqlash</em>
+                        </div>
+                        <div style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px;">
+                            <strong>Can I just double-check? You said the deadline is Friday?</strong><br>
+                            <span style="color: #d32f2f;">[Кэн ай джаст дабл чек? Ю сэйд зэ дэдлайн из фрайдэй]</span><br>
+                            <span style="color: #27ae60;">Ikki marta tekshirib olsam bo'ladimi? Muddat juma kuni dedingizmi?</span><br>
+                            <em>Muhim sanani tasdiqlash</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Practical Application -->
+            <div class="practical-application">
+                <h3>Amaliy qo'llash (Practical Application)</h3>
+                <div class="scenarios">
+                    <div style="background: #f3e5f5; padding: 12px; margin: 8px 0; border-radius: 6px;">
+                        <h4>Ish ko'rsatmalari (Work instructions):</h4>
+                        <p><strong>Clarification:</strong> "Sorry, what do you mean by 'quality control'?"</p>
+                        <p><em>Kechirasiz, "quality control" deganda nimani nazarda tutyapsiz?</em></p>
+                    </div>
+                    <div style="background: #f3e5f5; padding: 12px; margin: 8px 0; border-radius: 6px;">
+                        <h4>Yig'ilishlarda (In meetings):</h4>
+                        <p><strong>Confirmation:</strong> "So you're saying we need to finish by 5 PM?"</p>
+                        <p><em>Demak, 17:00 gacha tugatishimiz kerak deyapsizmi?</em></p>
+                    </div>
+                    <div style="background: #f3e5f5; padding: 12px; margin: 8px 0; border-radius: 6px;">
+                        <h4>Telefon suhbatida (On the phone):</h4>
+                        <p><strong>Repetition:</strong> "Sorry, the line is bad. Could you repeat the address?"</p>
+                        <p><em>Kechirasiz, aloqa yomon. Manzilni takrorlay olasizmi?</em></p>
+                    </div>
+                    <div style="background: #f3e5f5; padding: 12px; margin: 8px 0; border-radius: 6px;">
+                        <h4>Yangi vazifa (New task):</h4>
+                        <p><strong>Understanding check:</strong> "Let me make sure I understand the process correctly..."</p>
+                        <p><em>Jarayonni to'g'ri tushunganimga ishonch hosil qilaman...</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Common Mistakes -->
+            <div class="common-mistakes">
+                <h3>Tez-tez qilinadigan xatolar (Common Mistakes)</h3>
+                <div class="mistakes-list">
+                    <div style="background: #fff3e0; padding: 12px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #ff9800;">
+                        <p><strong>❌ Xato:</strong> "I no understand" (grammatik xato)</p>
+                        <p><strong>✅ To'g'ri:</strong> "I don't understand"</p>
+                        <p><em>Inkor uchun "don't" ishlatish kerak</em></p>
+                    </div>
+                    <div style="background: #fff3e0; padding: 12px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #ff9800;">
+                        <p><strong>❌ Xato:</strong> "What?" (qo'pol)</p>
+                        <p><strong>✅ To'g'ri:</strong> "Sorry, what did you say?" yoki "Pardon?"</p>
+                        <p><em>Xushmuomala so'rash muhim</em></p>
+                    </div>
+                    <div style="background: #fff3e0; padding: 12px; margin: 8px 0; border-radius: 6px; border-left: 4px solid #ff9800;">
+                        <p><strong>❌ Xato:</strong> "You speak too fast!" (ayblash)</p>
+                        <p><strong>✅ To'g'ri:</strong> "Could you speak a bit slower, please?"</p>
+                        <p><em>Iltimos shaklida so'rash yaxshiroq</em></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Examples Section -->
+        <section class="section examples-section">
+            <h2 class="section-title">Examples / Misollar</h2>
+            <div class="example">
+                <div class="example-english">Sorry, I didn't catch that.</div>
+                <div class="example-uzbek">Kechirasiz, eshitmadim.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">Could you explain it again?</div>
+                <div class="example-uzbek">Yana tushuntirib bera olasizmi?</div>
+            </div>
+            <div class="example">
+                <div class="example-english">What does this word mean?</div>
+                <div class="example-uzbek">Bu so'z nimani anglatadi?</div>
+            </div>
+            <div class="example">
+                <div class="example-english">How do you pronounce this?</div>
+                <div class="example-uzbek">Buni qanday talaffuz qilasiz?</div>
+            </div>
+            <div class="example">
+                <div class="example-english">Can you spell that for me?</div>
+                <div class="example-uzbek">Buni men uchun harflab bera olasizmi?</div>
+            </div>
+            <div class="example">
+                <div class="example-english">I'm sorry, my English isn't very good.</div>
+                <div class="example-uzbek">Kechirasiz, ingliz tilim unchalik yaxshi emas.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">Could you write it down?</div>
+                <div class="example-uzbek">Buni yozib bera olasizmi?</div>
+            </div>
+            <div class="example">
+                <div class="example-english">Let me check if I understand correctly.</div>
+                <div class="example-uzbek">To'g'ri tushunganimni tekshirib ko'raman.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">Thank you for being patient with me.</div>
+                <div class="example-uzbek">Menga sabr qilganingiz uchun rahmat.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">I'm still learning English.</div>
+                <div class="example-uzbek">Men hali ham ingliz tilini o'rganyapman.</div>
+            </div>
+        </section>
+
+        <!-- Dialogues Section -->
+        <section class="section dialogues-section">
+            <h2 class="section-title">Dialogues / Suhbatlar</h2>
+            
+            <div class="dialog">
+                <div class="dialog-speaker">Supervisor:</div>
+                <div class="dialog-text">You need to check the irrigation system.</div>
+                <div class="dialog-translation">Sug'orish tizimini tekshirishingiz kerak.</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">Sorry, could you repeat that?</div>
+                <div class="dialog-translation">Kechirasiz, takrorlay olasizmi?</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Colleague:</div>
+                <div class="dialog-text">We need to rotate the crops in sector five.</div>
+                <div class="dialog-translation">Beshinchi sektorda ekinlarni almashtirish kerak.</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">I don't understand. What does 'rotate' mean?</div>
+                <div class="dialog-translation">Tushunmayapman. 'Rotate' nimani anglatadi?</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Manager:</div>
+                <div class="dialog-text">Today we're harvesting strawberries in fields A, B, and C, then moving to the packaging area.</div>
+                <div class="dialog-translation">Bugun A, B va C dalalarida qulupnay terayapmiz, keyin qadoqlash joyiga o'tamiz.</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">Could you speak a bit slower, please?</div>
+                <div class="dialog-translation">Biroz sekinroq gapira olasizmi, iltimos?</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Trainer:</div>
+                <div class="dialog-text">First, put on your safety equipment, then start the machine.</div>
+                <div class="dialog-translation">Avval xavfsizlik jihozlarini kiying, keyin mashinani ishga tushiring.</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">So, safety equipment first, then machine. Is that right?</div>
+                <div class="dialog-translation">Demak, avval xavfsizlik jihozlari, keyin mashina. To'g'rimi?</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">How do you say this word? 'Schedule'?</div>
+                <div class="dialog-translation">Bu so'zni qanday aytasiz? 'Schedule'?</div>
+                <div class="dialog-speaker">Colleague:</div>
+                <div class="dialog-text">It's 'SHED-yool' in British English.</div>
+                <div class="dialog-translation">Britaniya ingliz tilida 'SHED-yool'.</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Supervisor:</div>
+                <div class="dialog-text">Take the trolley to the loading bay.</div>
+                <div class="dialog-translation">Aravachani yuklash joyiga olib boring.</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">I'm confused. Which trolley? Where is the loading bay?</div>
+                <div class="dialog-translation">Chalkashdim. Qaysi aravachani? Yuklash joyi qayerda?</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">This is quite complicated. Could you write it down?</div>
+                <div class="dialog-translation">Bu juda murakkab. Yozib bera olasizmi?</div>
+                <div class="dialog-speaker">Supervisor:</div>
+                <div class="dialog-text">Sure. I'll write the steps for you.</div>
+                <div class="dialog-translation">Albatta. Sizga qadamlarni yozib beraman.</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">I'm sorry, my English isn't very good yet.</div>
+                <div class="dialog-translation">Kechirasiz, ingliz tilim hali unchalik yaxshi emas.</div>
+                <div class="dialog-speaker">Colleague:</div>
+                <div class="dialog-text">Don't worry! You're doing great. Keep practicing.</div>
+                <div class="dialog-translation">Xavotir olmang! Yaxshi qilyapsiz. Mashq qilishda davom eting.</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Manager:</div>
+                <div class="dialog-text">Water the plants, then collect the ripe tomatoes.</div>
+                <div class="dialog-translation">O'simliklarni sug'oring, keyin pishgan pomidorlarni yig'ing.</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">Let me check: first water, then pick tomatoes?</div>
+                <div class="dialog-translation">Tekshirib ko'raman: avval suv, keyin pomidor teramanmi?</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">How do you say 'choy' in English?</div>
+                <div class="dialog-translation">Ingliz tilida 'choy'ni qanday aytasiz?</div>
+                <div class="dialog-speaker">Colleague:</div>
+                <div class="dialog-text">'Choy' is 'tea' in English.</div>
+                <div class="dialog-translation">'Choy' ingliz tilida 'tea'.</div>
+            </div>
+        </section>
+
+        <!-- Exercises Section -->
+        <section class="section exercises-section">
+            <h2 class="section-title">Exercises / Mashqlar</h2>
+            
+            <!-- Exercise 1: Clarification Requests -->
+            <div class="exercise" data-exercise-id="18-1">
+                <div class="exercise-question">
+                    <strong>1. Bo'sh joyni to'ldiring (Fill in the blanks)</strong><br>
+                    <em>Namuna: Could you _____ that, please? (repeat)</em><br><br>
+                    Clarification request: "I'm sorry, could you _____ what you just said?"
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="repeat" placeholder="Type your answer here...">
+                    <button class="check-answer-btn" onclick="checkExerciseAnswer(this)">Check Answer</button>
+                </div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <!-- Exercise 2: Misunderstanding Resolution -->
+            <div class="exercise" data-exercise-id="18-2">
+                <div class="exercise-question">
+                    <strong>2. To'g'ri javobni tanlang (Choose the correct answer)</strong><br>
+                    <em>When you don't understand something, which is most polite?</em><br>
+                    a) What?  b) I don't understand  c) Sorry, could you explain that again?
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="c" placeholder="Type a, b, or c">
+                    <button class="check-answer-btn" onclick="checkExerciseAnswer(this)">Check Answer</button>
+                </div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <!-- Exercise 3: Comprehension Checking -->
+            <div class="exercise" data-exercise-id="18-3">
+                <div class="exercise-question">
+                    <strong>3. O'zbek tilidan inglizchaga tarjima qiling (Translate from Uzbek to English)</strong><br>
+                    <em>Namuna: Men tushunmadim → I didn't understand</em><br><br>
+                    "Bu so'z nimani anglatadi?" = What _____ this word _____?
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="does mean" placeholder="Type your answer here...">
+                    <button class="check-answer-btn" onclick="checkExerciseAnswer(this)">Check Answer</button>
+                </div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <!-- Exercise 4: Communication Repair Scenarios -->
+            <div class="exercise" data-exercise-id="18-4">
+                <div class="exercise-question">
+                    <strong>4. Gapni to'g'ri tartibda yozing (Write the sentence in correct order)</strong><br>
+                    <em>Words: [could / you / speak / more / slowly / please]</em><br>
+                    Polite request: _____ _____ _____ _____ _____ _____?
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="could you speak more slowly please" placeholder="Type the complete sentence">
+                    <button class="check-answer-btn" onclick="checkExerciseAnswer(this)">Check Answer</button>
+                </div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <!-- Exercise 5: Effective Workplace Communication -->
+            <div class="exercise" data-exercise-id="18-5">
+                <div class="exercise-question">
+                    <strong>5. Bo'sh joyni to'ldiring (Fill in the blanks)</strong><br>
+                    <em>Asking for written help: "Could you _____ that down for me, please?"</em>
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="write" placeholder="Type your answer here...">
+                    <button class="check-answer-btn" onclick="checkExerciseAnswer(this)">Check Answer</button>
+                </div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <!-- Exercise 6: Confirmation Strategies -->
+            <div class="exercise" data-exercise-id="18-6">
+                <div class="exercise-question">
+                    <strong>6. To'g'ri javobni tanlang (Choose the correct answer)</strong><br>
+                    <em>To check if you understood correctly: "So you're saying that..."</em><br>
+                    a) I think  b) Let me check  c) Am I right?
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="b" placeholder="Type a, b, or c">
+                    <button class="check-answer-btn" onclick="checkExerciseAnswer(this)">Check Answer</button>
+                </div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <!-- Exercise 7: Asking for Spelling -->
+            <div class="exercise" data-exercise-id="18-7">
+                <div class="exercise-question">
+                    <strong>7. O'zbek tilidan inglizchaga tarjima qiling (Translate from Uzbek to English)</strong><br>
+                    <em>Spelling request: "Buni harflab ayta olasizmi?"</em><br>
+                    "Can you _____ that for me?"
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="spell" placeholder="Type your answer here...">
+                    <button class="check-answer-btn" onclick="checkExerciseAnswer(this)">Check Answer</button>
+                </div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <!-- Exercise 8: Showing Understanding -->
+            <div class="exercise" data-exercise-id="18-8">
+                <div class="exercise-question">
+                    <strong>8. Bo'sh joyni to'ldiring (Fill in the blanks)</strong><br>
+                    <em>Confirming understanding: "Ah, now I _____. Thank you for explaining."</em>
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="understand" placeholder="Type your answer here...">
+                    <button class="check-answer-btn" onclick="checkExerciseAnswer(this)">Check Answer</button>
+                </div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <!-- Exercise 9: Apologizing for Language Level -->
+            <div class="exercise" data-exercise-id="18-9">
+                <div class="exercise-question">
+                    <strong>9. Gapni to'g'ri tartibda yozing (Write the sentence in correct order)</strong><br>
+                    <em>Words: [sorry / my / english / isn't / very / good / yet]</em><br>
+                    Polite apology: _____ _____ _____ _____ _____ _____ _____
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="sorry my english isn't very good yet" placeholder="Type the complete sentence">
+                    <button class="check-answer-btn" onclick="checkExerciseAnswer(this)">Check Answer</button>
+                </div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <!-- Exercise 10: Thanking for Patience -->
+            <div class="exercise" data-exercise-id="18-10">
+                <div class="exercise-question">
+                    <strong>10. O'zingizning misolingizni yozing (Write your own example)</strong><br>
+                    <em>Situation: You want to thank someone for being patient while you learn English.</em><br>
+                    <em>Complete: "Thank you for being _____ with me."</em>
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="patient" placeholder="Type your answer here...">
+                    <button class="check-answer-btn" onclick="checkExerciseAnswer(this)">Check Answer</button>
+                </div>
+                <div class="exercise-feedback"></div>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <footer class="chapter-navigation" role="navigation" aria-label="Chapter navigation">
+            <a href="Chapter_17_Emergency_Safety.html" class="nav-btn prev" aria-label="Go to previous chapter">
+                <span class="nav-btn-icon">←</span>
+                <div class="nav-btn-text">
+                    <span class="nav-btn-label">Previous</span>
+                    <span class="nav-btn-title">Emergency & Safety</span>
+                </div>
+            </a>
+            
+            <a href="index.html" class="nav-btn home-btn" aria-label="Go to home page">
+                <span class="nav-btn-icon">🏠</span>
+                <span>Home</span>
+            </a>
+            
+            <a href="Chapter_19_Countries_Languages.html" class="nav-btn next" aria-label="Go to next chapter">
+                <div class="nav-btn-text">
+                    <span class="nav-btn-label">Next</span>
+                    <span class="nav-btn-title">Countries & Languages</span>
+                </div>
+                <span class="nav-btn-icon">→</span>
+            </a>
+        </footer>
+
+        <!-- Quick Navigation -->
+        <div class="quick-nav" role="navigation" aria-label="Quick navigation">
+            <button class="quick-nav-btn" onclick="scrollToTop()" aria-label="Scroll to top" title="Scroll to top">
+                ↑
+            </button>
+            <button class="quick-nav-btn" onclick="window.location.href='index.html'" aria-label="Go to home" title="Go to home">
+                🏠
+            </button>
+        </div>
+    </div>
+
+    <script src="interactive-exercises.js"></script>
+    <script src="progress-tracker.js"></script>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Initialize progress tracking for this chapter
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof ProgressTracker !== 'undefined') {
+                ProgressTracker.initializeChapterPage(18);
+            }
+        });
+    </script>
+</body>
+</html>

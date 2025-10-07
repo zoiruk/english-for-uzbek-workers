@@ -1,0 +1,1411 @@
+﻿<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chapter 11: Food, Cooking, and Ordering - English for Uzbek Seasonal Workers - CEFR A0-A1 level">
+    <meta name="keywords" content="English food, cooking, ordering, restaurant, Uzbek seasonal workers, UK food, quantifiers">
+    <meta name="author" content="Zoir UK">
+    <title>Chapter 11: Food, Cooking, and Ordering - Ingliz Tili Darsligi</title>
+    <style>
+        /* Material Design 3 Base Styles */
+        :root {
+            --md-sys-color-primary: #1abc9c;
+            /* Chapter 11 Aqua */
+            --md-sys-color-on-primary: #ffffff;
+            --md-sys-color-primary-container: #e0f2f1;
+            --md-sys-color-on-primary-container: #004d40;
+            --md-sys-color-secondary: #565f71;
+            --md-sys-color-on-secondary: #ffffff;
+            --md-sys-color-surface: #fefbff;
+            --md-sys-color-on-surface: #1a1c1e;
+            --md-sys-color-surface-variant: #e1e2ec;
+            --md-sys-color-on-surface-variant: #44474f;
+            --md-sys-color-outline: #74777f;
+            --md-sys-color-success: #2e7d32;
+            --md-sys-color-error: #d32f2f;
+            --md-sys-elevation-level1: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
+            --md-sys-elevation-level2: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--md-sys-color-on-surface);
+            background-color: var(--md-sys-color-surface);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        .chapter-header {
+            text-align: center;
+            margin-bottom: 32px;
+            padding: 24px 0;
+            border-bottom: 2px solid var(--md-sys-color-primary);
+        }
+
+        .chapter-header h1 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: var(--md-sys-color-primary);
+            margin-bottom: 8px;
+        }
+
+        .chapter-subtitle {
+            font-size: 1.25rem;
+            color: var(--md-sys-color-on-surface-variant);
+            margin-bottom: 16px;
+        }
+
+        .chapter-progress {
+            background: var(--md-sys-color-primary-container);
+            color: var(--md-sys-color-on-primary-container);
+            padding: 8px 16px;
+            border-radius: 16px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .section {
+            margin-bottom: 48px;
+            background: var(--md-sys-color-surface);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: var(--md-sys-elevation-level1);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--md-sys-color-primary);
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--md-sys-color-outline);
+        }
+
+        .vocab-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+        }
+
+        .vocab-table th,
+        .vocab-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--md-sys-color-outline);
+        }
+
+        .vocab-table th {
+            background: var(--md-sys-color-primary-container);
+            color: var(--md-sys-color-on-primary-container);
+            font-weight: 500;
+        }
+
+        .vocab-table .transcription {
+            color: #d32f2f;
+            font-weight: 500;
+        }
+
+        .vocab-table .uzbek {
+            color: var(--md-sys-color-on-surface-variant);
+        }
+
+        /* Grammar Box */
+        .grammar-box {
+            background: var(--md-sys-color-primary-container);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 16px 0;
+        }
+
+        .grammar-box h3 {
+            color: var(--md-sys-color-on-primary-container);
+            margin-bottom: 12px;
+        }
+
+        .grammar-box p {
+            color: var(--md-sys-color-on-primary-container);
+            margin-bottom: 8px;
+        }
+
+        /* Dialogue Styles */
+        .dialog {
+            background: #e8f5e8;
+            border-left: 4px solid var(--md-sys-color-success);
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .dialog-speaker {
+            font-weight: 600;
+            color: var(--md-sys-color-success);
+            margin-bottom: 4px;
+        }
+
+        .dialog-text {
+            margin-bottom: 8px;
+        }
+
+        .dialog-translation {
+            font-style: italic;
+            color: var(--md-sys-color-on-surface-variant);
+            font-size: 0.9rem;
+        }
+
+        /* Exercise Styles */
+        .exercise {
+            background: #fff8e1;
+            border-left: 4px solid #f39c12;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 16px 0;
+            position: relative;
+        }
+
+        .exercise-question {
+            font-weight: 500;
+            margin-bottom: 12px;
+            color: var(--md-sys-color-on-surface);
+        }
+
+        .exercise-input-group {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .exercise-input {
+            flex: 1;
+            padding: 12px;
+            border: 2px solid var(--md-sys-color-outline);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.2s ease;
+        }
+
+        .exercise-input:focus {
+            outline: none;
+            border-color: var(--md-sys-color-primary);
+        }
+
+        .exercise-input.completed {
+            background: #e8f5e8;
+            border-color: var(--md-sys-color-success);
+        }
+
+        .check-answer-btn {
+            background: var(--md-sys-color-primary);
+            color: var(--md-sys-color-on-primary);
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            min-height: 44px;
+        }
+
+        .check-answer-btn:hover {
+            background: #16a085;
+            transform: translateY(-1px);
+        }
+
+        .check-answer-btn:active {
+            transform: translateY(0);
+        }
+
+        .exercise-feedback {
+            margin-top: 12px;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+
+        .exercise-feedback.correct {
+            background: #e8f5e8;
+            color: var(--md-sys-color-success);
+            border: 1px solid var(--md-sys-color-success);
+        }
+
+        .exercise-feedback.incorrect {
+            background: #ffebee;
+            color: var(--md-sys-color-error);
+            border: 1px solid var(--md-sys-color-error);
+        }
+
+        .feedback-icon {
+            font-size: 1.2rem;
+            margin-right: 8px;
+        }
+
+        /* Example Styles */
+        .example {
+            background: #f3e5f5;
+            border-left: 4px solid #9c27b0;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .example-english {
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .example-uzbek {
+            font-style: italic;
+            color: var(--md-sys-color-on-surface-variant);
+        }
+
+        /* Navigation Styles */
+        .chapter-navigation {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 16px;
+            align-items: center;
+            margin-top: 48px;
+            padding: 24px 0;
+            border-top: 1px solid var(--md-sys-color-outline);
+        }
+
+        .nav-btn {
+            background: var(--md-sys-color-primary);
+            color: var(--md-sys-color-on-primary);
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 20px;
+            font-weight: 500;
+            transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: var(--md-sys-elevation-level1);
+        }
+
+        .nav-btn:hover {
+            background: #16a085;
+            transform: translateY(-2px);
+            box-shadow: var(--md-sys-elevation-level2);
+        }
+
+        .nav-btn.prev {
+            justify-self: start;
+        }
+
+        .nav-btn.next {
+            justify-self: end;
+        }
+
+        .home-btn {
+            background: var(--md-sys-color-secondary);
+            color: var(--md-sys-color-on-secondary);
+            justify-self: center;
+        }
+
+        .nav-btn-icon {
+            font-size: 1.2rem;
+        }
+
+        .nav-btn-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .nav-btn-label {
+            font-size: 0.75rem;
+            opacity: 0.8;
+        }
+
+        .nav-btn-title {
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        /* Quick Navigation */
+        .quick-nav {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            z-index: 100;
+        }
+
+        .quick-nav-btn {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: var(--md-sys-color-primary);
+            color: var(--md-sys-color-on-primary);
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: var(--md-sys-elevation-level2);
+            transition: all 0.3s ease;
+        }
+
+        .quick-nav-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 12px;
+            }
+
+            .chapter-header h1 {
+                font-size: 2rem;
+            }
+
+            .section {
+                padding: 16px;
+                margin-bottom: 24px;
+            }
+
+            /* Mobile Table CSS Template - Responsive vocabulary tables */
+            .vocab-table {
+                font-size: 0.875rem;
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            /* Convert all table elements to block display */
+            .vocab-table thead,
+            .vocab-table tbody,
+            .vocab-table th,
+            .vocab-table td,
+            .vocab-table tr {
+                display: block;
+            }
+
+            /* Hide table headers on mobile (replaced by pseudo-elements) */
+            .vocab-table thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            /* Style each table row as a card */
+            .vocab-table tr {
+                border: 1px solid var(--md-sys-color-outline);
+                border-radius: 8px;
+                margin-bottom: 12px;
+                padding: 12px;
+                background: var(--md-sys-color-surface);
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            }
+
+            /* Style table cells with label positioning */
+            .vocab-table td {
+                border: none;
+                position: relative;
+                padding: 8px 8px 8px 50% !important;
+                white-space: normal;
+                text-align: left;
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+            }
+
+            /* Create labels using data-label attributes */
+            .vocab-table td:before {
+                content: attr(data-label) ": ";
+                position: absolute;
+                left: 8px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                font-weight: 500;
+                color: var(--md-sys-color-on-surface-variant);
+                display: flex;
+                align-items: center;
+                min-height: 44px;
+            }
+
+            .exercise-input-group {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .check-answer-btn {
+                width: 100%;
+            }
+
+            .chapter-navigation {
+                grid-template-columns: 1fr;
+                gap: 12px;
+                text-align: center;
+            }
+
+            .nav-btn {
+                width: 100%;
+                justify-content: center;
+                justify-self: center;
+            }
+
+            .nav-btn.prev,
+            .nav-btn.next {
+                justify-self: center;
+            }
+
+            .quick-nav {
+                bottom: 16px;
+                right: 16px;
+            }
+
+            .quick-nav-btn {
+                width: 48px;
+                height: 48px;
+                font-size: 1.25rem;
+            }
+        }
+
+        /* Touch targets for mobile */
+        @media (max-width: 768px) {
+
+            .exercise-input,
+            .check-answer-btn,
+            .nav-btn,
+            .quick-nav-btn {
+                min-height: 44px;
+            }
+        }
+
+        /* Breadcrumb Navigation */
+        .breadcrumb-nav {
+            background: var(--md-sys-color-surface-variant);
+            padding: 12px 0;
+            margin-bottom: 24px;
+            border-radius: 8px;
+        }
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.875rem;
+            color: var(--md-sys-color-on-surface-variant);
+        }
+
+        .breadcrumb a {
+            color: var(--md-sys-color-primary);
+            text-decoration: none;
+            padding: 4px 8px;
+            border-radius: 4px;
+            transition: background-color 0.2s ease;
+        }
+
+        .breadcrumb a:hover {
+            background: var(--md-sys-color-primary-container);
+        }
+
+        .breadcrumb a:focus {
+            outline: 2px solid var(--md-sys-color-primary);
+            outline-offset: 2px;
+        }
+
+        .breadcrumb-separator {
+            color: var(--md-sys-color-outline);
+        }
+
+        .breadcrumb-current {
+            font-weight: 500;
+            color: var(--md-sys-color-on-surface);
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--md-sys-color-primary);
+            color: var(--md-sys-color-on-primary);
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 4px;
+            z-index: 1000;
+        }
+
+        .skip-link:focus {
+            top: 6px;
+        }
+    
+        /* Small mobile devices */
+        @media (max-width: 480px) {
+            .container {
+                padding: 8px;
+            }
+        }
+</style>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <div class="container" id="main-content" data-chapter-id="11">
+        <!-- Breadcrumb Navigation -->
+        <nav class="breadcrumb-nav" aria-label="Breadcrumb navigation">
+            <div class="breadcrumb">
+                <a href="index.html" aria-label="Go to home page">🏠 Home</a>
+                <span class="breadcrumb-separator" aria-hidden="true">›</span>
+                <span class="breadcrumb-current" aria-current="page">Chapter 11: Food, Cooking, and Ordering</span>
+            </div>
+        </nav>
+        <header class="chapter-header">
+            <h1>Chapter 11: Food, Cooking, and Ordering</h1>
+            <p class="chapter-subtitle">Ovqat, Pishirish va Buyurtma berish</p>
+            <div class="chapter-progress">Progress: 0% (0/10)</div>
+        </header>
+
+        <!-- Vocabulary Section -->
+        <section class="section vocabulary-section">
+            <h2 class="section-title">Vocabulary / Lug'at</h2>
+            <table class="vocab-table">
+                <thead>
+                    <tr>
+                        <th>English</th>
+                        <th>Transcription</th>
+                        <th>O'zbek</th>
+                        <th>Context</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="English">Food</td>
+                        <td data-label="Transcription" class="transcription">фуд</td>
+                        <td data-label="O'zbek" class="uzbek">Ovqat</td>
+                        <td data-label="Context">General term</td>
+                    </tr>
+                    <tr>
+                        <td data-label="English">Meal</td>
+                        <td data-label="Transcription" class="transcription">мил</td>
+                        <td data-label="O'zbek" class="uzbek">Ovqat vaqti</td>
+                        <td data-label="Context">Eating time</td>
+                    </tr>
+                    <tr>
+                        <td data-label="English">Breakfast</td>
+                        <td data-label="Transcription" class="transcription">брэкфэст</td>
+                        <td data-label="O'zbek" class="uzbek">Nonushta</td>
+                        <td data-label="Context">Morning meal</td>
+                    </tr>
+                    <tr>
+                        <td data-label="English">Lunch</td>
+                        <td data-label="Transcription" class="transcription">ланч</td>
+                        <td data-label="O'zbek" class="uzbek">Tushlik</td>
+                        <td data-label="Context">Midday meal</td>
+                    </tr>
+                    <tr>
+                        <td data-label="English">Dinner</td>
+                        <td data-label="Transcription" class="transcription">динэр</td>
+                        <td data-label="O'zbek" class="uzbek">Kechki ovqat</td>
+                        <td data-label="Context">Evening meal</td>
+                    </tr>
+                    <tr>
+                        <td data-label="English">Bread</td>
+                        <td data-label="Transcription" class="transcription">брэд</td>
+                        <td data-label="O'zbek" class="uzbek">Non</td>
+                        <td data-label="Context">Basic food</td>
+                    </tr>
+                    <tr>
+                        <td data-label="English">Milk</td>
+                        <td data-label="Transcription" class="transcription">милк</td>
+                        <td data-label="O'zbek" class="uzbek">Sut</td>
+                        <td data-label="Context">Dairy product</td>
+                    </tr>
+                    <tr>
+                        <td data-label="English">Cheese</td>
+                        <td data-label="Transcription" class="transcription">чиз</td>
+                        <td data-label="O'zbek" class="uzbek">Pishloq</td>
+                        <td data-label="Context">Dairy product</td>
+                    </tr>
+                    <tr>
+                        <td data-label="English">Butter</td>
+                        <td data-label="Transcription" class="transcription">батэр</td>
+                        <td data-label="O'zbek" class="uzbek">Sariyog'</td>
+                        <td data-label="Context">Dairy product</td>
+                    </tr>
+                    <tr>
+                        <td data-label="English">Eggs</td>
+                        <td data-label="Transcription" class="transcription">эгс</td>
+                        <td data-label="O'zbek" class="uzbek">Tuxum</td>
+                        <td data-label="Context">Protein source</td>
+                    </tr>
+                    <tr>
+                        <td data-label="English">Meat</td>
+                        <td data-label="Transcription" class="transcription">мит</td>
+                        <td data-label="O'zbek" class="uzbek">Go'sht</td>
+                        <td data-label="Context">Protein source</td>
+                    </tr>
+                    <tr>
+                        <td data-label="English">Chicken</td>
+                        <td data-label="Transcription" class="transcription">чикин</td>
+                        <td data-label="O'zbek" class="uzbek">Tovuq go'shti</td>
+                        <td data-label="Context">Poultry</td>
+                    </tr>
+                    <tr>
+                        <td data-label="English">Fish</td>
+                        <td data-label="Transcription" class="transcription">фиш</td>
+                        <td data-label="O'zbek" class="uzbek">Baliq</td>
+                        <td data-label="Context">Seafood</td>
+                    </tr>
+                    <tr>
+                        <td data-label="English">Vegetables</td>
+                        <td data-label="Transcription" class="transcription">вэджитэблс</td>
+                        <td data-label="O'zbek" class="uzbek">Sabzavotlar</td>
+                        <td data-label="Context">Plant food</td>
+                    </tr>
+                    <tr>
+                        <td data-label="English">Fruit</td>
+                        <td data-label="Transcription" class="transcription">фрут</td>
+                        <td data-label="O'zbek" class="uzbek">Meva</td>
+                        <td data-label="Context">Sweet plant food</td>
+                    </tr>
+                    <tr>
+                        <td data-label="English">Apple</td>
+                        <td data-label="Transcription" class="transcription">эпл</td>
+                        <td data-label="O'zbek" class="uzbek">Olma</td>
+                        <td data-label="Context">Common fruit</td>
+                    </tr>
+                    <tr>
+                        <td data-label="English">Banana</td>
+                        <td data-label="Transcription" class="transcription">бэнанэ</td>
+                        <td data-label="O'zbek" class="uzbek">Banan</td>
+                        <td data-label="Context">Tropical fruit</td>
+                    </tr>
+                    <tr>
+                        <td data-label="English">Orange</td>
+                        <td data-label="Transcription" class="transcription">орэндж</td>
+                        <td data-label="O'zbek" class="uzbek">Apelsin</td>
+                        <td data-label="Context">Citrus fruit</td>
+                    </tr>
+                    <tr>
+                        <td data-label="English">Potato</td>
+                        <td data-label="Transcription" class="transcription">потэйтоу</td>
+                        <td data-label="O'zbek" class="uzbek">Kartoshka</td>
+                        <td data-label="Context">Root vegetable</td>
+                    </tr>
+                    <tr>
+                        <td data-label="English">Carrot</td>
+                        <td data-label="Transcription" class="transcription">кэрэт</td>
+                        <td data-label="O'zbek" class="uzbek">Sabzi</td>
+                        <td data-label="Context">Root vegetable</td>
+                    </tr>
+                    <tr>
+                        <td data-label="English">Onion</td>
+                        <td data-label="Transcription" class="transcription">аниэн</td>
+                        <td data-label="O'zbek" class="uzbek">Piyoz</td>
+                        <td data-label="Context">Flavoring vegetable</td>
+                    </tr>
+                    <tr>
+                        <td data-label="English">Rice</td>
+                        <td data-label="Transcription" class="transcription">райс</td>
+                        <td data-label="O'zbek" class="uzbek">Guruch</td>
+                        <td data-label="Context">Grain</td>
+                    </tr>
+                    <tr>
+                        <td data-label="English">Pasta</td>
+                        <td data-label="Transcription" class="transcription">пастэ</td>
+                        <td data-label="O'zbek" class="uzbek">Makaron</td>
+                        <td data-label="Context">Italian food</td>
+                    </tr>
+                    <tr>
+                        <td data-label="English">Salt</td>
+                        <td data-label="Transcription" class="transcription">солт</td>
+                        <td data-label="O'zbek" class="uzbek">Tuz</td>
+                        <td data-label="Context">Seasoning</td>
+                    </tr>
+                    <tr>
+                        <td data-label="English">Sugar</td>
+                        <td data-label="Transcription" class="transcription">шугэр</td>
+                        <td data-label="O'zbek" class="uzbek">Shakar</td>
+                        <td data-label="Context">Sweetener</td>
+                    </tr>
+                    <tr>
+                        <td data-label="English">Water</td>
+                        <td data-label="Transcription" class="transcription">вотэр</td>
+                        <td data-label="O'zbek" class="uzbek">Suv</td>
+                        <td data-label="Context">Drink</td>
+                    </tr>
+                    <tr>
+                        <td data-label="English">Tea</td>
+                        <td data-label="Transcription" class="transcription">ти</td>
+                        <td data-label="O'zbek" class="uzbek">Choy</td>
+                        <td data-label="Context">Hot drink</td>
+                    </tr>
+                    <tr>
+                        <td data-label="English">Coffee</td>
+                        <td data-label="Transcription" class="transcription">кофи</td>
+                        <td data-label="O'zbek" class="uzbek">Qahva</td>
+                        <td data-label="Context">Hot drink</td>
+                    </tr>
+                    <tr>
+                        <td data-label="English">Menu</td>
+                        <td data-label="Transcription" class="transcription">мэню</td>
+                        <td data-label="O'zbek" class="uzbek">Menyu</td>
+                        <td data-label="Context">Food list</td>
+                    </tr>
+                    <tr>
+                        <td data-label="English">Order</td>
+                        <td data-label="Transcription" class="transcription">ордэр</td>
+                        <td data-label="O'zbek" class="uzbek">Buyurtma</td>
+                        <td data-label="Context">Food request</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Grammar Section -->
+        <section class="section grammar-section">
+            <h2 class="section-title">Grammar / Grammatika</h2>
+
+            <div class="grammar-section">
+                <h2>Grammatika - Modal Verbs: Can/Can't, Would Like (Modal Fe'llar)</h2>
+
+                <!-- Introduction and Purpose -->
+                <div class="grammar-intro">
+                    <h3>Bu grammatika nima uchun kerak? (Why do we need this grammar?)</h3>
+                    <p>Modal fe'llar ovqat buyurtma berish, iltimos qilish va qobiliyatni ifodalash uchun juda muhim.
+                        Mavsumiy ishchilar sifatida siz har kuni ovqat sotib olishingiz, restoranda buyurtma berishingiz
+                        va boshqalardan yordam so'rashingiz kerak bo'ladi. "Can" qobiliyat va imkoniyatni, "would like"
+                        esa xushmuomalalik bilan xohishni bildiradi. Masalan: "Can I cook here?" yoki "I would like some
+                        tea, please".</p>
+                </div>
+
+                <!-- Basic Concept Explanation -->
+                <div class="concept-explanation">
+                    <h3>Asosiy tushuncha (Basic Concept)</h3>
+                    <p>Modal fe'llar - bu asosiy fe'l oldidan keladigan yordamchi fe'llar. Ular qobiliyat, imkoniyat,
+                        iltimos va xohishni ifodalaydi. <strong>Can</strong> - qila olish, imkoni bor;
+                        <strong>Can't</strong> - qila olmaslik; <strong>Would like</strong> - xohlamoq (muloyim shakl).
+                        Bu fe'llar bilan asosiy fe'l o'zgarmasdan qoladi: "I can cook", "I would like to eat".
+                    </p>
+                </div>
+
+                <!-- Three-Form Structure -->
+                <div class="three-forms">
+                    <h3>Uch shakl (Three Forms)</h3>
+
+                    <!-- Positive Form -->
+                    <div class="positive-form"
+                        style="background: #e8f5e8; padding: 16px; margin: 16px 0; border-radius: 8px;">
+                        <h4>1. Can - Qobiliyat va Imkoniyat (Ability and Permission)</h4>
+                        <div class="structure-table">
+                            <table style="width: 100%; border-collapse: collapse; margin: 12px 0;">
+                                <thead>
+                                    <tr style="background: #d4edda;">
+                                        <th style="padding: 8px; border: 1px solid #c3e6cb;">Subject</th>
+                                        <th style="padding: 8px; border: 1px solid #c3e6cb;">can</th>
+                                        <th style="padding: 8px; border: 1px solid #c3e6cb;">Base Verb</th>
+                                        <th style="padding: 8px; border: 1px solid #c3e6cb;">Object</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 8px; border: 1px solid #c3e6cb;">I/You/He/She/We/They</td>
+                                        <td style="padding: 8px; border: 1px solid #c3e6cb;">can</td>
+                                        <td style="padding: 8px; border: 1px solid #c3e6cb;">cook/eat/order</td>
+                                        <td style="padding: 8px; border: 1px solid #c3e6cb;">food/dinner</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="examples">
+                            <p><strong>Misollar (Examples):</strong></p>
+                            <div style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px;">
+                                <div><strong>I can cook simple meals.</strong></div>
+                                <div style="color: #d32f2f; font-style: italic;">[Ай кэн кук симпл милс]</div>
+                                <div style="color: #27ae60;">Men oddiy taomlar tayyorlay olaman.</div>
+                                <div style="font-size: 0.9em; color: #666;">Qobiliyat: Ovqat pishirish mahorati</div>
+                            </div>
+                            <div style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px;">
+                                <div><strong>You can use the kitchen after 6 PM.</strong></div>
+                                <div style="color: #d32f2f; font-style: italic;">[Ю кэн юз зэ кичин афтэр сикс пи эм]
+                                </div>
+                                <div style="color: #27ae60;">Siz oshxonani soat 6 dan keyin ishlatishingiz mumkin.</div>
+                                <div style="font-size: 0.9em; color: #666;">Ruxsat: Oshxona qoidalari</div>
+                            </div>
+                            <div style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px;">
+                                <div><strong>We can eat lunch together today.</strong></div>
+                                <div style="color: #d32f2f; font-style: italic;">[Ви кэн ит ланч тугэзэр тудэй]</div>
+                                <div style="color: #27ae60;">Bugun birga tushlik qilishimiz mumkin.</div>
+                                <div style="font-size: 0.9em; color: #666;">Taklif: Birgalik ovqatlanish</div>
+                            </div>
+                            <div style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px;">
+                                <div><strong>She can make traditional Uzbek food.</strong></div>
+                                <div style="color: #d32f2f; font-style: italic;">[Ши кэн мэйк трэдишнл узбэк фуд]</div>
+                                <div style="color: #27ae60;">U an'anaviy o'zbek taomlarini tayyorlay oladi.</div>
+                                <div style="font-size: 0.9em; color: #666;">Mahorat: Milliy taomlar</div>
+                            </div>
+                            <div style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px;">
+                                <div><strong>They can order food online.</strong></div>
+                                <div style="color: #d32f2f; font-style: italic;">[Зэй кэн ордэр фуд онлайн]</div>
+                                <div style="color: #27ae60;">Ular onlayn ovqat buyurtma qilishlari mumkin.</div>
+                                <div style="font-size: 0.9em; color: #666;">Texnologiya: Zamonaviy usul</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Negative Form -->
+                    <div class="negative-form"
+                        style="background: #ffe8e8; padding: 16px; margin: 16px 0; border-radius: 8px;">
+                        <h4>2. Can't - Qobiliyatsizlik va Taqiq (Inability and Prohibition)</h4>
+                        <div class="structure-table">
+                            <table style="width: 100%; border-collapse: collapse; margin: 12px 0;">
+                                <thead>
+                                    <tr style="background: #f8d7da;">
+                                        <th style="padding: 8px; border: 1px solid #f5c6cb;">Subject</th>
+                                        <th style="padding: 8px; border: 1px solid #f5c6cb;">can't (cannot)</th>
+                                        <th style="padding: 8px; border: 1px solid #f5c6cb;">Base Verb</th>
+                                        <th style="padding: 8px; border: 1px solid #f5c6cb;">Object</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 8px; border: 1px solid #f5c6cb;">I/You/He/She/We/They</td>
+                                        <td style="padding: 8px; border: 1px solid #f5c6cb;">can't</td>
+                                        <td style="padding: 8px; border: 1px solid #f5c6cb;">cook/eat/find</td>
+                                        <td style="padding: 8px; border: 1px solid #f5c6cb;">spicy food</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="examples">
+                            <p><strong>Misollar (Examples):</strong></p>
+                            <div style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px;">
+                                <div><strong>I can't eat spicy food.</strong></div>
+                                <div style="color: #d32f2f; font-style: italic;">[Ай кэнт ит спайси фуд]</div>
+                                <div style="color: #27ae60;">Men achchiq ovqat yey olmayman.</div>
+                                <div style="font-size: 0.9em; color: #666;">Cheklov: Ovqat tanlovi</div>
+                            </div>
+                            <div style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px;">
+                                <div><strong>You can't cook in your bedroom.</strong></div>
+                                <div style="color: #d32f2f; font-style: italic;">[Ю кэнт кук ин йор бэдрум]</div>
+                                <div style="color: #27ae60;">Yotoq xonangizda ovqat pishira olmaysiz.</div>
+                                <div style="font-size: 0.9em; color: #666;">Qoida: Turar joy qoidalari</div>
+                            </div>
+                            <div style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px;">
+                                <div><strong>We can't find halal meat in this shop.</strong></div>
+                                <div style="color: #d32f2f; font-style: italic;">[Ви кэнт файнд халал мит ин зис шоп]
+                                </div>
+                                <div style="color: #27ae60;">Bu do'konda halol go'sht topa olmaymiz.</div>
+                                <div style="font-size: 0.9em; color: #666;">Muammo: Maxsus talab</div>
+                            </div>
+                            <div style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px;">
+                                <div><strong>She can't drink coffee late at night.</strong></div>
+                                <div style="color: #d32f2f; font-style: italic;">[Ши кэнт дринк кофи лэйт эт найт]</div>
+                                <div style="color: #27ae60;">U kechqurun kofe icha olmaydi.</div>
+                                <div style="font-size: 0.9em; color: #666;">Sog'liq: Shaxsiy cheklov</div>
+                            </div>
+                            <div style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px;">
+                                <div><strong>They can't afford expensive restaurants.</strong></div>
+                                <div style="color: #d32f2f; font-style: italic;">[Зэй кэнт эфорд экспэнсив рэсторантс]
+                                </div>
+                                <div style="color: #27ae60;">Ular qimmat restoranlarga pul yetkazmaydi.</div>
+                                <div style="font-size: 0.9em; color: #666;">Moliya: Byudjet cheklovi</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question Form -->
+                    <div class="question-form"
+                        style="background: #e8f0ff; padding: 16px; margin: 16px 0; border-radius: 8px;">
+                        <h4>3. Would Like - Muloyim Xohish (Polite Requests and Desires)</h4>
+                        <div class="structure-table">
+                            <table style="width: 100%; border-collapse: collapse; margin: 12px 0;">
+                                <thead>
+                                    <tr style="background: #cce7ff;">
+                                        <th style="padding: 8px; border: 1px solid #b3d9ff;">Subject</th>
+                                        <th style="padding: 8px; border: 1px solid #b3d9ff;">would like</th>
+                                        <th style="padding: 8px; border: 1px solid #b3d9ff;">Object/to + verb</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 8px; border: 1px solid #b3d9ff;">I/You/He/She/We/They</td>
+                                        <td style="padding: 8px; border: 1px solid #b3d9ff;">would like ('d like)</td>
+                                        <td style="padding: 8px; border: 1px solid #b3d9ff;">some tea / to order</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="examples">
+                            <p><strong>Misollar (Examples):</strong></p>
+                            <div style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px;">
+                                <div><strong>A: What would you like to drink?</strong></div>
+                                <div style="color: #d32f2f; font-style: italic;">[Вот вуд ю лайк ту дринк?]</div>
+                                <div style="color: #27ae60;">Nima ichmoqchisiz?</div>
+                                <div><strong>B: I'd like some tea, please.</strong></div>
+                                <div style="color: #d32f2f; font-style: italic;">[Айд лайк сам ти, плиз]</div>
+                                <div style="color: #27ae60;">Choy istardim, iltimos.</div>
+                                <div style="font-size: 0.9em; color: #666;">Restoran: Ichimlik buyurtmasi</div>
+                            </div>
+                            <div style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px;">
+                                <div><strong>A: Would you like to try our special dish?</strong></div>
+                                <div style="color: #d32f2f; font-style: italic;">[Вуд ю лайк ту трай аур спешал диш?]
+                                </div>
+                                <div style="color: #27ae60;">Maxsus taomimizni tatib ko'rmoqchimisiz?</div>
+                                <div><strong>B: Yes, I'd like to try it.</strong></div>
+                                <div style="color: #d32f2f; font-style: italic;">[Йес, айд лайк ту трай ит]</div>
+                                <div style="color: #27ae60;">Ha, tatib ko'rmoqchiman.</div>
+                                <div style="font-size: 0.9em; color: #666;">Taklif: Yangi taom sinash</div>
+                            </div>
+                            <div style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px;">
+                                <div><strong>A: Can I help you with anything?</strong></div>
+                                <div style="color: #d32f2f; font-style: italic;">[Кэн ай хэлп ю виз энисинг?]</div>
+                                <div style="color: #27ae60;">Biror narsada yordam bera olamanmi?</div>
+                                <div><strong>B: I'd like to order a takeaway, please.</strong></div>
+                                <div style="color: #d32f2f; font-style: italic;">[Айд лайк ту ордэр э тэйкэвэй, плиз]
+                                </div>
+                                <div style="color: #27ae60;">Olib ketish uchun buyurtma bermoqchiman.</div>
+                                <div style="font-size: 0.9em; color: #666;">Xizmat: Olib ketish buyurtmasi</div>
+                            </div>
+                            <div style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px;">
+                                <div><strong>A: Would you like some more rice?</strong></div>
+                                <div style="color: #d32f2f; font-style: italic;">[Вуд ю лайк сам мор райс?]</div>
+                                <div style="color: #27ae60;">Yana guruch istaysizmi?</div>
+                                <div><strong>B: No, thank you. I'm full.</strong></div>
+                                <div style="color: #d32f2f; font-style: italic;">[Ноу, сэнк ю. Айм фул]</div>
+                                <div style="color: #27ae60;">Yo'q, rahmat. To'qdim.</div>
+                                <div style="font-size: 0.9em; color: #666;">Mehmondo'stlik: Qo'shimcha taklif</div>
+                            </div>
+                            <div style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px;">
+                                <div><strong>A: What would you like for dessert?</strong></div>
+                                <div style="color: #d32f2f; font-style: italic;">[Вот вуд ю лайк фор дэзэрт?]</div>
+                                <div style="color: #27ae60;">Shirinlik sifatida nima istaysiz?</div>
+                                <div><strong>B: I'd like some ice cream, please.</strong></div>
+                                <div style="color: #d32f2f; font-style: italic;">[Айд лайк сам айс крим, плиз]</div>
+                                <div style="color: #27ae60;">Muzqaymoq istardim, iltimos.</div>
+                                <div style="font-size: 0.9em; color: #666;">Shirinlik: Dessert tanlovi</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Practical Application -->
+                <div class="practical-application"
+                    style="background: #fff9e8; padding: 16px; margin: 16px 0; border-radius: 8px;">
+                    <h3>Amaliy qo'llash (Practical Application)</h3>
+                    <div class="scenarios">
+                        <h4>Mavsumiy ishchilar uchun muhim vaziyatlar:</h4>
+                        <ul style="margin: 12px 0; padding-left: 20px;">
+                            <li><strong>Restoranda:</strong> "I'd like to order fish and chips, please" - ovqat buyurtma
+                                berish</li>
+                            <li><strong>Oshxonada:</strong> "Can I use the microwave?" - ruxsat so'rash</li>
+                            <li><strong>Do'konda:</strong> "I can't find halal meat" - muammo bildirish</li>
+                            <li><strong>Mehmondo'stlik:</strong> "Would you like some tea?" - taklif qilish</li>
+                            <li><strong>Cheklovlar:</strong> "I can't eat pork for religious reasons" - diniy talablar
+                            </li>
+                            <li><strong>Yordam:</strong> "Can you help me cook this dish?" - yordam so'rash</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Common Mistakes -->
+                <div class="common-mistakes"
+                    style="background: #f0e8ff; padding: 16px; margin: 16px 0; border-radius: 8px;">
+                    <h3>Tez-tez qilinadigan xatolar (Common Mistakes)</h3>
+                    <div class="mistakes-list">
+                        <div
+                            style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px; border-left: 4px solid #dc3545;">
+                            <div><strong>❌ Xato:</strong> I can to cook</div>
+                            <div><strong>✅ To'g'ri:</strong> I can cook</div>
+                            <div style="color: #666; font-size: 0.9em;">Can dan keyin "to" ishlatilmaydi</div>
+                        </div>
+                        <div
+                            style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px; border-left: 4px solid #dc3545;">
+                            <div><strong>❌ Xato:</strong> I would like some tea, please?</div>
+                            <div><strong>✅ To'g'ri:</strong> I would like some tea, please.</div>
+                            <div style="color: #666; font-size: 0.9em;">"Would like" gap oxirida so'roq belgisi yo'q
+                            </div>
+                        </div>
+                        <div
+                            style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px; border-left: 4px solid #dc3545;">
+                            <div><strong>❌ Xato:</strong> Can you like some coffee?</div>
+                            <div><strong>✅ To'g'ri:</strong> Would you like some coffee?</div>
+                            <div style="color: #666; font-size: 0.9em;">Taklif uchun "Would you like" ishlatiladi</div>
+                        </div>
+                        <div
+                            style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px; border-left: 4px solid #dc3545;">
+                            <div><strong>❌ Xato:</strong> I can't to eat spicy food</div>
+                            <div><strong>✅ To'g'ri:</strong> I can't eat spicy food</div>
+                            <div style="color: #666; font-size: 0.9em;">Can't dan keyin ham "to" ishlatilmaydi</div>
+                        </div>
+                        <div
+                            style="margin: 8px 0; padding: 8px; background: white; border-radius: 4px; border-left: 4px solid #dc3545;">
+                            <div><strong>❌ Xato:</strong> I like would some tea</div>
+                            <div><strong>✅ To'g'ri:</strong> I would like some tea</div>
+                            <div style="color: #666; font-size: 0.9em;">To'g'ri tartib: "would like"</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Examples Section -->
+        <section class="section examples-section">
+            <h2 class="section-title">Examples / Misollar</h2>
+            <div class="example">
+                <div class="example-english">I usually have cereal and milk for breakfast.</div>
+                <div class="example-uzbek">Men odatda nonushtaga don va sut ichaman.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">Can I have a chicken sandwich, please?</div>
+                <div class="example-uzbek">Tovuqli sendvich olsam bo'ladimi, iltimos?</div>
+            </div>
+            <div class="example">
+                <div class="example-english">Do you have any vegetarian options?</div>
+                <div class="example-uzbek">Vegetarian variantlaringiz bormi?</div>
+            </div>
+            <div class="example">
+                <div class="example-english">I need to buy some vegetables from the shop.</div>
+                <div class="example-uzbek">Do'kondan sabzavot sotib olishim kerak.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">How do you cook rice in the UK?</div>
+                <div class="example-uzbek">Buyuk Britaniyada guruchni qanday pishirasiz?</div>
+            </div>
+            <div class="example">
+                <div class="example-english">The fish and chips here are very popular.</div>
+                <div class="example-uzbek">Bu yerdagi baliq va kartoshka juda mashhur.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">Would you like some more tea?</div>
+                <div class="example-uzbek">Yana choy istaysizmi?</div>
+            </div>
+            <div class="example">
+                <div class="example-english">I'm allergic to nuts, so I can't eat this.</div>
+                <div class="example-uzbek">Men yong'oqqa allergiyam bor, shuning uchun buni yeya olmayman.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">The restaurant serves traditional British food.</div>
+                <div class="example-uzbek">Restoran an'anaviy Britaniya taomlarini taqdim etadi.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">Fresh fruit and vegetables are important for health.</div>
+                <div class="example-uzbek">Yangi meva va sabzavotlar salomatlik uchun muhim.</div>
+            </div>
+        </section>
+
+        <!-- Dialogues Section -->
+        <section class="section dialogues-section">
+            <h2 class="section-title">Dialogues / Suhbatlar</h2>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Waiter:</div>
+                <div class="dialog-text">Good evening! Are you ready to order?</div>
+                <div class="dialog-translation">Xayrli kech! Buyurtma berishga tayyormisiz?</div>
+                <div class="dialog-speaker">Customer:</div>
+                <div class="dialog-text">Yes, I'd like the fish and chips, please.</div>
+                <div class="dialog-translation">Ha, baliq va kartoshka istardim, iltimos.</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Shop Assistant:</div>
+                <div class="dialog-text">Can I help you find anything?</div>
+                <div class="dialog-translation">Biror narsa topishga yordam bera olamanmi?</div>
+                <div class="dialog-speaker">Customer:</div>
+                <div class="dialog-text">Where can I find fresh vegetables?</div>
+                <div class="dialog-translation">Yangi sabzavotlarni qayerdan topishim mumkin?</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Colleague:</div>
+                <div class="dialog-text">What do you usually have for lunch?</div>
+                <div class="dialog-translation">Tushlikda odatda nima yeyasiz?</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">Usually a sandwich and some fruit.</div>
+                <div class="dialog-translation">Odatda sendvich va meva.</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Café Worker:</div>
+                <div class="dialog-text">What would you like to drink?</div>
+                <div class="dialog-translation">Nima ichmoqchisiz?</div>
+                <div class="dialog-speaker">Customer:</div>
+                <div class="dialog-text">A cup of tea with milk, please.</div>
+                <div class="dialog-translation">Sutli choy, iltimos.</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Housemate:</div>
+                <div class="dialog-text">Are you cooking dinner tonight?</div>
+                <div class="dialog-translation">Bugun kechqurun ovqat pishirasizmi?</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">Yes, I'm making pasta with vegetables.</div>
+                <div class="dialog-translation">Ha, sabzavotli makaron tayyorlayman.</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Waiter:</div>
+                <div class="dialog-text">Do you have any allergies I should know about?</div>
+                <div class="dialog-translation">Bilishim kerak bo'lgan allergiyalaringiz bormi?</div>
+                <div class="dialog-speaker">Customer:</div>
+                <div class="dialog-text">I'm allergic to shellfish, but everything else is fine.</div>
+                <div class="dialog-translation">Dengiz mahsulotlariga allergiyam bor, lekin boshqa hamma narsa yaxshi.
+                </div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Supermarket Worker:</div>
+                <div class="dialog-text">These apples are on special offer today.</div>
+                <div class="dialog-translation">Bu olmalar bugun maxsus taklifda.</div>
+                <div class="dialog-speaker">Customer:</div>
+                <div class="dialog-text">Great! I'll take two kilos, please.</div>
+                <div class="dialog-translation">Ajoyib! Ikki kilo olaman, iltimos.</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Friend:</div>
+                <div class="dialog-text">Have you tried traditional British breakfast?</div>
+                <div class="dialog-translation">An'anaviy Britaniya nonushtasini tatib ko'rganmisiz?</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">No, what does it include?</div>
+                <div class="dialog-translation">Yo'q, u nimalarni o'z ichiga oladi?</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Takeaway Worker:</div>
+                <div class="dialog-text">Would you like that for here or to take away?</div>
+                <div class="dialog-translation">Buni bu yerda yeyasizmi yoki olib ketasizmi?</div>
+                <div class="dialog-speaker">Customer:</div>
+                <div class="dialog-text">To take away, please. I'm going back to work.</div>
+                <div class="dialog-translation">Olib ketaman, iltimos. Ishga qaytaman.</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Accommodation Manager:</div>
+                <div class="dialog-text">There's a shared kitchen where you can cook your meals.</div>
+                <div class="dialog-translation">Ovqat pishirishingiz mumkin bo'lgan umumiy oshxona bor.</div>
+                <div class="dialog-speaker">New Worker:</div>
+                <div class="dialog-text">That's perfect. I prefer cooking my own food.</div>
+                <div class="dialog-translation">Bu ajoyib. Men o'z ovqatimni pishirishni afzal ko'raman.</div>
+            </div>
+        </section>
+
+        <!-- Exercises Section -->
+        <section class="section exercises-section">
+            <h2 class="section-title">Exercises / Mashqlar</h2>
+
+            <!-- Exercise 1: Ability and Permission Requests -->
+            <div class="exercise" data-exercise-id="11-1" data-answer="can">
+                <div class="exercise-question">1. Qobiliyat va ruxsat so'rash (Ability and permission requests)
+                    <br><strong>Namuna:</strong> _____ I have a sandwich, please? (Can/Could) → Can
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="can" placeholder="Type your answer here...">
+                    <button class="check-answer-btn" onclick="checkAnswer(this)">Check</button>
+                </div>
+                <div class="exercise-question">_____ I cook in the shared kitchen? (Can/Could)</div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <!-- Exercise 2: Food Ordering and Preference Expression -->
+            <div class="exercise" data-exercise-id="11-2" data-answer="would like">
+                <div class="exercise-question">2. Ovqat buyurtma berish va afzallik bildirish (Food ordering and
+                    preference expression)
+                    <br><strong>Namuna:</strong> I would like some tea → I'd like some tea
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="would like"
+                        placeholder="Type your answer here...">
+                    <button class="check-answer-btn" onclick="checkAnswer(this)">Check</button>
+                </div>
+                <div class="exercise-question">I _____ a cup of coffee, please. (would like/can)</div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <!-- Exercise 3: Polite Request Formation -->
+            <div class="exercise" data-exercise-id="11-3" data-answer="Could">
+                <div class="exercise-question">3. Iltimosli so'rov tuzish (Polite request formation)
+                    <br><strong>Namuna:</strong> Can you help me? (less polite) → Could you help me? (more polite)
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="Could"
+                        placeholder="Type your answer here...">
+                    <button class="check-answer-btn" onclick="checkAnswer(this)">Check</button>
+                </div>
+                <div class="exercise-question">_____ you recommend a good dish? (Could/Can - more polite)</div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <!-- Exercise 4: Restaurant and Cooking Scenarios -->
+            <div class="exercise" data-exercise-id="11-4" data-answer="can't">
+                <div class="exercise-question">4. Restoran va oshpazlik stsenariylari (Restaurant and cooking scenarios)
+                    <br><strong>Namuna:</strong> In a restaurant: May I see the menu?
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="can't"
+                        placeholder="Type your answer here...">
+                    <button class="check-answer-btn" onclick="checkAnswer(this)">Check</button>
+                </div>
+                <div class="exercise-question">I _____ eat spicy food. (can/can't - unable to)</div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <!-- Exercise 5: Expressing Needs and Wants Translation -->
+            <div class="exercise" data-exercise-id="11-5" data-answer="Could I have some water, please?">
+                <div class="exercise-question">5. O'zbek tilidan inglizchaga tarjima qiling (Translate expressing needs
+                    and wants)
+                    <br><strong>Namuna:</strong> Men choy ichmoqchiman → I would like some tea
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="Could I have some water, please?"
+                        placeholder="Type your answer here...">
+                    <button class="check-answer-btn" onclick="checkAnswer(this)">Check</button>
+                </div>
+                <div class="exercise-question">Ozgina suv olsam bo'ladimi, iltimos? → _____</div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <!-- Exercise 6: Modal Verb Selection -->
+            <div class="exercise" data-exercise-id="11-6" data-answer="would like">
+                <div class="exercise-question">6. To'g'ri modal fe'lni tanlang (Choose correct modal verb)
+                    <br><strong>Namuna:</strong> I (can/would like) cook pasta → can
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="would like"
+                        placeholder="Type your answer here...">
+                    <button class="check-answer-btn" onclick="checkAnswer(this)">Check</button>
+                </div>
+                <div class="exercise-question">_____ you like some dessert? (Can/Would)</div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <!-- Exercise 7: Cooking Permission and Ability -->
+            <div class="exercise" data-exercise-id="11-7" data-answer="can">
+                <div class="exercise-question">7. Oshpazlik ruxsati va qobiliyati (Cooking permission and ability)
+                    <br><strong>Namuna:</strong> Can I use the microwave? → Yes, you can
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="can" placeholder="Type your answer here...">
+                    <button class="check-answer-btn" onclick="checkAnswer(this)">Check</button>
+                </div>
+                <div class="exercise-question">I _____ make traditional Uzbek food. (can/would like - ability)</div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <!-- Exercise 8: Negative Modal Verbs -->
+            <div class="exercise" data-exercise-id="11-8" data-answer="wouldn't like">
+                <div class="exercise-question">8. Inkor modal fe'llar (Negative modal verbs)
+                    <br><strong>Namuna:</strong> I can eat meat → I can't eat meat (vegetarian)
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="wouldn't like"
+                        placeholder="Type your answer here...">
+                    <button class="check-answer-btn" onclick="checkAnswer(this)">Check</button>
+                </div>
+                <div class="exercise-question">I _____ any more food, thank you. (wouldn't like/can't)</div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <!-- Exercise 9: Practical Food Communication -->
+            <div class="exercise" data-exercise-id="11-9" data-answer="Could you tell me what's in this dish?">
+                <div class="exercise-question">9. Amaliy ovqat muloqoti (Practical food communication)
+                    <br><strong>Namuna:</strong> Waiter: What would you like to drink?
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="Could you tell me what's in this dish?"
+                        placeholder="Type your answer here...">
+                    <button class="check-answer-btn" onclick="checkAnswer(this)">Check</button>
+                </div>
+                <div class="exercise-question">Bu taomda nima borligini aytib bera olasizmi? → _____</div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <!-- Exercise 10: Complete Modal Verb Scenario -->
+            <div class="exercise" data-exercise-id="11-10"
+                data-answer="I would like some tea, and could I have some biscuits too?">
+                <div class="exercise-question">10. O'zingizning misolingizni yozing (Write your own example)
+                    <br><strong>Namuna:</strong> I would like to order fish and chips, but I can't eat fried food
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input"
+                        data-correct="I would like some tea, and could I have some biscuits too?"
+                        placeholder="Write a food request using modal verbs...">
+                    <button class="check-answer-btn" onclick="checkAnswer(this)">Check</button>
+                </div>
+                <div class="exercise-question">Modal fe'llar bilan ovqat so'rovi yozing (Write a food request using
+                    modal verbs)</div>
+                <div class="exercise-feedback"></div>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <footer class="chapter-navigation" role="navigation" aria-label="Chapter navigation">
+            <a href="Chapter_10_Clothing_Weather.html" class="nav-btn prev" aria-label="Go to previous chapter">
+                <span class="nav-btn-icon">←</span>
+                <div class="nav-btn-text">
+                    <span class="nav-btn-label">Previous</span>
+                    <span class="nav-btn-title">Chapter 10</span>
+                </div>
+            </a>
+
+            <a href="index.html" class="nav-btn home-btn" aria-label="Go to home page">
+                <span class="nav-btn-icon">🏠</span>
+                <span>Home</span>
+            </a>
+
+            <a href="Chapter_12_Health_Medical.html" class="nav-btn next" aria-label="Go to next chapter">
+                <div class="nav-btn-text">
+                    <span class="nav-btn-label">Next</span>
+                    <span class="nav-btn-title">Chapter 12</span>
+                </div>
+                <span class="nav-btn-icon">→</span>
+            </a>
+        </footer>
+
+        <!-- Quick Navigation (Floating Action Buttons) -->
+        <div class="quick-nav" role="navigation" aria-label="Quick navigation">
+            <button class="quick-nav-btn" onclick="scrollToTop()" aria-label="Scroll to top" title="Scroll to top">
+                ↑
+            </button>
+            <button class="quick-nav-btn" onclick="window.location.href='index.html'" aria-label="Go to home"
+                title="Go to home">
+                🏠
+            </button>
+        </div>
+    </div>
+
+    <script src="interactive-exercises.js"></script>
+    <script src="progress-tracker.js"></script>
+    <script>
+        // Initialize progress tracking for this chapter
+        document.addEventListener('DOMContentLoaded', function () {
+            ProgressTracker.initializeChapterPage(11);
+        });
+
+        // Smooth scroll to top function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>

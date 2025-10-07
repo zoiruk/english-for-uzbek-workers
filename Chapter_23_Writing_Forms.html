@@ -1,0 +1,1313 @@
+﻿<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chapter 23: Writing and Filling Out Forms - English for Uzbek Seasonal Workers">
+    <title>Chapter 23: Writing and Filling Out Forms - Ingliz Tili Darsligi</title>
+    <style>
+        /* Material Design 3 Base Styles */
+        :root {
+            --md-sys-color-primary: #f39c12; /* Chapter 23 Orange (Cycle) */
+            --md-sys-color-on-primary: #ffffff;
+            --md-sys-color-primary-container: #fff3e0;
+            --md-sys-color-on-primary-container: #e65100;
+            --md-sys-color-secondary: #565f71;
+            --md-sys-color-on-secondary: #ffffff;
+            --md-sys-color-surface: #fefbff;
+            --md-sys-color-on-surface: #1a1c1e;
+            --md-sys-color-surface-variant: #e1e2ec;
+            --md-sys-color-on-surface-variant: #44474f;
+            --md-sys-color-outline: #74777f;
+            --md-sys-color-success: #2e7d32;
+            --md-sys-color-error: #d32f2f;
+            --md-sys-elevation-level1: 0px 1px 3px rgba(0,0,0,0.12), 0px 1px 2px rgba(0,0,0,0.24);
+            --md-sys-elevation-level2: 0px 3px 6px rgba(0,0,0,0.16), 0px 3px 6px rgba(0,0,0,0.23);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--md-sys-color-on-surface);
+            background-color: var(--md-sys-color-surface);
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--md-sys-color-primary);
+            color: var(--md-sys-color-on-primary);
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 4px;
+            z-index: 1000;
+        }
+
+        .skip-link:focus {
+            top: 6px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        .chapter-header {
+            text-align: center;
+            margin-bottom: 32px;
+            padding: 24px 0;
+            border-bottom: 2px solid var(--md-sys-color-primary);
+        }
+
+        .chapter-header h1 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: var(--md-sys-color-primary);
+            margin-bottom: 8px;
+        }
+
+        .chapter-subtitle {
+            font-size: 1.25rem;
+            color: var(--md-sys-color-on-surface-variant);
+            margin-bottom: 16px;
+        }
+
+        .chapter-progress {
+            background: var(--md-sys-color-primary-container);
+            color: var(--md-sys-color-on-primary-container);
+            padding: 8px 16px;
+            border-radius: 16px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .section {
+            margin-bottom: 48px;
+            background: var(--md-sys-color-surface);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: var(--md-sys-elevation-level1);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--md-sys-color-primary);
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--md-sys-color-outline);
+        }
+
+        .vocab-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+        }
+
+        .vocab-table th,
+        .vocab-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--md-sys-color-outline);
+        }
+
+        .vocab-table th {
+            background: var(--md-sys-color-primary-container);
+            color: var(--md-sys-color-on-primary-container);
+            font-weight: 500;
+        }
+
+        .vocab-table .transcription {
+            color: #d32f2f;
+            font-weight: 500;
+        }
+
+        .vocab-table .uzbek {
+            color: var(--md-sys-color-on-surface-variant);
+        }
+
+        .grammar-box {
+            background: var(--md-sys-color-primary-container);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 16px 0;
+        }
+
+        .grammar-box h3 {
+            color: var(--md-sys-color-on-primary-container);
+            margin-bottom: 12px;
+        }
+
+        .grammar-box p {
+            color: var(--md-sys-color-on-primary-container);
+            margin-bottom: 8px;
+        }
+
+        .forms-box {
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+            color: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 16px 0;
+        }
+
+        .forms-box h3 {
+            margin-bottom: 12px;
+        }
+
+        .forms-box p {
+            margin-bottom: 8px;
+        }
+
+        .example {
+            background: #fff3e0;
+            border-left: 4px solid #f39c12;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .example-english {
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .example-uzbek {
+            font-style: italic;
+            color: var(--md-sys-color-on-surface-variant);
+        }
+
+        .dialog {
+            background: #e8f5e8;
+            border-left: 4px solid var(--md-sys-color-success);
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .dialog-speaker {
+            font-weight: 600;
+            color: var(--md-sys-color-success);
+            margin-bottom: 4px;
+        }
+
+        .dialog-text {
+            margin-bottom: 8px;
+        }
+
+        .dialog-translation {
+            font-style: italic;
+            color: var(--md-sys-color-on-surface-variant);
+            font-size: 0.9rem;
+        }
+
+        .exercise {
+            background: #fff8e1;
+            border-left: 4px solid #f39c12;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 16px 0;
+            position: relative;
+        }
+
+        .exercise-question {
+            font-weight: 500;
+            margin-bottom: 12px;
+            color: var(--md-sys-color-on-surface);
+        }
+
+        .exercise-input-group {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .exercise-input {
+            flex: 1;
+            padding: 12px;
+            border: 2px solid var(--md-sys-color-outline);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.2s ease;
+        }
+
+        .exercise-input:focus {
+            outline: none;
+            border-color: var(--md-sys-color-primary);
+        }
+
+        .exercise-input.completed {
+            background: #e8f5e8;
+            border-color: var(--md-sys-color-success);
+        }
+
+        .check-answer-btn {
+            background: var(--md-sys-color-primary);
+            color: var(--md-sys-color-on-primary);
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            min-height: 44px;
+        }
+
+        .check-answer-btn:hover {
+            background: #e67e22;
+            transform: translateY(-1px);
+        }
+
+        .exercise-feedback {
+            margin-top: 12px;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+
+        .exercise-feedback.correct {
+            background: #e8f5e8;
+            color: var(--md-sys-color-success);
+            border: 1px solid var(--md-sys-color-success);
+        }
+
+        .exercise-feedback.incorrect {
+            background: #ffebee;
+            color: var(--md-sys-color-error);
+            border: 1px solid var(--md-sys-color-error);
+        }
+
+        .breadcrumb-nav {
+            background: var(--md-sys-color-surface-variant);
+            padding: 12px 0;
+            margin-bottom: 24px;
+            border-radius: 8px;
+        }
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.875rem;
+            color: var(--md-sys-color-on-surface-variant);
+        }
+
+        .breadcrumb a {
+            color: var(--md-sys-color-primary);
+            text-decoration: none;
+            padding: 4px 8px;
+            border-radius: 4px;
+            transition: background-color 0.2s ease;
+        }
+
+        .breadcrumb a:hover {
+            background: var(--md-sys-color-primary-container);
+        }
+
+        .breadcrumb-separator {
+            color: var(--md-sys-color-outline);
+        }
+
+        .breadcrumb-current {
+            font-weight: 500;
+            color: var(--md-sys-color-on-surface);
+        }
+
+        .chapter-navigation {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 16px;
+            align-items: center;
+            margin-top: 48px;
+            padding: 24px 0;
+            border-top: 1px solid var(--md-sys-color-outline);
+        }
+
+        .nav-btn {
+            background: var(--md-sys-color-primary);
+            color: var(--md-sys-color-on-primary);
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 20px;
+            font-weight: 500;
+            transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: var(--md-sys-elevation-level1);
+        }
+
+        .nav-btn:hover {
+            background: #e67e22;
+            transform: translateY(-2px);
+            box-shadow: var(--md-sys-elevation-level2);
+        }
+
+        .nav-btn.prev {
+            justify-self: start;
+        }
+
+        .nav-btn.next {
+            justify-self: end;
+        }
+
+        .home-btn {
+            background: var(--md-sys-color-secondary);
+            color: var(--md-sys-color-on-secondary);
+            justify-self: center;
+        }
+
+        .nav-btn-icon {
+            font-size: 1.2rem;
+        }
+
+        .nav-btn-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .nav-btn-label {
+            font-size: 0.75rem;
+            opacity: 0.8;
+        }
+
+        .nav-btn-title {
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .quick-nav {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            z-index: 100;
+        }
+
+        .quick-nav-btn {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: var(--md-sys-color-primary);
+            color: var(--md-sys-color-on-primary);
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: var(--md-sys-elevation-level2);
+            transition: all 0.3s ease;
+        }
+
+        .quick-nav-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 6px 12px rgba(0,0,0,0.2);
+        }
+
+        /* Grammar Enhancement Styles */
+        .grammar-intro {
+            background: #f8f9fa;
+            border-left: 4px solid var(--md-sys-color-primary);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 16px 0;
+        }
+
+        .concept-explanation {
+            background: #fff8e1;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 16px 0;
+        }
+
+        .three-forms {
+            margin: 24px 0;
+        }
+
+        .positive-form, .negative-form, .question-form {
+            margin: 20px 0;
+        }
+
+        .grammar-structure-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .grammar-structure-table th,
+        .grammar-structure-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .grammar-structure-table th {
+            background: var(--md-sys-color-primary-container);
+            color: var(--md-sys-color-on-primary-container);
+            font-weight: 500;
+        }
+
+        .examples {
+            margin: 16px 0;
+        }
+
+        .example .transcription {
+            color: #d32f2f;
+            font-weight: 500;
+            font-style: italic;
+            margin: 4px 0;
+        }
+
+        .example .context {
+            color: #666;
+            font-size: 0.9rem;
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        .practical-application {
+            margin: 24px 0;
+        }
+
+        .scenarios {
+            display: grid;
+            gap: 16px;
+            margin: 16px 0;
+        }
+
+        .common-mistakes {
+            margin: 24px 0;
+        }
+
+        .mistakes-list {
+            margin: 16px 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 12px;
+            }
+
+            .chapter-header h1 {
+                font-size: 2rem;
+            }
+
+            .section {
+                padding: 16px;
+                margin-bottom: 24px;
+            }
+
+            /* Enhanced vocabulary table mobile layout */
+            .vocab-table {
+                font-size: 0.875rem;
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .vocab-table thead,
+            .vocab-table tbody,
+            .vocab-table th,
+            .vocab-table td,
+            .vocab-table tr {
+                display: block;
+            }
+
+            .vocab-table thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            .vocab-table tr {
+                border: 1px solid var(--md-sys-color-outline);
+                border-radius: 8px;
+                margin-bottom: 12px;
+                padding: 12px;
+                background: var(--md-sys-color-surface);
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            }
+
+            .vocab-table td {
+                border: none;
+                position: relative;
+                padding: 8px 8px 8px 50% !important;
+                white-space: normal;
+                text-align: left;
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+            }
+
+            .vocab-table td:before {
+                content: attr(data-label) ": ";
+                position: absolute;
+                left: 8px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                font-weight: 500;
+                color: var(--md-sys-color-on-surface-variant);
+                display: flex;
+                align-items: center;
+                min-height: 44px;
+            }
+
+            .exercise-input-group {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .check-answer-btn {
+                width: 100%;
+            }
+
+            .chapter-navigation {
+                grid-template-columns: 1fr;
+                gap: 12px;
+                text-align: center;
+            }
+
+            .nav-btn {
+                width: 100%;
+                justify-content: center;
+                justify-self: center;
+            }
+
+            .nav-btn.prev,
+            .nav-btn.next {
+                justify-self: center;
+            }
+
+            .quick-nav {
+                bottom: 16px;
+                right: 16px;
+            }
+
+            .quick-nav-btn {
+                width: 48px;
+                height: 48px;
+                font-size: 1.25rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .exercise-input,
+            .check-answer-btn,
+            .nav-btn,
+            .quick-nav-btn {
+                min-height: 44px;
+            }
+        }
+    
+        /* Small mobile devices */
+        @media (max-width: 480px) {
+            .container {
+                padding: 8px;
+            }
+        }
+</style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <div class="container" id="main-content" data-chapter-id="23">
+        <!-- Breadcrumb Navigation -->
+        <nav class="breadcrumb-nav" aria-label="Breadcrumb navigation">
+            <div class="breadcrumb">
+                <a href="index.html" aria-label="Go to home page">🏠 Home</a>
+                <span class="breadcrumb-separator" aria-hidden="true">›</span>
+                <span class="breadcrumb-current" aria-current="page">Chapter 23: Writing and Filling Out Forms</span>
+            </div>
+        </nav>
+
+        <header class="chapter-header">
+            <h1>Chapter 23: Writing and Filling Out Forms</h1>
+            <p class="chapter-subtitle">Yozish va shakllarni to'ldirish</p>
+            <div class="chapter-progress">Progress: 0% (0/10)</div>
+        </header>
+
+        <!-- Vocabulary Section -->
+        <section class="section vocabulary-section">
+            <h2 class="section-title">Vocabulary / Lug'at</h2>
+            <table class="vocab-table">
+                <thead>
+                    <tr>
+                        <th>English</th>
+                        <th>Transcription</th>
+                        <th>O'zbek</th>
+                        <th>Context</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td data-label="English">Form</td><td data-label="Transcription" class="transcription">форм</td><td data-label="O'zbek" class="uzbek">Shakl</td><td data-label="Context">Document to fill</td></tr>
+                    <tr><td data-label="English">Application</td><td data-label="Transcription" class="transcription">эпликэйшн</td><td data-label="O'zbek" class="uzbek">Ariza</td><td data-label="Context">Request document</td></tr>
+                    <tr><td data-label="English">Fill in</td><td data-label="Transcription" class="transcription">фил ин</td><td data-label="O'zbek" class="uzbek">To'ldirish</td><td data-label="Context">Complete form</td></tr>
+                    <tr><td data-label="English">Sign</td><td data-label="Transcription" class="transcription">сайн</td><td data-label="O'zbek" class="uzbek">Imzolash</td><td data-label="Context">Write signature</td></tr>
+                    <tr><td data-label="English">Signature</td><td data-label="Transcription" class="transcription">сигнэчэр</td><td data-label="O'zbek" class="uzbek">Imzo</td><td data-label="Context">Personal mark</td></tr>
+                    <tr><td data-label="English">Date</td><td data-label="Transcription" class="transcription">дэйт</td><td data-label="O'zbek" class="uzbek">Sana</td><td data-label="Context">Day/month/year</td></tr>
+                    <tr><td data-label="English">Address</td><td data-label="Transcription" class="transcription">эдрэс</td><td data-label="O'zbek" class="uzbek">Manzil</td><td data-label="Context">Where you live</td></tr>
+                    <tr><td data-label="English">Postcode</td><td data-label="Transcription" class="transcription">поусткоуд</td><td data-label="O'zbek" class="uzbek">Pochta indeksi</td><td data-label="Context">Area code</td></tr>
+                    <tr><td data-label="English">Email</td><td data-label="Transcription" class="transcription">имэйл</td><td data-label="O'zbek" class="uzbek">Elektron pochta</td><td data-label="Context">Electronic mail</td></tr>
+                    <tr><td data-label="English">Phone number</td><td data-label="Transcription" class="transcription">фоун намбэр</td><td data-label="O'zbek" class="uzbek">Telefon raqami</td><td data-label="Context">Contact number</td></tr>
+                    <tr><td data-label="English">Name</td><td data-label="Transcription" class="transcription">нэйм</td><td data-label="O'zbek" class="uzbek">Ism</td><td data-label="Context">Personal identifier</td></tr>
+                    <tr><td data-label="English">Surname</td><td data-label="Transcription" class="transcription">сёнэйм</td><td data-label="O'zbek" class="uzbek">Familiya</td><td data-label="Context">Family name</td></tr>
+                    <tr><td data-label="English">First name</td><td data-label="Transcription" class="transcription">фёст нэйм</td><td data-label="O'zbek" class="uzbek">Ism</td><td data-label="Context">Given name</td></tr>
+                    <tr><td data-label="English">Last name</td><td data-label="Transcription" class="transcription">ласт нэйм</td><td data-label="O'zbek" class="uzbek">Familiya</td><td data-label="Context">Family name</td></tr>
+                    <tr><td data-label="English">Title</td><td data-label="Transcription" class="transcription">тайтл</td><td data-label="O'zbek" class="uzbek">Unvon</td><td data-label="Context">Mr/Mrs/Ms</td></tr>
+                    <tr><td data-label="English">Gender</td><td data-label="Transcription" class="transcription">джэндэр</td><td data-label="O'zbek" class="uzbek">Jins</td><td data-label="Context">Male/Female</td></tr>
+                    <tr><td data-label="English">Age</td><td data-label="Transcription" class="transcription">эйдж</td><td data-label="O'zbek" class="uzbek">Yosh</td><td data-label="Context">How old</td></tr>
+                    <tr><td data-label="English">Nationality</td><td data-label="Transcription" class="transcription">нэшэнэлити</td><td data-label="O'zbek" class="uzbek">Milliyat</td><td data-label="Context">Country origin</td></tr>
+                    <tr><td data-label="English">Occupation</td><td data-label="Transcription" class="transcription">окьюпэйшн</td><td data-label="O'zbek" class="uzbek">Kasb</td><td data-label="Context">Job type</td></tr>
+                    <tr><td data-label="English">Employer</td><td data-label="Transcription" class="transcription">имплойэр</td><td data-label="O'zbek" class="uzbek">Ish beruvchi</td><td data-label="Context">Company name</td></tr>
+                    <tr><td data-label="English">Document</td><td data-label="Transcription" class="transcription">докьюмэнт</td><td data-label="O'zbek" class="uzbek">Hujjat</td><td data-label="Context">Official paper</td></tr>
+                    <tr><td data-label="English">Passport</td><td data-label="Transcription" class="transcription">паспорт</td><td data-label="O'zbek" class="uzbek">Pasport</td><td data-label="Context">Travel document</td></tr>
+                    <tr><td data-label="English">ID card</td><td data-label="Transcription" class="transcription">ай ди кард</td><td data-label="O'zbek" class="uzbek">Shaxsni tasdiqlovchi</td><td data-label="Context">Identity card</td></tr>
+                    <tr><td data-label="English">Bank account</td><td data-label="Transcription" class="transcription">бэнк экаунт</td><td data-label="O'zbek" class="uzbek">Bank hisobi</td><td data-label="Context">Money account</td></tr>
+                    <tr><td data-label="English">Reference</td><td data-label="Transcription" class="transcription">рэфэрэнс</td><td data-label="O'zbek" class="uzbek">Tavsiya</td><td data-label="Context">Recommendation</td></tr>
+                    <tr><td data-label="English">Emergency contact</td><td data-label="Transcription" class="transcription">имёджэнси контэкт</td><td data-label="O'zbek" class="uzbek">Favqulodda aloqa</td><td data-label="Context">Crisis person</td></tr>
+                    <tr><td data-label="English">Medical information</td><td data-label="Transcription" class="transcription">мэдикэл инфомэйшн</td><td data-label="O'zbek" class="uzbek">Tibbiy ma'lumot</td><td data-label="Context">Health details</td></tr>
+                    <tr><td data-label="English">Allergies</td><td data-label="Transcription" class="transcription">элэджиз</td><td data-label="O'zbek" class="uzbek">Allergiya</td><td data-label="Context">Bad reactions</td></tr>
+                    <tr><td data-label="English">Submit</td><td data-label="Transcription" class="transcription">сабмит</td><td data-label="O'zbek" class="uzbek">Topshirish</td><td data-label="Context">Send form</td></tr>
+                    <tr><td data-label="English">Required</td><td data-label="Transcription" class="transcription">риквайэрд</td><td data-label="O'zbek" class="uzbek">Majburiy</td><td data-label="Context">Must fill</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Grammar Section -->
+        <section class="section grammar-section">
+            <h2 class="section-title">Grammar / Grammatika</h2>
+            
+            <!-- Introduction and Purpose -->
+            <div class="grammar-intro">
+                <h3>Bu grammatika nima uchun kerak? (Why do we need this grammar?)</h3>
+                <p>Passive Voice (majhul nisbat) rasmiy hujjatlar va shakllar to'ldirishda juda ko'p ishlatiladi. Bu grammatika sizga rasmiy til va hujjatlardagi ko'rsatmalarni tushunish uchun kerak. Masalan, "Shakl to'ldirilishi kerak", "Ma'lumotlar taqdim etiladi" kabi iboralar doimo passive voice da yoziladi. Britaniyada har qanday rasmiy ish bilan shug'ullanganda bu grammatikani bilish shart.</p>
+            </div>
+
+            <!-- Basic Concept Explanation -->
+            <div class="concept-explanation">
+                <h3>Asosiy tushuncha (Basic Concept)</h3>
+                <p><strong>Active Voice (faol nisbat):</strong> Ish qiluvchi muhim. Masalan: "I fill the form" - Men shaklni to'ldiraman.</p>
+                <p><strong>Passive Voice (majhul nisbat):</strong> Ish muhim, qiluvchi muhim emas. Masalan: "The form is filled" - Shakl to'ldiriladi.</p>
+                <p><strong>Qachon ishlatiladi:</strong></p>
+                <p>• Rasmiy hujjatlarda</p>
+                <p>• Qoidalar va ko'rsatmalarda</p>
+                <p>• Ish qiluvchi noma'lum yoki muhim emasda</p>
+                <p><strong>Tuzilishi:</strong> be + Past Participle (3rd form)</p>
+            </div>
+
+            <!-- Three-Form Structure -->
+            <div class="three-forms">
+                <h3>Uch shakl (Three Forms)</h3>
+                
+                <!-- Positive Form -->
+                <div class="positive-form">
+                    <h4>1. Tasdiqlovchi shakl (Positive Form)</h4>
+                    <div class="grammar-box">
+                        <h4>Present Simple Passive (am/is/are + Past Participle)</h4>
+                        <table class="grammar-structure-table">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>am/is/are</th>
+                                    <th>Past Participle</th>
+                                    <th>O'zbek tarjima</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>The form</td><td>is</td><td>completed</td><td>Shakl to'ldiriladi</td></tr>
+                                <tr><td>Documents</td><td>are</td><td>required</td><td>Hujjatlar talab qilinadi</td></tr>
+                                <tr><td>Information</td><td>is</td><td>checked</td><td>Ma'lumot tekshiriladi</td></tr>
+                                <tr><td>Applications</td><td>are</td><td>processed</td><td>Arizalar ko'rib chiqiladi</td></tr>
+                            </tbody>
+                        </table>
+                        <div class="examples">
+                            <div class="example">
+                                <div class="example-english">The form is completed by the applicant.</div>
+                                <div class="transcription">[Зэ форм из комплитид бай зэ эпликэнт]</div>
+                                <div class="example-uzbek">Shakl ariza beruvchi tomonidan to'ldiriladi.</div>
+                                <div class="context">Rasmiy jarayon: Shakl to'ldirish tartibi</div>
+                            </div>
+                            <div class="example">
+                                <div class="example-english">All sections are required to be filled.</div>
+                                <div class="transcription">[Ол сэкшэнз а риквайэрд ту би филд]</div>
+                                <div class="example-uzbek">Barcha bo'limlar to'ldirilishi shart.</div>
+                                <div class="context">Qoidalar: Majburiy talablar</div>
+                            </div>
+                            <div class="example">
+                                <div class="example-english">Personal information is kept confidential.</div>
+                                <div class="transcription">[Пёсэнэл инфомэйшн из кэпт конфидэншэл]</div>
+                                <div class="example-uzbek">Shaxsiy ma'lumotlar maxfiy saqlanadi.</div>
+                                <div class="context">Maxfiylik: Ma'lumotlar himoyasi</div>
+                            </div>
+                            <div class="example">
+                                <div class="example-english">Applications are processed within 5 working days.</div>
+                                <div class="transcription">[Эпликэйшэнз а просэсд уизин файв воркинг дэйз]</div>
+                                <div class="example-uzbek">Arizalar 5 ish kuni ichida ko'rib chiqiladi.</div>
+                                <div class="context">Vaqt chegarasi: Jarayon davomiyligi</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="grammar-box">
+                        <h4>Past Simple Passive (was/were + Past Participle)</h4>
+                        <table class="grammar-structure-table">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>was/were</th>
+                                    <th>Past Participle</th>
+                                    <th>O'zbek tarjima</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>The application</td><td>was</td><td>submitted</td><td>Ariza topshirildi</td></tr>
+                                <tr><td>Documents</td><td>were</td><td>checked</td><td>Hujjatlar tekshirildi</td></tr>
+                                <tr><td>The form</td><td>was</td><td>signed</td><td>Shakl imzolandi</td></tr>
+                                <tr><td>Details</td><td>were</td><td>verified</td><td>Tafsilotlar tasdiqlandi</td></tr>
+                            </tbody>
+                        </table>
+                        <div class="examples">
+                            <div class="example">
+                                <div class="example-english">The application was submitted yesterday.</div>
+                                <div class="transcription">[Зэ эпликэйшн уоз сабмитид йэстэдэй]</div>
+                                <div class="example-uzbek">Ariza kecha topshirildi.</div>
+                                <div class="context">Tugallangan ish: Ariza topshirish</div>
+                            </div>
+                            <div class="example">
+                                <div class="example-english">All documents were checked by the officer.</div>
+                                <div class="transcription">[Ол докьюмэнтс уё чэкт бай зэ офисэ]</div>
+                                <div class="example-uzbek">Barcha hujjatlar xodim tomonidan tekshirildi.</div>
+                                <div class="context">Tekshirish jarayoni: Hujjatlar nazorati</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="grammar-box">
+                        <h4>Modal Passive (must/can/should + be + Past Participle)</h4>
+                        <table class="grammar-structure-table">
+                            <thead>
+                                <tr>
+                                    <th>Modal</th>
+                                    <th>be</th>
+                                    <th>Past Participle</th>
+                                    <th>O'zbek tarjima</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>must</td><td>be</td><td>completed</td><td>to'ldirilishi shart</td></tr>
+                                <tr><td>can</td><td>be</td><td>submitted</td><td>topshirilishi mumkin</td></tr>
+                                <tr><td>should</td><td>be</td><td>signed</td><td>imzolanishi kerak</td></tr>
+                            </tbody>
+                        </table>
+                        <div class="examples">
+                            <div class="example">
+                                <div class="example-english">Forms must be completed in black ink.</div>
+                                <div class="transcription">[Формз маст би комплитид ин блэк инк]</div>
+                                <div class="example-uzbek">Shakllar qora siyoh bilan to'ldirilishi shart.</div>
+                                <div class="context">Qoidalar: To'ldirish talablari</div>
+                            </div>
+                            <div class="example">
+                                <div class="example-english">Applications can be submitted online.</div>
+                                <div class="transcription">[Эпликэйшэнз кэн би сабмитид онлайн]</div>
+                                <div class="example-uzbek">Arizalar onlayn topshirilishi mumkin.</div>
+                                <div class="context">Imkoniyatlar: Topshirish usullari</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Negative Form -->
+                <div class="negative-form">
+                    <h4>2. Inkorlovchi shakl (Negative Form)</h4>
+                    <div class="grammar-box">
+                        <h4>Passive inkor shakli (Negative Passive)</h4>
+                        <table class="grammar-structure-table">
+                            <thead>
+                                <tr>
+                                    <th>Tuzilish</th>
+                                    <th>Misol</th>
+                                    <th>O'zbek tarjima</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>is/are + not + Past Participle</td><td>is not accepted</td><td>qabul qilinmaydi</td></tr>
+                                <tr><td>was/were + not + Past Participle</td><td>was not completed</td><td>to'ldirilmadi</td></tr>
+                                <tr><td>cannot + be + Past Participle</td><td>cannot be processed</td><td>ko'rib chiqilmaydi</td></tr>
+                            </tbody>
+                        </table>
+                        <div class="examples">
+                            <div class="example">
+                                <div class="example-english">Incomplete forms are not accepted.</div>
+                                <div class="transcription">[Инкомплит формз а нот эксэптид]</div>
+                                <div class="example-uzbek">To'liq bo'lmagan shakllar qabul qilinmaydi.</div>
+                                <div class="context">Rad etish: Noto'g'ri shakllar</div>
+                            </div>
+                            <div class="example">
+                                <div class="example-english">The application was not submitted on time.</div>
+                                <div class="transcription">[Зэ эпликэйшн уоз нот сабмитид он тайм]</div>
+                                <div class="example-uzbek">Ariza o'z vaqtida topshirilmadi.</div>
+                                <div class="context">Muammo: Kechikish</div>
+                            </div>
+                            <div class="example">
+                                <div class="example-english">Personal details cannot be changed after submission.</div>
+                                <div class="transcription">[Пёсэнэл дитэйлз кэннот би чэйнджд афтэ сабмишн]</div>
+                                <div class="example-uzbek">Shaxsiy ma'lumotlar topshirgandan keyin o'zgartirilmaydi.</div>
+                                <div class="context">Cheklovlar: O'zgartirish imkoni yo'qligi</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question Form -->
+                <div class="question-form">
+                    <h4>3. So'roq shakl (Question Form)</h4>
+                    <div class="grammar-box">
+                        <h4>Passive so'roqlar (Passive Questions)</h4>
+                        <table class="grammar-structure-table">
+                            <thead>
+                                <tr>
+                                    <th>So'roq turi</th>
+                                    <th>Tuzilish</th>
+                                    <th>Misol</th>
+                                    <th>O'zbek tarjima</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Is/Are + Past Participle?</td><td>Is it required?</td><td>Is ID required?</td><td>ID talab qilinadimi?</td></tr>
+                                <tr><td>Was/Were + Past Participle?</td><td>Was it submitted?</td><td>Was the form submitted?</td><td>Shakl topshirildimi?</td></tr>
+                                <tr><td>When + is/are + Past Participle?</td><td>When is it processed?</td><td>When is it processed?</td><td>Qachon ko'rib chiqiladi?</td></tr>
+                            </tbody>
+                        </table>
+                        <div class="examples">
+                            <div class="example">
+                                <div class="example-english">Is a passport photo required?</div>
+                                <div class="transcription">[Из э паспорт фоуто риквайэрд?]</div>
+                                <div class="example-uzbek">Pasport surati talab qilinadimi?</div>
+                                <div class="context">Talablar: Kerakli hujjatlar haqida so'rash</div>
+                            </div>
+                            <div class="example">
+                                <div class="example-english">When will the application be processed?</div>
+                                <div class="transcription">[Уэн уил зэ эпликэйшн би просэсд?]</div>
+                                <div class="example-uzbek">Ariza qachon ko'rib chiqiladi?</div>
+                                <div class="context">Vaqt: Jarayon davomiyligi haqida</div>
+                            </div>
+                            <div class="example">
+                                <div class="example-english">How is the form submitted?</div>
+                                <div class="transcription">[Хау из зэ форм сабмитид?]</div>
+                                <div class="example-uzbek">Shakl qanday topshiriladi?</div>
+                                <div class="context">Jarayon: Topshirish usuli haqida</div>
+                            </div>
+                            <div class="example">
+                                <div class="example-english">Where are the documents checked?</div>
+                                <div class="transcription">[Уэа а зэ докьюмэнтс чэкт?]</div>
+                                <div class="example-uzbek">Hujjatlar qayerda tekshiriladi?</div>
+                                <div class="context">Joy: Tekshirish joyi haqida</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Practical Application -->
+            <div class="practical-application">
+                <h3>Amaliy qo'llash (Practical Application)</h3>
+                <div class="scenarios">
+                    <div class="forms-box">
+                        <h4>1. Rasmiy hujjatlarni tushunish (Understanding official documents)</h4>
+                        <p><strong>Vaziyat:</strong> Shakl to'ldirish ko'rsatmalarini o'qish</p>
+                        <p><strong>Umumiy iboralar:</strong></p>
+                        <p>• "All fields must be completed." - Barcha maydonlar to'ldirilishi shart.</p>
+                        <p>• "Documents should be submitted by post." - Hujjatlar pochta orqali topshirilishi kerak.</p>
+                        <p>• "Applications are processed in order." - Arizalar navbat bo'yicha ko'rib chiqiladi.</p>
+                        <p>• "Forms can be downloaded from the website." - Shakllarni veb-saytdan yuklab olish mumkin.</p>
+                    </div>
+                    
+                    <div class="forms-box">
+                        <h4>2. Jarayonlar haqida so'rash (Asking about processes)</h4>
+                        <p><strong>Vaziyat:</strong> Idoraviy ishlar haqida ma'lumot olish</p>
+                        <p><strong>Foydali so'roqlar:</strong></p>
+                        <p>• "When will my application be processed?" - Mening arizam qachon ko'rib chiqiladi?</p>
+                        <p>• "Is additional documentation required?" - Qo'shimcha hujjatlar talab qilinadimi?</p>
+                        <p>• "How long is the form kept on file?" - Shakl qancha vaqt saqlanadi?</p>
+                        <p>• "Where should the form be submitted?" - Shakl qayerga topshirilishi kerak?</p>
+                    </div>
+                    
+                    <div class="forms-box">
+                        <h4>3. Muammolar va tushuntirishlar (Problems and explanations)</h4>
+                        <p><strong>Vaziyat:</strong> Shakl to'ldirishda muammolar</p>
+                        <p><strong>Muammolarni tushuntirish:</strong></p>
+                        <p>• "The form was not completed correctly." - Shakl to'g'ri to'ldirilmagan.</p>
+                        <p>• "Some information was not provided." - Ba'zi ma'lumotlar berilmagan.</p>
+                        <p>• "The deadline was missed." - Muddat o'tkazib yuborilgan.</p>
+                        <p><strong>Yechimlar:</strong></p>
+                        <p>• "The form needs to be resubmitted." - Shaklni qayta topshirish kerak.</p>
+                        <p>• "Missing information must be added." - Etishmayotgan ma'lumotlar qo'shilishi shart.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Common Mistakes -->
+            <div class="common-mistakes">
+                <h3>Tez-tez qilinadigan xatolar (Common Mistakes)</h3>
+                <div class="mistakes-list">
+                    <div class="grammar-box">
+                        <h4>❌ Xato (Wrong) ➡️ ✅ To'g'ri (Correct)</h4>
+                        <p><strong>1. "Be" fe'lini unutish:</strong></p>
+                        <p>❌ "The form completed" ➡️ ✅ "The form is completed"</p>
+                        <p>❌ "Documents required" ➡️ ✅ "Documents are required"</p>
+                        <p><em>Tushuntirish: Passive voice da "be" fe'li majburiy.</em></p>
+                        
+                        <p><strong>2. Noto'g'ri Past Participle ishlatish:</strong></p>
+                        <p>❌ "The form is complete" ➡️ ✅ "The form is completed"</p>
+                        <p>❌ "Applications are process" ➡️ ✅ "Applications are processed"</p>
+                        <p><em>Tushuntirish: Passive voice da Past Participle (3rd form) kerak.</em></p>
+                        
+                        <p><strong>3. Active va Passive ni aralashtirib yuborish:</strong></p>
+                        <p>❌ "I am completed the form" ➡️ ✅ "I completed the form" (Active)</p>
+                        <p>❌ "The form completes by me" ➡️ ✅ "The form is completed by me" (Passive)</p>
+                        <p><em>Tushuntirish: Active da oddiy fe'l, Passive da "be + Past Participle".</em></p>
+                        
+                        <p><strong>4. Modal bilan noto'g'ri ishlatish:</strong></p>
+                        <p>❌ "Forms must completed" ➡️ ✅ "Forms must be completed"</p>
+                        <p>❌ "Documents can submitted" ➡️ ✅ "Documents can be submitted"</p>
+                        <p><em>Tushuntirish: Modal + be + Past Participle.</em></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Examples Section -->
+        <section class="section examples-section">
+            <h2 class="section-title">Examples / Misollar</h2>
+            <div class="example">
+                <div class="example-english">Please fill in this application form.</div>
+                <div class="example-uzbek">Iltimos, ushbu ariza shaklini to'ldiring.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">Write your full name in capital letters.</div>
+                <div class="example-uzbek">To'liq ismingizni bosh harflar bilan yozing.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">What's your current address?</div>
+                <div class="example-uzbek">Sizning hozirgi manzilingiz nima?</div>
+            </div>
+            <div class="example">
+                <div class="example-english">Don't forget to sign and date the form.</div>
+                <div class="example-uzbek">Shaklni imzolash va sana qo'yishni unutmang.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">This field is required.</div>
+                <div class="example-uzbek">Bu maydon majburiy.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">Please provide two references.</div>
+                <div class="example-uzbek">Iltimos, ikkita tavsiya bering.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">Enter your phone number including the area code.</div>
+                <div class="example-uzbek">Telefon raqamingizni hudud kodi bilan kiriting.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">Do you have any medical conditions or allergies?</div>
+                <div class="example-uzbek">Sizda biron-bir tibbiy holat yoki allergiya bormi?</div>
+            </div>
+            <div class="example">
+                <div class="example-english">Submit the completed form to the office.</div>
+                <div class="example-uzbek">To'ldirilgan shaklni ofisga topshiring.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">Keep a copy for your records.</div>
+                <div class="example-uzbek">O'zingiz uchun nusxasini saqlang.</div>
+            </div>
+        </section>
+
+        <!-- Dialogues Section -->
+        <section class="section dialogues-section">
+            <h2 class="section-title">Dialogues / Suhbatlar</h2>
+            
+            <div class="dialog">
+                <div class="dialog-speaker">Receptionist:</div>
+                <div class="dialog-text">Please fill in this registration form.</div>
+                <div class="dialog-translation">Iltimos, ushbu ro'yxatga olish shaklini to'ldiring.</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">Do I need to fill in all sections?</div>
+                <div class="dialog-translation">Barcha bo'limlarni to'ldirishim kerakmi?</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Bank Officer:</div>
+                <div class="dialog-text">What's your current address in the UK?</div>
+                <div class="dialog-translation">Buyuk Britaniyadagi hozirgi manzilingiz nima?</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">I live at 15 Farm Cottages, Little Shelford, Cambridge, CB22 5HJ.</div>
+                <div class="dialog-translation">Men 15 Farm Cottages, Little Shelford, Cambridge, CB22 5HJ da yashayman.</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">HR Officer:</div>
+                <div class="dialog-text">Can you provide an emergency contact?</div>
+                <div class="dialog-translation">Favqulodda vaziyat uchun aloqa ma'lumotini bera olasizmi?</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">Yes, my wife in Uzbekistan. Her number is +998 90 123 4567.</div>
+                <div class="dialog-translation">Ha, O'zbekistondagi xotinim. Uning raqami +998 90 123 4567.</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Doctor's Receptionist:</div>
+                <div class="dialog-text">Do you have any allergies or medical conditions?</div>
+                <div class="dialog-translation">Sizda biron-bir allergiya yoki tibbiy holat bormi?</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">No, I don't have any allergies or medical problems.</div>
+                <div class="dialog-translation">Yo'q, menda hech qanday allergiya yoki tibbiy muammo yo'q.</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Office Worker:</div>
+                <div class="dialog-text">Please sign here and write today's date.</div>
+                <div class="dialog-translation">Iltimos, bu yerda imzolang va bugungi sanani yozing.</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">Should I write the date in British format?</div>
+                <div class="dialog-translation">Sanani britaniya formatida yozishim kerakmi?</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Supervisor:</div>
+                <div class="dialog-text">What's your job title for this form?</div>
+                <div class="dialog-translation">Ushbu shakl uchun sizning lavozimingiz nima?</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">I'm a seasonal agricultural worker.</div>
+                <div class="dialog-translation">Men mavsumiy qishloq xo'jaligi ishchisiman.</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Bank Clerk:</div>
+                <div class="dialog-text">I need to see your passport and work visa.</div>
+                <div class="dialog-translation">Pasportingiz va ish vizangizni ko'rishim kerak.</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">Here are my documents. Do you need copies?</div>
+                <div class="dialog-translation">Mana hujjatlarim. Nusxalari kerakmi?</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Receptionist:</div>
+                <div class="dialog-text">Please write your email address clearly.</div>
+                <div class="dialog-translation">Iltimos, elektron pochta manzilingizni aniq yozing.</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">It's a.karimov@email.com - should I write it in capital letters?</div>
+                <div class="dialog-translation">Bu a.karimov@email.com - bosh harflar bilan yozishim kerakmi?</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Form Helper:</div>
+                <div class="dialog-text">This section is optional. You don't have to fill it in.</div>
+                <div class="dialog-translation">Bu bo'lim ixtiyoriy. Uni to'ldirishingiz shart emas.</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">Thank you. Which parts are required?</div>
+                <div class="dialog-translation">Rahmat. Qaysi qismlar majburiy?</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Office Manager:</div>
+                <div class="dialog-text">When you finish, please submit the form to reception.</div>
+                <div class="dialog-translation">Tugagach, iltimos shaklni qabulxonaga topshiring.</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">How long will it take to process?</div>
+                <div class="dialog-translation">Qayta ishlash qancha vaqt oladi?</div>
+            </div>
+        </section>
+
+        <!-- Exercises Section -->
+        <section class="section exercises-section">
+            <h2 class="section-title">Exercises / Mashqlar</h2>
+            
+            <div class="exercise">
+                <div class="exercise-question">Exercise 1: Bo'sh joyni to'ldiring (Fill in the blanks) - Passive Voice Formation</div>
+                <p><strong>Namuna:</strong> The form _____ completed. (is/are/am) → The form is completed.</p>
+                <p>All documents _____ checked by the office. (is/are/am)</p>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" id="ex1" placeholder="Type your answer">
+                    <button class="check-answer-btn" onclick="checkAnswer('ex1', 'are', 'All documents are checked by the office.')">Check</button>
+                </div>
+                <div class="exercise-feedback" id="feedback1"></div>
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-question">Exercise 2: Form Completion and Document Exercises - Passive Voice</div>
+                <p><strong>Namuna:</strong> The office processes applications → Applications are processed by the office</p>
+                <p>The manager _____ the form yesterday. → The form _____ _____ by the manager yesterday. (signed/was signed)</p>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" id="ex2" placeholder="Type your answer">
+                    <button class="check-answer-btn" onclick="checkAnswer('ex2', 'was signed', 'The form was signed by the manager yesterday.')">Check</button>
+                </div>
+                <div class="exercise-feedback" id="feedback2"></div>
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-question">Exercise 3: Active to Passive Voice Transformation</div>
+                <p><strong>Namuna:</strong> They require these documents → These documents are required</p>
+                <p>Transform: "The office will process your application" → "Your application _____ _____ _____ by the office."</p>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" id="ex3" placeholder="Type your answer">
+                    <button class="check-answer-btn" onclick="checkAnswer('ex3', 'will be processed', 'Your application will be processed by the office.')">Check</button>
+                </div>
+                <div class="exercise-feedback" id="feedback3"></div>
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-question">Exercise 4: Official Procedure Description - Passive Voice</div>
+                <p><strong>Vaziyat:</strong> Rasmiy jarayonlar haqida (About official procedures)</p>
+                <p>Complete: "Visas _____ _____ within 10 working days." (process/are processed/will process)</p>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" id="ex4" placeholder="Type your answer">
+                    <button class="check-answer-btn" onclick="checkAnswer('ex4', 'are processed', 'Visas are processed within 10 working days.')">Check</button>
+                </div>
+                <div class="exercise-feedback" id="feedback4"></div>
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-question">Exercise 5: Bureaucratic and Administrative Scenarios</div>
+                <p><strong>Vaziyat:</strong> Ma'muriy ishlar (Administrative work)</p>
+                <p>Complete: "The meeting _____ _____ for next Monday." (has been scheduled/have been scheduled/will schedule)</p>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" id="ex5" placeholder="Type your answer">
+                    <button class="check-answer-btn" onclick="checkAnswer('ex5', 'has been scheduled', 'The meeting has been scheduled for next Monday.')">Check</button>
+                </div>
+                <div class="exercise-feedback" id="feedback5"></div>
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-question">Exercise 6: O'zbek tilidan inglizchaga tarjima qiling - Passive Voice</div>
+                <p><strong>Namuna:</strong> Hujjatlar tekshiriladi → Documents are checked</p>
+                <p>Ariza qabul qilindi.</p>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" id="ex6" placeholder="Type your answer">
+                    <button class="check-answer-btn" onclick="checkAnswer('ex6', 'the application was accepted', 'The application was accepted.')">Check</button>
+                </div>
+                <div class="exercise-feedback" id="feedback6"></div>
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-question">Exercise 7: To'g'ri javobni tanlang (Choose the correct answer) - Passive vs Active</div>
+                <p><strong>Qoida:</strong> Passive - harakat qabul qiluvchi muhim, Active - harakat qiluvchi muhim</p>
+                <p>Which is correct for official documents? "The form _____ carefully." (must complete/must be completed)</p>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" id="ex7" placeholder="Type your answer">
+                    <button class="check-answer-btn" onclick="checkAnswer('ex7', 'must be completed', 'The form must be completed carefully.')">Check</button>
+                </div>
+                <div class="exercise-feedback" id="feedback7"></div>
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-question">Exercise 8: Understanding Official Communications - Passive Voice</div>
+                <p><strong>Vaziyat:</strong> Rasmiy xabarlarni tushunish (Understanding official messages)</p>
+                <p>Complete: "All workers _____ _____ to attend the safety meeting." (are required/is required/require)</p>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" id="ex8" placeholder="Type your answer">
+                    <button class="check-answer-btn" onclick="checkAnswer('ex8', 'are required', 'All workers are required to attend the safety meeting.')">Check</button>
+                </div>
+                <div class="exercise-feedback" id="feedback8"></div>
+            </div>
+
+            <div class="exercise">
+                <div class="exercise-question">Exercise 9: Past Passive Voice - Official Procedures</div>
+                <p><strong>Vaziyat:</strong> Tugallangan rasmiy ishlar (Completed official work)</p>
+                <p>Complete: "The contract _____ _____ last week." (was signed/were signed/has signed)</p>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" id="ex9" placeholder="Type your answer">
+                    <button class="check-answer-btn" onclick="checkAnswer('ex9', 'was signed', 'The contract was signed last week.')">Check</button>
+                </div>
+                <div class="exercise-feedback" id="feedback9"></div>
+            </div>
+
+            <div class="exercise" data-type="fill-blank" data-answer="the forms are required" data-hint="Use passive voice structure: subject + be + past participle">
+                <div class="exercise-question">Exercise 10: O'zingizning misolingizni yozing (Write your own example)</div>
+                <p><strong>Vaziyat:</strong> Rasmiy jarayon haqida gapiring (Talk about an official process, Passive voice)</p>
+                <p>Write a sentence about a form or document using passive voice:</p>
+                <p><strong>Namuna:</strong> "The visa was approved" yoki "Forms are checked every day"</p>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-exercise="9" placeholder="Write your sentence using passive voice" aria-label="Write a passive voice sentence">
+                    <button class="check-answer-btn" data-exercise="9" type="button">Tekshirish</button>
+                </div>
+                <div class="exercise-feedback" style="display: none;" aria-live="polite" aria-atomic="true"></div>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <nav class="chapter-navigation">
+            <a href="Chapter_22_Family_Relations.html" class="nav-btn prev">
+                <span class="nav-btn-icon">←</span>
+                <span class="nav-btn-text">
+                    <span class="nav-btn-label">Previous</span>
+                    <span class="nav-btn-title">Family & Relations</span>
+                </span>
+            </a>
+            
+            <a href="index.html" class="nav-btn home-btn">
+                <span class="nav-btn-icon">🏠</span>
+                <span class="nav-btn-text">
+                    <span class="nav-btn-label">Back to</span>
+                    <span class="nav-btn-title">Home</span>
+                </span>
+            </a>
+            
+            <a href="Chapter_24_Jobs_Future_Review.html" class="nav-btn next">
+                <span class="nav-btn-text">
+                    <span class="nav-btn-label">Next</span>
+                    <span class="nav-btn-title">Jobs & Future Plans</span>
+                </span>
+                <span class="nav-btn-icon">→</span>
+            </a>
+        </nav>
+
+        <!-- Quick Navigation -->
+        <div class="quick-nav">
+            <button class="quick-nav-btn" onclick="scrollToTop()" title="Back to top">↑</button>
+            <button class="quick-nav-btn" onclick="window.location.href='index.html'" title="Go to home">🏠</button>
+        </div>
+    </div>
+
+    <script src="interactive-exercises.js"></script>
+    <script src="progress-tracker.js"></script>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function toggleProgress() {
+            // This will be implemented by the progress tracker
+            if (typeof showProgressModal === 'function') {
+                showProgressModal();
+            }
+        }
+
+        // Initialize progress tracking for this chapter
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof ProgressTracker !== 'undefined') {
+                ProgressTracker.initializeChapterPage(23);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+# Test files
+test-*.html
+validate-*.js
+run-*.html
+*-test-*.html
+*-test-*.js
+comprehensive-test-*.html
+test-*.md
+
+# Reports and logs
+*-report.md
+*-validation-*.json
+*-compliance-*.md
+*-report-*.md
+*-results-*.json
+*-summary.md
+*-analysis.md
+
+# Development and debugging files
+*.ps1
+debug-*.html
+*-analyzer.js
+*-validator.js
+*-optimizer.js
+*-diagnostic.js
+*-utility.js
+*-checker.js
+*-tester.js
+*-runner.js
+*-system.js
+fix-*.js
+extract-*.js
+mass-fix-*.py
+
+# Template and development files
+*-template.html
+*-template.css
+*-template.md
+chapter-template.*
+*-guide.md
+*-implementation-*.md
+
+# IDE and editor folders
+.kiro/
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Node modules (if any)
+node_modules/
+npm-debug.log*
+
+# Build files
+dist/
+build/
+
+# Package files
+package-lock.json
+yarn.lock
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Backup files
+backup-*.js
+*-backup.*
+
+# Documentation that's not needed for deployment
+AUTOMATED_*.md
+COMPREHENSIVE_*.md
+CONTENT_*.md
+CROSS_BROWSER_*.md
+DEPLOYMENT_CONFIGURATION_*.md
+DEPLOYMENT_VERIFICATION_*.md
+HTML_VALIDATION_*.md
+LINK_INTEGRITY_*.md
+PASSIVE_VOICE_*.md
+PROGRESS_TESTS_*.md
+QUALITY_ASSURANCE_*.md
+RESPONSIVE_DESIGN_*.md
+STANDARDIZED_*.md
+CONTAINER_WIDTH_*.md
+ACCESSIBILITY_*.md
+A2_LEVEL_*.md
+CERTIFICATE_*.md
+CHAPTER_*.md
+COMPLETION_*.md
+GRAMMAR_*.md
+TASK_*.md
+
+# Specific development files
+create-icons.html
+package.json
+material-design-3-system.css
+grammar-*.html
+grammar-*.js
+grammar-*.css
+user-guide-uzbek.md
+accessibility-*.js
+automated-*.js
+backup-*.js
+chapter-*.js
+comprehensive-*.js
+content-*.js
+cross-browser-*.js
+deployment-*.js
+file-access-*.js
+final-*.js
+github-pages-*.js
+html-validator*.js
+interactive-functionality-*.js
+link-integrity-*.js
+mobile-*.js
+offline-*.js
+performance-*.js
+project-cleanup-*.js
+responsive-*.js
+standardize-*.js
+user-testing-*.js
+verify-*.js

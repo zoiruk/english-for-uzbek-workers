@@ -1,0 +1,76 @@
+# GitHub Pages Configuration for English for Uzbek Seasonal Workers
+title: "English for Uzbek Seasonal Workers"
+description: "A comprehensive English language learning course for Uzbek seasonal workers in the UK"
+baseurl: "" # Leave empty for GitHub Pages
+url: "" # Will be set automatically by GitHub Pages
+
+# Jekyll settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# GitHub Pages settings
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - LICENSE
+  - DEPLOYMENT.md
+  - TECHNICAL.md
+  - MARKETING.md
+  - TESTING.md
+  - .gitignore
+  - .kiro/
+
+# Include files that start with underscore
+include:
+  - _config.yml
+
+# Site settings
+lang: en
+author: "Zoir UK"
+email: contact@example.com
+
+# SEO settings
+twitter:
+  username: 
+facebook:
+  app_id: 
+  publisher: 
+
+# Google Analytics (optional)
+google_analytics: 
+
+# Social media links (optional)
+github_username: 
+twitter_username: 
+facebook_username: 
+
+# Course specific settings
+course:
+  total_chapters: 24
+  total_vocabulary: 720
+  total_dialogues: 240
+  total_exercises: 240
+  target_level: "A0-A1"
+  
+# Navigation settings
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "Glossary"
+    url: "/glossary.html"
+  - title: "Chapter 1"
+    url: "/Chapter_0_Foundations_Alphabet_Numbers.html"
+
+# Default layout for pages
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"

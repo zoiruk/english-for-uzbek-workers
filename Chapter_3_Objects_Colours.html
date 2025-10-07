@@ -1,0 +1,1400 @@
+﻿<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chapter 3: Everyday Objects and Colours - English for Uzbek Seasonal Workers">
+    <title>Chapter 3: Everyday Objects and Colours - Ingliz Tili Darsligi</title>
+    <style>
+        /* Material Design 3 Base Styles */
+        :root {
+            --md-sys-color-primary: #9b59b6; /* Chapter 3 Purple */
+            --md-sys-color-on-primary: #ffffff;
+            --md-sys-color-primary-container: #d3e3fd;
+            --md-sys-color-on-primary-container: #001c38;
+            --md-sys-color-secondary: #565f71;
+            --md-sys-color-on-secondary: #ffffff;
+            --md-sys-color-surface: #fefbff;
+            --md-sys-color-on-surface: #1a1c1e;
+            --md-sys-color-surface-variant: #e1e2ec;
+            --md-sys-color-on-surface-variant: #44474f;
+            --md-sys-color-outline: #74777f;
+            --md-sys-color-success: #2e7d32;
+            --md-sys-color-error: #d32f2f;
+            --md-sys-elevation-level1: 0px 1px 3px rgba(0,0,0,0.12), 0px 1px 2px rgba(0,0,0,0.24);
+            --md-sys-elevation-level2: 0px 3px 6px rgba(0,0,0,0.16), 0px 3px 6px rgba(0,0,0,0.23);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--md-sys-color-on-surface);
+            background-color: var(--md-sys-color-surface);
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--md-sys-color-primary);
+            color: var(--md-sys-color-on-primary);
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 4px;
+            z-index: 1000;
+        }
+
+        .skip-link:focus {
+            top: 6px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        /* Header Styles */
+        .chapter-header {
+            text-align: center;
+            margin-bottom: 32px;
+            padding: 24px 0;
+            border-bottom: 2px solid var(--md-sys-color-primary);
+        }
+
+        .chapter-header h1 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: var(--md-sys-color-primary);
+            margin-bottom: 8px;
+        }
+
+        .chapter-subtitle {
+            font-size: 1.25rem;
+            color: var(--md-sys-color-on-surface-variant);
+            margin-bottom: 16px;
+        }
+
+        .chapter-progress {
+            background: var(--md-sys-color-primary-container);
+            color: var(--md-sys-color-on-primary-container);
+            padding: 8px 16px;
+            border-radius: 16px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        /* Section Styles */
+        .section {
+            margin-bottom: 48px;
+            background: var(--md-sys-color-surface);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: var(--md-sys-elevation-level1);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--md-sys-color-primary);
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--md-sys-color-outline);
+        }
+
+        /* Vocabulary Table */
+        .vocab-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+        }
+
+        .vocab-table th,
+        .vocab-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--md-sys-color-outline);
+        }
+
+        .vocab-table th {
+            background: var(--md-sys-color-primary-container);
+            color: var(--md-sys-color-on-primary-container);
+            font-weight: 500;
+        }
+
+        .vocab-table .transcription {
+            color: #d32f2f;
+            font-weight: 500;
+        }
+
+        .vocab-table .uzbek {
+            color: var(--md-sys-color-on-surface-variant);
+        }
+
+        /* Grammar Box */
+        .grammar-box {
+            background: var(--md-sys-color-primary-container);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 16px 0;
+        }
+
+        .grammar-box h3 {
+            color: var(--md-sys-color-on-primary-container);
+            margin-bottom: 12px;
+        }
+
+        .grammar-box p {
+            color: var(--md-sys-color-on-primary-container);
+            margin-bottom: 8px;
+        }
+
+        /* Dialogue Styles */
+        .dialog {
+            background: #e8f5e8;
+            border-left: 4px solid var(--md-sys-color-success);
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .dialog-speaker {
+            font-weight: 600;
+            color: var(--md-sys-color-success);
+            margin-bottom: 4px;
+        }
+
+        .dialog-text {
+            margin-bottom: 8px;
+        }
+
+        .dialog-translation {
+            font-style: italic;
+            color: var(--md-sys-color-on-surface-variant);
+            font-size: 0.9rem;
+        }
+
+        /* Exercise Styles */
+        .exercise {
+            background: #fff8e1;
+            border-left: 4px solid #f39c12;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 16px 0;
+            position: relative;
+        }
+
+        .exercise-question {
+            font-weight: 500;
+            margin-bottom: 12px;
+            color: var(--md-sys-color-on-surface);
+        }
+
+        .exercise-input-group {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .exercise-input {
+            flex: 1;
+            padding: 12px;
+            border: 2px solid var(--md-sys-color-outline);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.2s ease;
+        }
+
+        .exercise-input:focus {
+            outline: none;
+            border-color: var(--md-sys-color-primary);
+        }
+
+        .exercise-input.completed {
+            background: #e8f5e8;
+            border-color: var(--md-sys-color-success);
+        }
+
+        .check-answer-btn {
+            background: var(--md-sys-color-primary);
+            color: var(--md-sys-color-on-primary);
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            min-height: 44px;
+        }
+
+        .check-answer-btn:hover {
+            background: #8e44ad;
+            transform: translateY(-1px);
+        }
+
+        .check-answer-btn:active {
+            transform: translateY(0);
+        }
+
+        .exercise-feedback {
+            margin-top: 12px;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+
+        .exercise-feedback.correct {
+            background: #e8f5e8;
+            color: var(--md-sys-color-success);
+            border: 1px solid var(--md-sys-color-success);
+        }
+
+        .exercise-feedback.incorrect {
+            background: #ffebee;
+            color: var(--md-sys-color-error);
+            border: 1px solid var(--md-sys-color-error);
+        }
+
+        .feedback-icon {
+            font-size: 1.2rem;
+            margin-right: 8px;
+        }
+
+        /* Example Styles */
+        .example {
+            background: #f3e5f5;
+            border-left: 4px solid #9c27b0;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .example-english {
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .example-uzbek {
+            font-style: italic;
+            color: var(--md-sys-color-on-surface-variant);
+        }
+
+        /* Breadcrumb Navigation */
+        .breadcrumb-nav {
+            background: var(--md-sys-color-surface-variant);
+            padding: 12px 0;
+            margin-bottom: 24px;
+            border-radius: 8px;
+        }
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.875rem;
+            color: var(--md-sys-color-on-surface-variant);
+        }
+
+        .breadcrumb a {
+            color: var(--md-sys-color-primary);
+            text-decoration: none;
+            padding: 4px 8px;
+            border-radius: 4px;
+            transition: background-color 0.2s ease;
+        }
+
+        .breadcrumb a:hover {
+            background: var(--md-sys-color-primary-container);
+        }
+
+        .breadcrumb a:focus {
+            outline: 2px solid var(--md-sys-color-primary);
+            outline-offset: 2px;
+        }
+
+        .breadcrumb-separator {
+            color: var(--md-sys-color-outline);
+        }
+
+        .breadcrumb-current {
+            font-weight: 500;
+            color: var(--md-sys-color-on-surface);
+        }
+
+        /* Navigation Styles */
+        .chapter-navigation {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 16px;
+            align-items: center;
+            margin-top: 48px;
+            padding: 24px 0;
+            border-top: 1px solid var(--md-sys-color-outline);
+        }
+
+        .nav-btn {
+            background: var(--md-sys-color-primary);
+            color: var(--md-sys-color-on-primary);
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 20px;
+            font-weight: 500;
+            transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: var(--md-sys-elevation-level1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .nav-btn:hover::before {
+            left: 100%;
+        }
+
+        .nav-btn:hover {
+            background: #8e44ad;
+            transform: translateY(-2px);
+            box-shadow: var(--md-sys-elevation-level2);
+        }
+
+        .nav-btn:focus {
+            outline: 3px solid var(--md-sys-color-primary);
+            outline-offset: 2px;
+        }
+
+        .nav-btn:active {
+            transform: translateY(0);
+        }
+
+        .nav-btn.disabled {
+            background: var(--md-sys-color-surface-variant);
+            color: var(--md-sys-color-on-surface-variant);
+            pointer-events: none;
+            opacity: 0.6;
+        }
+
+        .nav-btn.prev {
+            justify-self: start;
+        }
+
+        .nav-btn.next {
+            justify-self: end;
+        }
+
+        .home-btn {
+            background: var(--md-sys-color-secondary);
+            color: var(--md-sys-color-on-secondary);
+            justify-self: center;
+        }
+
+        .nav-btn-icon {
+            font-size: 1.2rem;
+        }
+
+        .nav-btn-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .nav-btn-label {
+            font-size: 0.75rem;
+            opacity: 0.8;
+        }
+
+        .nav-btn-title {
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        /* Quick Navigation */
+        .quick-nav {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            z-index: 100;
+        }
+
+        .quick-nav-btn {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: var(--md-sys-color-primary);
+            color: var(--md-sys-color-on-primary);
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: var(--md-sys-elevation-level2);
+            transition: all 0.3s ease;
+        }
+
+        .quick-nav-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 6px 12px rgba(0,0,0,0.2);
+        }
+
+        .quick-nav-btn:focus {
+            outline: 3px solid var(--md-sys-color-primary);
+            outline-offset: 2px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 12px;
+            }
+
+            .chapter-header h1 {
+                font-size: 2rem;
+            }
+
+            .section {
+                padding: 16px;
+                margin-bottom: 24px;
+            }
+
+            /* Enhanced vocabulary table mobile layout */
+            .vocab-table {
+                font-size: 0.875rem;
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .vocab-table thead,
+            .vocab-table tbody,
+            .vocab-table th,
+            .vocab-table td,
+            .vocab-table tr {
+                display: block;
+            }
+
+            .vocab-table thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            .vocab-table tr {
+                border: 1px solid var(--md-sys-color-outline);
+                border-radius: 8px;
+                margin-bottom: 12px;
+                padding: 12px;
+                background: var(--md-sys-color-surface);
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            }
+
+            .vocab-table td {
+                border: none;
+                position: relative;
+                padding: 8px 8px 8px 50% !important;
+                white-space: normal;
+                text-align: left;
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+            }
+
+            .vocab-table td:before {
+                content: attr(data-label) ": ";
+                position: absolute;
+                left: 8px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                font-weight: 500;
+                color: var(--md-sys-color-on-surface-variant);
+                display: flex;
+                align-items: center;
+                min-height: 44px;
+            }
+
+            .exercise-input-group {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .check-answer-btn {
+                width: 100%;
+            }
+
+            .chapter-navigation {
+                grid-template-columns: 1fr;
+                gap: 12px;
+                text-align: center;
+            }
+
+            .nav-btn {
+                width: 100%;
+                justify-content: center;
+                justify-self: center;
+            }
+
+            .nav-btn.prev,
+            .nav-btn.next {
+                justify-self: center;
+            }
+
+            .breadcrumb {
+                flex-wrap: wrap;
+                font-size: 0.75rem;
+            }
+
+            .quick-nav {
+                bottom: 16px;
+                right: 16px;
+            }
+
+            .quick-nav-btn {
+                width: 48px;
+                height: 48px;
+                font-size: 1.25rem;
+            }
+        }
+
+        /* Touch targets for mobile */
+        @media (max-width: 768px) {
+            .exercise-input,
+            .check-answer-btn,
+            .nav-btn,
+            .quick-nav-btn {
+                min-height: 44px;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            .chapter-navigation,
+            .check-answer-btn,
+            .quick-nav {
+                display: none;
+            }
+            
+            .exercise-feedback {
+                display: none;
+            }
+        }
+    
+        /* Small mobile devices */
+        @media (max-width: 480px) {
+            .container {
+                padding: 8px;
+            }
+        }
+</style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <div class="container" id="main-content" data-chapter-id="3">
+        <!-- Breadcrumb Navigation -->
+        <nav class="breadcrumb-nav" aria-label="Breadcrumb navigation">
+            <div class="breadcrumb">
+                <a href="index.html" aria-label="Go to home page">🏠 Home</a>
+                <span class="breadcrumb-separator" aria-hidden="true">›</span>
+                <span class="breadcrumb-current" aria-current="page">Chapter 3: Everyday Objects and Colours</span>
+            </div>
+        </nav>
+
+        <header class="chapter-header">
+            <h1>Chapter 3: Everyday Objects and Colours</h1>
+            <p class="chapter-subtitle">Kundalik Narsalar va Ranglar</p>
+            <div class="chapter-progress">Progress: 0% (0/10)</div>
+        </header>
+
+        <!-- Vocabulary Section -->
+        <section class="section vocabulary-section">
+            <h2 class="section-title">Vocabulary / Lug'at</h2>
+            <table class="vocab-table">
+                <thead>
+                    <tr>
+                        <th>English</th>
+                        <th>Transcription</th>
+                        <th>O'zbek</th>
+                        <th>Context</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td data-label="English">Red</td><td data-label="Transcription" class="transcription">рэд</td><td data-label="O'zbek" class="uzbek">Qizil</td><td data-label="Context">Basic colour</td></tr>
+                    <tr><td data-label="English">Blue</td><td data-label="Transcription" class="transcription">блу</td><td data-label="O'zbek" class="uzbek">Ko'k</td><td data-label="Context">Basic colour</td></tr>
+                    <tr><td data-label="English">Green</td><td data-label="Transcription" class="transcription">грин</td><td data-label="O'zbek" class="uzbek">Yashil</td><td data-label="Context">Basic colour</td></tr>
+                    <tr><td data-label="English">Yellow</td><td data-label="Transcription" class="transcription">йэлоу</td><td data-label="O'zbek" class="uzbek">Sariq</td><td data-label="Context">Basic colour</td></tr>
+                    <tr><td data-label="English">White</td><td data-label="Transcription" class="transcription">вайт</td><td data-label="O'zbek" class="uzbek">Oq</td><td data-label="Context">Basic colour</td></tr>
+                    <tr><td data-label="English">Black</td><td data-label="Transcription" class="transcription">блэк</td><td data-label="O'zbek" class="uzbek">Qora</td><td data-label="Context">Basic colour</td></tr>
+                    <tr><td data-label="English">Orange</td><td data-label="Transcription" class="transcription">орэндж</td><td data-label="O'zbek" class="uzbek">To'q sariq</td><td data-label="Context">Basic colour</td></tr>
+                    <tr><td data-label="English">Purple</td><td data-label="Transcription" class="transcription">пёрпл</td><td data-label="O'zbek" class="uzbek">Binafsha</td><td data-label="Context">Basic colour</td></tr>
+                    <tr><td data-label="English">Box</td><td data-label="Transcription" class="transcription">бокс</td><td data-label="O'zbek" class="uzbek">Quti</td><td data-label="Context">Container</td></tr>
+                    <tr><td data-label="English">Bag</td><td data-label="Transcription" class="transcription">бэг</td><td data-label="O'zbek" class="uzbek">Sumka</td><td data-label="Context">Container</td></tr>
+                    <tr><td data-label="English">Bottle</td><td data-label="Transcription" class="transcription">ботл</td><td data-label="O'zbek" class="uzbek">Shisha</td><td data-label="Context">Container</td></tr>
+                    <tr><td data-label="English">Cup</td><td data-label="Transcription" class="transcription">кап</td><td data-label="O'zbek" class="uzbek">Piyola</td><td data-label="Context">Drinking vessel</td></tr>
+                    <tr><td data-label="English">Plate</td><td data-label="Transcription" class="transcription">плэйт</td><td data-label="O'zbek" class="uzbek">Likop</td><td data-label="Context">Eating utensil</td></tr>
+                    <tr><td data-label="English">Spoon</td><td data-label="Transcription" class="transcription">спун</td><td data-label="O'zbek" class="uzbek">Qoshiq</td><td data-label="Context">Eating utensil</td></tr>
+                    <tr><td data-label="English">Fork</td><td data-label="Transcription" class="transcription">форк</td><td data-label="O'zbek" class="uzbek">Vilka</td><td data-label="Context">Eating utensil</td></tr>
+                    <tr><td data-label="English">Knife</td><td data-label="Transcription" class="transcription">найф</td><td data-label="O'zbek" class="uzbek">Pichoq</td><td data-label="Context">Cutting tool</td></tr>
+                    <tr><td data-label="English">Table</td><td data-label="Transcription" class="transcription">тэйбл</td><td data-label="O'zbek" class="uzbek">Stol</td><td data-label="Context">Furniture</td></tr>
+                    <tr><td data-label="English">Chair</td><td data-label="Transcription" class="transcription">чэр</td><td data-label="O'zbek" class="uzbek">Stul</td><td data-label="Context">Furniture</td></tr>
+                    <tr><td data-label="English">Book</td><td data-label="Transcription" class="transcription">бук</td><td data-label="O'zbek" class="uzbek">Kitob</td><td data-label="Context">Reading material</td></tr>
+                    <tr><td data-label="English">Pen</td><td data-label="Transcription" class="transcription">пэн</td><td data-label="O'zbek" class="uzbek">Ruchka</td><td data-label="Context">Writing tool</td></tr>
+                    <tr><td data-label="English">Paper</td><td data-label="Transcription" class="transcription">пэйпэр</td><td data-label="O'zbek" class="uzbek">Qog'oz</td><td data-label="Context">Writing material</td></tr>
+                    <tr><td data-label="English">Phone</td><td data-label="Transcription" class="transcription">фоун</td><td data-label="O'zbek" class="uzbek">Telefon</td><td data-label="Context">Communication device</td></tr>
+                    <tr><td data-label="English">Key</td><td data-label="Transcription" class="transcription">ки</td><td data-label="O'zbek" class="uzbek">Kalit</td><td data-label="Context">Access tool</td></tr>
+                    <tr><td data-label="English">Money</td><td data-label="Transcription" class="transcription">мани</td><td data-label="O'zbek" class="uzbek">Pul</td><td data-label="Context">Currency</td></tr>
+                    <tr><td data-label="English">Watch</td><td data-label="Transcription" class="transcription">воч</td><td data-label="O'zbek" class="uzbek">Soat</td><td data-label="Context">Timepiece</td></tr>
+                    <tr><td data-label="English">Glasses</td><td data-label="Transcription" class="transcription">гласиз</td><td data-label="O'zbek" class="uzbek">Ko'zoynak</td><td data-label="Context">Vision aid</td></tr>
+                    <tr><td data-label="English">Bucket</td><td data-label="Transcription" class="transcription">бакит</td><td data-label="O'zbek" class="uzbek">Chelak</td><td data-label="Context">Farm container</td></tr>
+                    <tr><td data-label="English">Gloves</td><td data-label="Transcription" class="transcription">главз</td><td data-label="O'zbek" class="uzbek">Qo'lqop</td><td data-label="Context">Farm protection</td></tr>
+                    <tr><td data-label="English">Tool</td><td data-label="Transcription" class="transcription">тул</td><td data-label="O'zbek" class="uzbek">Asbob</td><td data-label="Context">Farm equipment</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Grammar Section -->
+        <section class="section grammar-section">
+            <h2 class="section-title">Grammar / Grammatika</h2>
+            
+            <div class="grammar-section">
+                <h2>Grammatika - Ko'rsatish olmoshlari (this/that/these/those)</h2>
+                
+                <!-- Introduction and Purpose -->
+                <div class="grammar-intro">
+                    <h3>Bu grammatika nima uchun kerak? (Why do we need this grammar?)</h3>
+                    <p>Ko'rsatish olmoshlari yordamida siz narsalarni ko'rsatasiz va ular haqida gapirasiz. Mavsumiy ishchi sifatida bu so'zlarni har kuni ishlatasiz - asboblarni ko'rsatishda, ranglarni aytishda, do'konda xarid qilishda va ish joyida narsalarni topishda.</p>
+                    <p>Misol: "Bu qizil chelak qulupnay uchun" - "This red bucket is for strawberries"</p>
+                </div>
+                
+                <!-- Basic Concept Explanation -->
+                <div class="concept-explanation">
+                    <h3>Asosiy tushuncha (Basic Concept)</h3>
+                    <p>Ko'rsatish olmoshlari narsalarning joylashuvi (yaqin yoki uzoq) va soni (bitta yoki ko'p) bo'yicha farqlanadi:</p>
+                    <ul>
+                        <li><strong>This</strong> - yaqin joylashgan bitta narsa uchun</li>
+                        <li><strong>That</strong> - uzoq joylashgan bitta narsa uchun</li>
+                        <li><strong>These</strong> - yaqin joylashgan ko'p narsalar uchun</li>
+                        <li><strong>Those</strong> - uzoq joylashgan ko'p narsalar uchun</li>
+                    </ul>
+                    <p><strong>Masofa qoidasi:</strong> Qo'lingiz bilan yetib olsangiz - "this/these", yeta olmasangiz - "that/those"</p>
+                </div>
+                
+                <!-- Three-Form Structure -->
+                <div class="three-forms">
+                    <h3>Uch shakl (Three Forms)</h3>
+                    
+                    <!-- Positive Form -->
+                    <div class="positive-form" style="background: #e8f5e8; border-left: 4px solid #2e7d32; border-radius: 8px; padding: 16px; margin: 16px 0;">
+                        <h4>1. Tasdiqlovchi shakl (Positive Form)</h4>
+                        <p><strong>Qachon ishlatamiz:</strong> Narsalarni ko'rsatish va ular haqida ma'lumot berishda</p>
+                        
+                        <div class="structure-table">
+                            <table style="width: 100%; border-collapse: collapse; margin: 16px 0;">
+                                <thead>
+                                    <tr style="background: #c8e6c9;">
+                                        <th style="padding: 12px; border: 1px solid #4caf50;">Ko'rsatish</th>
+                                        <th style="padding: 12px; border: 1px solid #4caf50;">Masofa</th>
+                                        <th style="padding: 12px; border: 1px solid #4caf50;">Son</th>
+                                        <th style="padding: 12px; border: 1px solid #4caf50;">O'zbek ma'nosi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 8px; border: 1px solid #4caf50;"><strong>This</strong></td>
+                                        <td style="padding: 8px; border: 1px solid #4caf50;">Yaqin</td>
+                                        <td style="padding: 8px; border: 1px solid #4caf50;">Birlik</td>
+                                        <td style="padding: 8px; border: 1px solid #4caf50;">Bu</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px; border: 1px solid #4caf50;"><strong>That</strong></td>
+                                        <td style="padding: 8px; border: 1px solid #4caf50;">Uzoq</td>
+                                        <td style="padding: 8px; border: 1px solid #4caf50;">Birlik</td>
+                                        <td style="padding: 8px; border: 1px solid #4caf50;">U/O'sha</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px; border: 1px solid #4caf50;"><strong>These</strong></td>
+                                        <td style="padding: 8px; border: 1px solid #4caf50;">Yaqin</td>
+                                        <td style="padding: 8px; border: 1px solid #4caf50;">Ko'plik</td>
+                                        <td style="padding: 8px; border: 1px solid #4caf50;">Bular</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px; border: 1px solid #4caf50;"><strong>Those</strong></td>
+                                        <td style="padding: 8px; border: 1px solid #4caf50;">Uzoq</td>
+                                        <td style="padding: 8px; border: 1px solid #4caf50;">Ko'plik</td>
+                                        <td style="padding: 8px; border: 1px solid #4caf50;">Ular/O'shalar</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="examples">
+                            <h5>Amaliy misollar (Practical Examples):</h5>
+                            <div class="example-sentence" style="margin: 8px 0; padding: 8px; background: #f1f8e9; border-radius: 4px;">
+                                <div class="english" style="font-weight: bold;">This is my red bucket.</div>
+                                <div class="transcription" style="color: #d32f2f; font-style: italic;">[Зис из май ред бакет]</div>
+                                <div class="uzbek" style="color: #2e7d32;">Bu mening qizil chelakim.</div>
+                                <div class="context" style="font-size: 0.9em; color: #666;">Fermada: Yaqindagi asbobni ko'rsatish</div>
+                            </div>
+                            
+                            <div class="example-sentence" style="margin: 8px 0; padding: 8px; background: #f1f8e9; border-radius: 4px;">
+                                <div class="english" style="font-weight: bold;">That is the supervisor's office.</div>
+                                <div class="transcription" style="color: #d32f2f; font-style: italic;">[Зэт из зэ супервайзерз офис]</div>
+                                <div class="uzbek" style="color: #2e7d32;">U supervayzer ofisi.</div>
+                                <div class="context" style="font-size: 0.9em; color: #666;">Fermada: Uzoqdagi binoni ko'rsatish</div>
+                            </div>
+                            
+                            <div class="example-sentence" style="margin: 8px 0; padding: 8px; background: #f1f8e9; border-radius: 4px;">
+                                <div class="english" style="font-weight: bold;">These are my work gloves.</div>
+                                <div class="transcription" style="color: #d32f2f; font-style: italic;">[Зиз ар май ворк главз]</div>
+                                <div class="uzbek" style="color: #2e7d32;">Bular mening ish qo'lqoplarim.</div>
+                                <div class="context" style="font-size: 0.9em; color: #666;">Ish kiyimi: Yaqindagi narsalarni ko'rsatish</div>
+                            </div>
+                            
+                            <div class="example-sentence" style="margin: 8px 0; padding: 8px; background: #f1f8e9; border-radius: 4px;">
+                                <div class="english" style="font-weight: bold;">Those are strawberry plants.</div>
+                                <div class="transcription" style="color: #d32f2f; font-style: italic;">[Зоуз ар стробери плэнтс]</div>
+                                <div class="uzbek" style="color: #2e7d32;">Ular qulupnay o'simliklari.</div>
+                                <div class="context" style="font-size: 0.9em; color: #666;">Fermada: Uzoqdagi o'simliklarni ko'rsatish</div>
+                            </div>
+                            
+                            <div class="example-sentence" style="margin: 8px 0; padding: 8px; background: #f1f8e9; border-radius: 4px;">
+                                <div class="english" style="font-weight: bold;">This knife is very sharp.</div>
+                                <div class="transcription" style="color: #d32f2f; font-style: italic;">[Зис найф из вери шарп]</div>
+                                <div class="uzbek" style="color: #2e7d32;">Bu pichoq juda o'tkir.</div>
+                                <div class="context" style="font-size: 0.9em; color: #666;">Xavfsizlik: Asbob haqida ogohlantirish</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Negative Form -->
+                    <div class="negative-form" style="background: #ffebee; border-left: 4px solid #d32f2f; border-radius: 8px; padding: 16px; margin: 16px 0;">
+                        <h4>2. Inkorlovchi shakl (Negative Form)</h4>
+                        <p><strong>Qachon ishlatamiz:</strong> Narsalar haqida noto'g'ri ma'lumotni rad etishda</p>
+                        <p><strong>Qanday yasaymiz:</strong> Ko'rsatish olmoshi + "is not" yoki "are not"</p>
+                        
+                        <div class="structure-table">
+                            <table style="width: 100%; border-collapse: collapse; margin: 16px 0;">
+                                <thead>
+                                    <tr style="background: #ffcdd2;">
+                                        <th style="padding: 12px; border: 1px solid #f44336;">Ko'rsatish</th>
+                                        <th style="padding: 12px; border: 1px solid #f44336;">To Be + Not</th>
+                                        <th style="padding: 12px; border: 1px solid #f44336;">Qisqa shakl</th>
+                                        <th style="padding: 12px; border: 1px solid #f44336;">O'zbek ma'nosi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 8px; border: 1px solid #f44336;">This/That</td>
+                                        <td style="padding: 8px; border: 1px solid #f44336;">is not</td>
+                                        <td style="padding: 8px; border: 1px solid #f44336;">isn't</td>
+                                        <td style="padding: 8px; border: 1px solid #f44336;">Bu/U ... emas</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px; border: 1px solid #f44336;">These/Those</td>
+                                        <td style="padding: 8px; border: 1px solid #f44336;">are not</td>
+                                        <td style="padding: 8px; border: 1px solid #f44336;">aren't</td>
+                                        <td style="padding: 8px; border: 1px solid #f44336;">Bular/Ular ... emas</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="examples">
+                            <h5>Amaliy misollar (Practical Examples):</h5>
+                            <div class="example-sentence" style="margin: 8px 0; padding: 8px; background: #fce4ec; border-radius: 4px;">
+                                <div class="english" style="font-weight: bold;">This is not my bag.</div>
+                                <div class="transcription" style="color: #d32f2f; font-style: italic;">[Зис из нот май бэг]</div>
+                                <div class="uzbek" style="color: #d32f2f;">Bu mening sumkam emas.</div>
+                                <div class="context" style="font-size: 0.9em; color: #666;">Turar joyda: Noto'g'ri ma'lumotni tuzatish</div>
+                            </div>
+                            
+                            <div class="example-sentence" style="margin: 8px 0; padding: 8px; background: #fce4ec; border-radius: 4px;">
+                                <div class="english" style="font-weight: bold;">That isn't the right tool.</div>
+                                <div class="transcription" style="color: #d32f2f; font-style: italic;">[Зэт изнт зэ райт тул]</div>
+                                <div class="uzbek" style="color: #d32f2f;">U to'g'ri asbob emas.</div>
+                                <div class="context" style="font-size: 0.9em; color: #666;">Fermada: Noto'g'ri asbobni rad etish</div>
+                            </div>
+                            
+                            <div class="example-sentence" style="margin: 8px 0; padding: 8px; background: #fce4ec; border-radius: 4px;">
+                                <div class="english" style="font-weight: bold;">These aren't ripe strawberries.</div>
+                                <div class="transcription" style="color: #d32f2f; font-style: italic;">[Зиз арнт райп стробериз]</div>
+                                <div class="uzbek" style="color: #d32f2f;">Bular pishgan qulupnaylar emas.</div>
+                                <div class="context" style="font-size: 0.9em; color: #666;">Fermada: Mahsulot sifatini baholash</div>
+                            </div>
+                            
+                            <div class="example-sentence" style="margin: 8px 0; padding: 8px; background: #fce4ec; border-radius: 4px;">
+                                <div class="english" style="font-weight: bold;">Those are not our boxes.</div>
+                                <div class="transcription" style="color: #d32f2f; font-style: italic;">[Зоуз ар нот ауэр боксиз]</div>
+                                <div class="uzbek" style="color: #d32f2f;">Ular bizning qutilarimiz emas.</div>
+                                <div class="context" style="font-size: 0.9em; color: #666;">Ish joyida: Mulkni ajratish</div>
+                            </div>
+                            
+                            <div class="example-sentence" style="margin: 8px 0; padding: 8px; background: #fce4ec; border-radius: 4px;">
+                                <div class="english" style="font-weight: bold;">This isn't the right colour.</div>
+                                <div class="transcription" style="color: #d32f2f; font-style: italic;">[Зис изнт зэ райт калэр]</div>
+                                <div class="uzbek" style="color: #d32f2f;">Bu to'g'ri rang emas.</div>
+                                <div class="context" style="font-size: 0.9em; color: #666;">Do'konda: Xarid qilishda</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Question Form -->
+                    <div class="question-form" style="background: #e3f2fd; border-left: 4px solid #1976d2; border-radius: 8px; padding: 16px; margin: 16px 0;">
+                        <h4>3. So'roq shakl (Question Form)</h4>
+                        <p><strong>Qachon ishlatamiz:</strong> Narsalar haqida savol berishda va ma'lumot olishda</p>
+                        <p><strong>Qanday yasaymiz:</strong> "Is" yoki "Are" ni gapning boshiga qo'yamiz</p>
+                        
+                        <div class="structure-table">
+                            <table style="width: 100%; border-collapse: collapse; margin: 16px 0;">
+                                <thead>
+                                    <tr style="background: #bbdefb;">
+                                        <th style="padding: 12px; border: 1px solid #2196f3;">Is/Are</th>
+                                        <th style="padding: 12px; border: 1px solid #2196f3;">Ko'rsatish</th>
+                                        <th style="padding: 12px; border: 1px solid #2196f3;">Ma'lumot</th>
+                                        <th style="padding: 12px; border: 1px solid #2196f3;">O'zbek ma'nosi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 8px; border: 1px solid #2196f3;"><strong>Is</strong></td>
+                                        <td style="padding: 8px; border: 1px solid #2196f3;">this/that</td>
+                                        <td style="padding: 8px; border: 1px solid #2196f3;">your bag?</td>
+                                        <td style="padding: 8px; border: 1px solid #2196f3;">Bu/U sizning sumkangizmi?</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px; border: 1px solid #2196f3;"><strong>Are</strong></td>
+                                        <td style="padding: 8px; border: 1px solid #2196f3;">these/those</td>
+                                        <td style="padding: 8px; border: 1px solid #2196f3;">ready?</td>
+                                        <td style="padding: 8px; border: 1px solid #2196f3;">Bular/Ular tayyormi?</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="examples">
+                            <h5>Amaliy misollar (Practical Examples):</h5>
+                            <div class="example-sentence" style="margin: 8px 0; padding: 8px; background: #e1f5fe; border-radius: 4px;">
+                                <div class="english" style="font-weight: bold;">What colour is this bucket?</div>
+                                <div class="transcription" style="color: #d32f2f; font-style: italic;">[Вот калэр из зис бакет?]</div>
+                                <div class="uzbek" style="color: #1976d2;">Bu chelak qanday rang?</div>
+                                <div class="context" style="font-size: 0.9em; color: #666;">Fermada: Asbob haqida savol</div>
+                            </div>
+                            
+                            <div class="example-sentence" style="margin: 8px 0; padding: 8px; background: #e1f5fe; border-radius: 4px;">
+                                <div class="english" style="font-weight: bold;">Is that your supervisor?</div>
+                                <div class="transcription" style="color: #d32f2f; font-style: italic;">[Из зэт ёр супервайзер?]</div>
+                                <div class="uzbek" style="color: #1976d2;">U sizning supervayzeringizmi?</div>
+                                <div class="context" style="font-size: 0.9em; color: #666;">Ish joyida: Odamlarni aniqlash</div>
+                            </div>
+                            
+                            <div class="example-sentence" style="margin: 8px 0; padding: 8px; background: #e1f5fe; border-radius: 4px;">
+                                <div class="english" style="font-weight: bold;">Are these strawberries ripe?</div>
+                                <div class="transcription" style="color: #d32f2f; font-style: italic;">[Ар зиз стробериз райп?]</div>
+                                <div class="uzbek" style="color: #1976d2;">Bu qulupnaylar pishganmi?</div>
+                                <div class="context" style="font-size: 0.9em; color: #666;">Fermada: Mahsulot sifatini tekshirish</div>
+                            </div>
+                            
+                            <div class="example-sentence" style="margin: 8px 0; padding: 8px; background: #e1f5fe; border-radius: 4px;">
+                                <div class="english" style="font-weight: bold;">Are those the right tools?</div>
+                                <div class="transcription" style="color: #d32f2f; font-style: italic;">[Ар зоуз зэ райт тулз?]</div>
+                                <div class="uzbek" style="color: #1976d2;">Ular to'g'ri asboblarmi?</div>
+                                <div class="context" style="font-size: 0.9em; color: #666;">Ish joyida: Asboblarni tasdiqlash</div>
+                            </div>
+                            
+                            <div class="example-sentence" style="margin: 8px 0; padding: 8px; background: #e1f5fe; border-radius: 4px;">
+                                <div class="english" style="font-weight: bold;">What are those plants called?</div>
+                                <div class="transcription" style="color: #d32f2f; font-style: italic;">[Вот ар зоуз плэнтс колд?]</div>
+                                <div class="uzbek" style="color: #1976d2;">O'sha o'simliklar nima deb ataladi?</div>
+                                <div class="context" style="font-size: 0.9em; color: #666;">Fermada: Yangi o'simliklar haqida</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Practical Application -->
+                <div class="practical-application" style="background: #f3e5f5; border-left: 4px solid #9c27b0; border-radius: 8px; padding: 16px; margin: 16px 0;">
+                    <h3>Amaliy qo'llash (Practical Application)</h3>
+                    <div class="scenarios">
+                        <h4>Mavsumiy ishchilar uchun real vaziyatlar:</h4>
+                        
+                        <div style="margin: 12px 0; padding: 12px; background: #fce4ec; border-radius: 6px;">
+                            <h5>🧰 Fermada asboblar bilan ishlash (Working with tools on farm):</h5>
+                            <p><strong>Supervayzer:</strong> "Use this red bucket for strawberries and that blue one for raspberries."</p>
+                            <p><strong>Siz:</strong> "Is this bucket clean? Those buckets over there look dirty."</p>
+                            <p><em>Supervayzer: "Bu qizil chelakni qulupnay uchun, o'sha ko'k chelakni malina uchun ishlating." Siz: "Bu chelak tozami? Ana u yerdagi chelaklar iflos ko'rinadi."</em></p>
+                        </div>
+                        
+                        <div style="margin: 12px 0; padding: 12px; background: #fce4ec; border-radius: 6px;">
+                            <h5>🛒 Do'konda xarid qilish (Shopping in store):</h5>
+                            <p><strong>Sotuvchi:</strong> "What colour gloves do you need?"</p>
+                            <p><strong>Siz:</strong> "I need these blue gloves. How much are those yellow ones?"</p>
+                            <p><em>Sotuvchi: "Qanday rangli qo'lqop kerak?" Siz: "Menga bu ko'k qo'lqoplar kerak. O'sha sariq qo'lqoplar qancha turadi?"</em></p>
+                        </div>
+                        
+                        <div style="margin: 12px 0; padding: 12px; background: #fce4ec; border-radius: 6px;">
+                            <h5>🏠 Turar joyda narsalarni topish (Finding things at accommodation):</h5>
+                            <p><strong>Xonadosh:</strong> "Is this your phone charger?"</p>
+                            <p><strong>Siz:</strong> "No, that's not mine. My charger is black, this one is white."</p>
+                            <p><em>Xonadosh: "Bu sizning telefon zaryadlovchingizmi?" Siz: "Yo'q, u meniki emas. Mening zaryadlovchim qora, bu esa oq."</em></p>
+                        </div>
+                        
+                        <div style="margin: 12px 0; padding: 12px; background: #fce4ec; border-radius: 6px;">
+                            <h5>🌱 Fermada o'simliklar bilan ishlash (Working with plants on farm):</h5>
+                            <p><strong>Tajribali ishchi:</strong> "These plants are ready to harvest, but those aren't."</p>
+                            <p><strong>Siz:</strong> "What about this row? Are these strawberries ripe enough?"</p>
+                            <p><em>Tajribali ishchi: "Bu o'simliklar yig'ishga tayyor, lekin ular yo'q." Siz: "Bu qator-chi? Bu qulupnaylar etarlicha pishganmi?"</em></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Common Mistakes -->
+                <div class="common-mistakes" style="background: #fff3e0; border-left: 4px solid #ff9800; border-radius: 8px; padding: 16px; margin: 16px 0;">
+                    <h3>Tez-tez qilinadigan xatolar (Common Mistakes)</h3>
+                    <div class="mistakes-list">
+                        <div style="margin: 12px 0; padding: 12px; background: #ffecb3; border-radius: 6px;">
+                            <h5>❌ Xato (Wrong):</h5>
+                            <p><strong>"These is my gloves"</strong></p>
+                            <h5>✅ To'g'ri (Correct):</h5>
+                            <p><strong>"These are my gloves"</strong></p>
+                            <p><em>Tushuntirish: "These/Those" bilan doimo "are" ishlatiladi.</em></p>
+                        </div>
+                        
+                        <div style="margin: 12px 0; padding: 12px; background: #ffecb3; border-radius: 6px;">
+                            <h5>❌ Xato (Wrong):</h5>
+                            <p><strong>"That are my tools"</strong></p>
+                            <h5>✅ To'g'ri (Correct):</h5>
+                            <p><strong>"Those are my tools"</strong></p>
+                            <p><em>Tushuntirish: Ko'p narsalar uchun "those" ishlatiladi, "that" emas.</em></p>
+                        </div>
+                        
+                        <div style="margin: 12px 0; padding: 12px; background: #ffecb3; border-radius: 6px;">
+                            <h5>❌ Xato (Wrong):</h5>
+                            <p><strong>"This are red buckets"</strong></p>
+                            <h5>✅ To'g'ri (Correct):</h5>
+                            <p><strong>"These are red buckets"</strong></p>
+                            <p><em>Tushuntirish: Ko'p narsalar uchun "these" ishlatiladi, "this" emas.</em></p>
+                        </div>
+                        
+                        <div style="margin: 12px 0; padding: 12px; background: #ffecb3; border-radius: 6px;">
+                            <h5>❌ Xato (Wrong):</h5>
+                            <p><strong>"Those is not mine"</strong></p>
+                            <h5>✅ To'g'ri (Correct):</h5>
+                            <p><strong>"Those are not mine"</strong></p>
+                            <p><em>Tushuntirish: "Those" bilan "are" ishlatiladi, "is" emas.</em></p>
+                        </div>
+                        
+                        <div style="margin: 12px 0; padding: 12px; background: #ffecb3; border-radius: 6px;">
+                            <h5>❌ Xato (Wrong):</h5>
+                            <p><strong>"What colour are this?"</strong></p>
+                            <h5>✅ To'g'ri (Correct):</h5>
+                            <p><strong>"What colour is this?"</strong></p>
+                            <p><em>Tushuntirish: "This/That" bilan "is" ishlatiladi, "are" emas.</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Examples Section -->
+        <section class="section examples-section">
+            <h2 class="section-title">Examples / Misollar</h2>
+            <div class="example">
+                <div class="example-english">This is a red bucket for strawberries.</div>
+                <div class="example-uzbek">Bu qulupnay uchun qizil chelak.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">Those are green boxes on the table.</div>
+                <div class="example-uzbek">Stol ustidagi ular yashil qutilar.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">These gloves are too small for me.</div>
+                <div class="example-uzbek">Bu qo'lqoplar men uchun juda kichik.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">That is my blue bag.</div>
+                <div class="example-uzbek">U mening ko'k sumkam.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">What colour is your phone?</div>
+                <div class="example-uzbek">Telefoningiz qanday rang?</div>
+            </div>
+            <div class="example">
+                <div class="example-english">This knife is very sharp.</div>
+                <div class="example-uzbek">Bu pichoq juda o'tkir.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">Those are white plates in the kitchen.</div>
+                <div class="example-uzbek">Oshxonadagi ular oq likoplar.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">These tools are for farm work.</div>
+                <div class="example-uzbek">Bu asboblar ferma ishi uchun.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">That orange bottle is mine.</div>
+                <div class="example-uzbek">O'sha to'q sariq shisha meniki.</div>
+            </div>
+            <div class="example">
+                <div class="example-english">This black pen doesn't work.</div>
+                <div class="example-uzbek">Bu qora ruchka ishlamaydi.</div>
+            </div>
+        </section>
+
+        <!-- Dialogues Section -->
+        <section class="section dialogues-section">
+            <h2 class="section-title">Dialogues / Suhbatlar</h2>
+            
+            <div class="dialog">
+                <div class="dialog-speaker">Supervisor:</div>
+                <div class="dialog-text">What colour are these boxes?</div>
+                <div class="dialog-translation">Bu qutilar qanday rang?</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">These boxes are green.</div>
+                <div class="dialog-translation">Bu qutilar yashil.</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Worker 1:</div>
+                <div class="dialog-text">Is this your red bucket?</div>
+                <div class="dialog-translation">Bu sizning qizil chelakingizmi?</div>
+                <div class="dialog-speaker">Worker 2:</div>
+                <div class="dialog-text">No, that is my bucket over there.</div>
+                <div class="dialog-translation">Yo'q, u yerda mening chelakım.</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Team Leader:</div>
+                <div class="dialog-text">Where are the blue gloves?</div>
+                <div class="dialog-translation">Ko'k qo'lqoplar qayerda?</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">Those blue gloves are in that box.</div>
+                <div class="dialog-translation">O'sha ko'k qo'lqoplar o'sha qutida.</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Roommate:</div>
+                <div class="dialog-text">Can I use this white plate?</div>
+                <div class="dialog-translation">Bu oq likopdan foydalansam bo'ladimi?</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">Yes, but please wash it after.</div>
+                <div class="dialog-translation">Ha, lekin keyin yuvib qo'ying.</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Supervisor:</div>
+                <div class="dialog-text">These tools are for today's work.</div>
+                <div class="dialog-translation">Bu asboblar bugungi ish uchun.</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">Which tools do I need?</div>
+                <div class="dialog-translation">Qaysi asboblar kerak?</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">What is that yellow thing?</div>
+                <div class="dialog-translation">O'sha sariq narsa nima?</div>
+                <div class="dialog-speaker">Colleague:</div>
+                <div class="dialog-text">That is a safety helmet.</div>
+                <div class="dialog-translation">U xavfsizlik dubulg'asi.</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Manager:</div>
+                <div class="dialog-text">Put the red strawberries in these boxes.</div>
+                <div class="dialog-translation">Qizil qulupnaylarni bu qutilarga soling.</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">Should I use this knife to cut them?</div>
+                <div class="dialog-translation">Ularni kesish uchun bu pichoqdan foydalansam bo'ladimi?</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Worker 1:</div>
+                <div class="dialog-text">Is this your black bag?</div>
+                <div class="dialog-translation">Bu sizning qora sumkangizmi?</div>
+                <div class="dialog-speaker">Worker 2:</div>
+                <div class="dialog-text">No, my bag is blue. That black bag is Ahmed's.</div>
+                <div class="dialog-translation">Yo'q, mening sumkam ko'k. O'sha qora sumka Ahmadniki.</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Canteen Worker:</div>
+                <div class="dialog-text">Do you need a fork and spoon?</div>
+                <div class="dialog-translation">Vilka va qoshiq kerakmi?</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">Yes, and a clean cup please.</div>
+                <div class="dialog-translation">Ha, va toza piyola ham iltimos.</div>
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-speaker">Supervisor:</div>
+                <div class="dialog-text">Those purple boxes are for grapes.</div>
+                <div class="dialog-translation">O'sha binafsha qutilar uzum uchun.</div>
+                <div class="dialog-speaker">Worker:</div>
+                <div class="dialog-text">And what about these white boxes?</div>
+                <div class="dialog-translation">Bu oq qutilar-chi?</div>
+            </div>
+        </section>
+
+        <!-- Exercises Section -->
+        <section class="section exercises-section">
+            <h2 class="section-title">Exercises / Mashqlar</h2>
+            
+            <!-- Exercise Type 1: Object identification with demonstratives -->
+            <div class="exercise" data-exercise-id="3-1">
+                <div class="exercise-question">
+                    <strong>1. Narsalarni ko'rsatish (Object identification)</strong><br>
+                    <em>Namuna (Example): _____ is a red bucket (yaqin) → <strong>This</strong> is a red bucket</em><br><br>
+                    Complete: "_____ gloves are dirty." (yaqin, ko'plik - close, plural)
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="these" placeholder="this, that, these, yoki those...">
+                    <button class="check-answer-btn" onclick="checkAnswer(this)">Check</button>
+                </div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <div class="exercise" data-exercise-id="3-2">
+                <div class="exercise-question">
+                    <strong>2. Masofa bo'yicha tanlash (Distance-based selection)</strong><br>
+                    <em>Namuna (Example): Yaqin narsa uchun "this", uzoq narsa uchun "that"</em><br><br>
+                    Choose: "_____ tools over there are expensive." (uzoq, ko'plik - far, plural)
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="those" placeholder="Type this, that, these, or those...">
+                    <button class="check-answer-btn" onclick="checkAnswer(this)">Check</button>
+                </div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <div class="exercise" data-exercise-id="3-3">
+                <div class="exercise-question">
+                    <strong>3. Do'konda: Tarjima qiling (Shopping: Translate)</strong><br>
+                    <em>Namuna (Example): Bu qizil chelak → This is a red bucket</em><br><br>
+                    Translate: "O'sha ko'k qo'lqoplar qancha turadi?" → "How much are _____ blue gloves?"
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="those" placeholder="Complete the translation...">
+                    <button class="check-answer-btn" onclick="checkAnswer(this)">Check</button>
+                </div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <div class="exercise" data-exercise-id="3-4">
+                <div class="exercise-question">
+                    <strong>4. Ferma asboblari: Bo'sh joyni to'ldiring (Farm equipment: Fill in the blanks)</strong><br>
+                    Complete: "Can you pass me _____ hammer?" (yaqin - close to you)
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="this" placeholder="Type the correct demonstrative...">
+                    <button class="check-answer-btn" onclick="checkAnswer(this)">Check</button>
+                </div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <div class="exercise" data-exercise-id="3-5">
+                <div class="exercise-question">
+                    <strong>5. Ranglar bilan mashq (Colors practice)</strong><br>
+                    Complete: "_____ green boxes are heavy, but _____ red box is light." (uzoq ko'plik, yaqin birlik)
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="those this" placeholder="Type two demonstratives...">
+                    <button class="check-answer-btn" onclick="checkAnswer(this)">Check</button>
+                </div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <div class="exercise" data-exercise-id="3-6">
+                <div class="exercise-question">
+                    <strong>6. Joyni tasvirlash (Describing locations)</strong><br>
+                    <em>Namuna (Example): Bu yerda → here, O'sha yerda → there</em><br><br>
+                    Complete: "_____ tools here are mine, _____ tools there are yours."
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="these those" placeholder="Type two demonstratives...">
+                    <button class="check-answer-btn" onclick="checkAnswer(this)">Check</button>
+                </div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <div class="exercise" data-exercise-id="3-7">
+                <div class="exercise-question">
+                    <strong>7. Do'konda so'rash (Shopping scenario)</strong><br>
+                    Translate: "Bu pichoq o'tkir" → "_____ knife is sharp."
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="this" placeholder="Complete the translation...">
+                    <button class="check-answer-btn" onclick="checkAnswer(this)">Check</button>
+                </div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <div class="exercise" data-exercise-id="3-8">
+                <div class="exercise-question">
+                    <strong>8. Ishda: Asboblarni so'rash (At work: Asking for tools)</strong><br>
+                    Complete: "I need _____ screwdriver and _____ nails." (yaqin birlik, uzoq ko'plik)
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="this those" placeholder="Type two demonstratives...">
+                    <button class="check-answer-btn" onclick="checkAnswer(this)">Check</button>
+                </div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <div class="exercise" data-exercise-id="3-9">
+                <div class="exercise-question">
+                    <strong>9. Rang va narsa (Color and object)</strong><br>
+                    Complete: "_____ purple bucket is full, but _____ yellow buckets are empty." (yaqin birlik, uzoq ko'plik)
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="this those" placeholder="Type two demonstratives...">
+                    <button class="check-answer-btn" onclick="checkAnswer(this)">Check</button>
+                </div>
+                <div class="exercise-feedback"></div>
+            </div>
+
+            <div class="exercise" data-exercise-id="3-10">
+                <div class="exercise-question">
+                    <strong>10. Amaliy vazifa: Supervayzer bilan (Practical task: With supervisor)</strong><br>
+                    Complete: "Supervisor, _____ tools are broken. Can we use _____ new tools instead?" (yaqin ko'plik, uzoq ko'plik)
+                </div>
+                <div class="exercise-input-group">
+                    <input type="text" class="exercise-input" data-correct="these those" placeholder="Type two demonstratives...">
+                    <button class="check-answer-btn" onclick="checkAnswer(this)">Check</button>
+                </div>
+                <div class="exercise-feedback"></div>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <footer class="chapter-navigation" role="navigation" aria-label="Chapter navigation">
+            <a href="Chapter_2_Numbers_Time.html" class="nav-btn prev" aria-label="Go to previous chapter">
+                <span class="nav-btn-icon">←</span>
+                <div class="nav-btn-text">
+                    <span class="nav-btn-label">Previous</span>
+                    <span class="nav-btn-title">Numbers, Time, Calendar</span>
+                </div>
+            </a>
+            
+            <a href="index.html" class="nav-btn home-btn" aria-label="Go to home page">
+                <span class="nav-btn-icon">🏠</span>
+                <span>Home</span>
+            </a>
+            
+            <a href="Chapter_4_Basic_Verbs.html" class="nav-btn next" aria-label="Go to next chapter">
+                <div class="nav-btn-text">
+                    <span class="nav-btn-label">Next</span>
+                    <span class="nav-btn-title">Basic Actions and Everyday Verbs</span>
+                </div>
+                <span class="nav-btn-icon">→</span>
+            </a>
+        </footer>
+
+        <!-- Quick Navigation (Floating Action Buttons) -->
+        <div class="quick-nav" role="navigation" aria-label="Quick navigation">
+            <button class="quick-nav-btn" onclick="scrollToTop()" aria-label="Scroll to top" title="Scroll to top">
+                ↑
+            </button>
+            <button class="quick-nav-btn" onclick="window.location.href='index.html'" aria-label="Go to home" title="Go to home">
+                🏠
+            </button>
+        </div>
+    </div>
+
+    <script src="interactive-exercises.js"></script>
+    <script src="progress-tracker.js"></script>
+    <script>
+        // Navigation functions
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Exercise checking function
+        function checkAnswer(button) {
+            const inputGroup = button.parentElement;
+            const input = inputGroup.querySelector('.exercise-input');
+            const feedback = inputGroup.parentElement.querySelector('.exercise-feedback');
+            const exerciseId = inputGroup.parentElement.dataset.exerciseId;
+            
+            const userAnswer = input.value.trim().toLowerCase();
+            const correctAnswer = input.dataset.correct.toLowerCase();
+            
+            if (userAnswer === correctAnswer) {
+                feedback.innerHTML = '<span class="feedback-icon">✓</span>Correct! Well done!';
+                feedback.className = 'exercise-feedback correct';
+                input.classList.add('completed');
+                
+                // Update progress
+                if (typeof ProgressTracker !== 'undefined') {
+                    ProgressTracker.markExerciseComplete(3, exerciseId);
+                }
+            } else {
+                feedback.innerHTML = `<span class="feedback-icon">✗</span>Incorrect. The correct answer is: "${input.dataset.correct}"`;
+                feedback.className = 'exercise-feedback incorrect';
+            }
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize progress tracking
+            if (typeof ProgressTracker !== 'undefined') {
+                ProgressTracker.initializeChapterPage(3);
+            }
+            
+            // Add keyboard navigation
+            document.addEventListener('keydown', function(event) {
+                // Alt + Left Arrow = Previous chapter
+                if (event.altKey && event.key === 'ArrowLeft') {
+                    event.preventDefault();
+                    window.location.href = 'Chapter_2_Numbers_Time.html';
+                }
+                
+                // Alt + Right Arrow = Next chapter
+                if (event.altKey && event.key === 'ArrowRight') {
+                    event.preventDefault();
+                    window.location.href = 'Chapter_4_Basic_Verbs.html';
+                }
+                
+                // Alt + H = Home
+                if (event.altKey && event.key === 'h') {
+                    event.preventDefault();
+                    window.location.href = 'index.html';
+                }
+                
+                // Alt + T = Top of page
+                if (event.altKey && event.key === 't') {
+                    event.preventDefault();
+                    scrollToTop();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

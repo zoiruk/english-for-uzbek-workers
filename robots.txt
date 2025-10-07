@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://zoir-uk.github.io/uzbek-seasonal-workers-textbook/sitemap.xml
+
+# Disallow test and development files
+Disallow: /comprehensive-test-suite.html
+Disallow: /mobile-device-test.html
+Disallow: /test-runner.html
+Disallow: /performance-test.html
+Disallow: /testing-validation-report.md
+
+# Allow important pages
+Allow: /index.html
+Allow: /glossary.html
+Allow: /Chapter_*.html
+Allow: /English_for_Uzbek_Seasonal_Workers.html
+
+# Allow JavaScript files
+Allow: /*.js
+
+# Crawl delay (optional)
+Crawl-delay: 1
