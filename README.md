@@ -53,7 +53,7 @@ Created by **Zoir UK** for Uzbek seasonal workers in the United Kingdom.
 
 ## 🔗 Live Demo
 
-Visit the live version: [GitHub Pages URL will be here]
+Visit the live version: https://zoiruk.github.io/english-for-uzbek-workers/
 
 ## 📞 Support
 
@@ -62,3 +62,4 @@ For issues or suggestions, please create an issue in this repository.
 ---
 
 *Helping Uzbek seasonal workers succeed in the UK through practical English education.*
+
