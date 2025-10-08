@@ -985,120 +985,6 @@
                 animation: none;
             }
         }
-
-        /* Premium Lock Indicator Styles */
-        .premium-lock-indicator {
-            position: absolute;
-            top: 16px;
-            right: 16px;
-            background: rgba(255, 107, 53, 0.9);
-            color: white;
-            padding: 6px 10px;
-            border-radius: 12px;
-            font-size: 0.75rem;
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-            gap: 4px;
-            backdrop-filter: blur(4px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            z-index: 2;
-        }
-
-        .premium-lock-indicator svg {
-            width: 16px;
-            height: 16px;
-            flex-shrink: 0;
-        }
-
-        /* Premium Locked Chapter Styles */
-        .chapter-card.premium-locked {
-            position: relative;
-            opacity: 0.7;
-            cursor: pointer;
-        }
-
-        .chapter-card.premium-locked::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(255, 107, 53, 0.05) 100%);
-            border-radius: inherit;
-            pointer-events: none;
-        }
-
-        .chapter-card.premium-locked:hover {
-            opacity: 0.9;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(255, 107, 53, 0.2);
-        }
-
-        .chapter-card.premium-locked:focus {
-            outline: 3px solid #ff6b35;
-            outline-offset: 2px;
-        }
-
-        /* Premium Access Button Styles */
-        .premium-access-button {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .premium-access-button::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-            transition: left 0.6s ease;
-        }
-
-        .premium-access-button:hover::before {
-            left: 100%;
-        }
-
-        /* Mobile responsive adjustments for premium indicators */
-        @media (max-width: 768px) {
-            .premium-lock-indicator {
-                top: 12px;
-                right: 12px;
-                padding: 4px 8px;
-                font-size: 0.7rem;
-                border-radius: 8px;
-            }
-
-            .premium-lock-indicator svg {
-                width: 14px;
-                height: 14px;
-            }
-
-            .chapter-card.premium-locked:active {
-                transform: scale(0.96);
-                opacity: 0.8;
-            }
-        }
-
-        /* High contrast mode support for premium indicators */
-        @media (prefers-contrast: high) {
-            .premium-lock-indicator {
-                background: #000000;
-                color: #ffffff;
-                border: 2px solid #ffffff;
-            }
-
-            .chapter-card.premium-locked {
-                border: 2px solid #ff6b35;
-            }
-
-            .chapter-card.premium-locked::after {
-                background: rgba(255, 107, 53, 0.3);
-            }
-        }
     </style>
 </head>
 
@@ -1113,8 +999,6 @@
             <p lang="uz">Xush kelibsiz! Ushbu interaktiv darslik Buyuk Britaniyaga Seasonal Worker Visa dasturi orqali
                 keluvchi o'zbek mavsumiy ishchilari uchun ZoirUK tomonidan maxsus yaratilgan. Darslik A0 (mutlaq
                 boshlang'ich) dan A1 (boshlang'ich) darajasigacha ingliz tilini o'rganishga yordam beradi.</p>
-
-
 
             <div style="margin-top: 24px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;">
                 <a href="course-info.html" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; 
@@ -1268,10 +1152,6 @@
                 const chapterProgress = progressData.chapters[chapter.id] || { completed: 0, total: 10 };
                 const progressPercent = Math.round((chapterProgress.completed / chapterProgress.total) * 100);
 
-                // Check if chapter is accessible (freemium system)
-                const isAccessible = window.accessControlManager ? 
-                    window.accessControlManager.isChapterAccessible(chapter.id) : true;
-
                 // Determine status
                 let statusClass = 'not-started';
                 let statusIcon = '';
@@ -1285,20 +1165,13 @@
 
                 const card = document.createElement('a');
                 card.className = 'chapter-card';
-                
-                // Set href and accessibility based on access level
-                if (isAccessible) {
-                    card.href = chapter.file;
-                    card.setAttribute('aria-label', `Chapter ${chapter.id}: ${chapter.title}. Progress: ${progressPercent}% completed. ${chapter.description}`);
-                } else {
-                    card.href = '#';
-                    card.classList.add('premium-locked');
-                    card.setAttribute('aria-label', `Chapter ${chapter.id}: ${chapter.title} - Premium content requires activation. ${chapter.description}`);
-                    card.setAttribute('role', 'button');
-                }
-                
+                card.href = chapter.file;
                 card.style.setProperty('--chapter-color', chapter.color);
                 card.setAttribute('data-chapter-id', chapter.id);
+
+                // Add ARIA attributes for accessibility
+                card.setAttribute('role', 'link');
+                card.setAttribute('aria-label', `Chapter ${chapter.id}: ${chapter.title}. Progress: ${progressPercent}% completed. ${chapter.description}`);
                 card.setAttribute('tabindex', '0');
 
                 // Add heading for screen readers
@@ -1312,18 +1185,6 @@
                     `<span class="exercise-indicator ${completed ? 'completed' : 'not-completed'}" 
                            title="Exercise ${index + 1}: ${completed ? 'Completed' : 'Not completed'}"></span>`
                 ).join('');
-
-                // Add premium lock indicator if not accessible
-                const lockIndicator = !isAccessible ? `
-                    <div class="premium-lock-indicator">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
-                            <circle cx="12" cy="16" r="1" fill="currentColor"/>
-                            <path d="M7 11V7C7 4.79086 8.79086 3 11 3H13C15.2091 3 17 4.79086 17 7V11" stroke="currentColor" stroke-width="2"/>
-                        </svg>
-                        <span>Premium</span>
-                    </div>
-                ` : '';
 
                 card.innerHTML = `
                     <div>
@@ -1340,27 +1201,7 @@
                         </div>
                         <div class="chapter-status-icon ${statusClass}" aria-label="Chapter status: ${statusClass.replace('-', ' ')}">${statusIcon}</div>
                     </div>
-                    ${lockIndicator}
                 `;
-
-                // Add click handler for locked chapters
-                if (!isAccessible) {
-                    card.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        if (window.chapterNavigationController) {
-                            window.chapterNavigationController.showPremiumPrompt(chapter.id);
-                        }
-                    });
-                    
-                    card.addEventListener('keydown', (e) => {
-                        if (e.key === 'Enter' || e.key === ' ') {
-                            e.preventDefault();
-                            if (window.chapterNavigationController) {
-                                window.chapterNavigationController.showPremiumPrompt(chapter.id);
-                            }
-                        }
-                    });
-                }
 
                 grid.appendChild(card);
             });
@@ -1667,40 +1508,12 @@
                     return;
                 }
                 
-                // Check if chapter is accessible (freemium system)
-                const isAccessible = window.accessControlManager ? 
-                    window.accessControlManager.isChapterAccessible(chapter.id) : true;
-                
                 // Regular chapter cards
                 const card = document.createElement('a');
                 card.className = 'chapter-card';
-                
-                // Set href and accessibility based on access level
-                if (isAccessible) {
-                    card.href = chapter.file;
-                    card.setAttribute('aria-label', `Chapter ${chapter.id}: ${chapter.title}. ${chapter.description}`);
-                } else {
-                    card.href = '#';
-                    card.classList.add('premium-locked');
-                    card.setAttribute('aria-label', `Chapter ${chapter.id}: ${chapter.title} - Premium content requires activation. ${chapter.description}`);
-                    card.setAttribute('role', 'button');
-                }
-                
+                card.href = chapter.file;
                 card.style.setProperty('--chapter-color', chapter.color);
                 card.setAttribute('data-chapter-id', chapter.id);
-                card.setAttribute('tabindex', '0');
-
-                // Add premium lock indicator if not accessible
-                const lockIndicator = !isAccessible ? `
-                    <div class="premium-lock-indicator">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
-                            <circle cx="12" cy="16" r="1" fill="currentColor"/>
-                            <path d="M7 11V7C7 4.79086 8.79086 3 11 3H13C15.2091 3 17 4.79086 17 7V11" stroke="currentColor" stroke-width="2"/>
-                        </svg>
-                        <span>Premium</span>
-                    </div>
-                ` : '';
                 
                 card.innerHTML = `
                     <div>
@@ -1714,27 +1527,7 @@
                         </div>
                         <div class="chapter-status-icon not-started">0%</div>
                     </div>
-                    ${lockIndicator}
                 `;
-
-                // Add click handler for locked chapters
-                if (!isAccessible) {
-                    card.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        if (window.chapterNavigationController) {
-                            window.chapterNavigationController.showPremiumPrompt(chapter.id);
-                        }
-                    });
-                    
-                    card.addEventListener('keydown', (e) => {
-                        if (e.key === 'Enter' || e.key === ' ') {
-                            e.preventDefault();
-                            if (window.chapterNavigationController) {
-                                window.chapterNavigationController.showPremiumPrompt(chapter.id);
-                            }
-                        }
-                    });
-                }
                 
                 grid.appendChild(card);
             });
@@ -1745,10 +1538,6 @@
         // Initialize page
         document.addEventListener('DOMContentLoaded', function () {
             console.log('DOM loaded, initializing chapters...');
-            
-
-            
-
             
             // Try to render with progress tracking first, fallback to basic if needed
             if (typeof ProgressTracker !== 'undefined') {
@@ -1887,18 +1676,6 @@
     </script>
     <script src="certificate-generator.js"></script>
     <script src="telegram-web-app.js"></script>
-    <script src="activation-system.js"></script>
-    <script>
-        // Initialize the freemium activation system
-        document.addEventListener('DOMContentLoaded', function() {
-            // Initialize access control and navigation
-            window.accessControlManager = new AccessControlManager();
-            window.keyValidator = new KeyValidator();
-            window.chapterNavigationController = new ChapterNavigationController(window.accessControlManager);
-            
-            console.log('Freemium activation system initialized');
-        });
-    </script>
 </body>
 
 </html>
