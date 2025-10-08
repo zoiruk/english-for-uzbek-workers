@@ -1028,6 +1028,12 @@ window.USED_KEYS_STORAGE_KEY = 'englishCourse_usedKeys';
  * @returns {boolean} - True if valid and unused
  */
 window.validateActivationKey = function (key) {
+    // Use enhanced validation if available, otherwise fallback to basic validation
+    if (window.validateActivationKeyEnhanced && typeof window.validateActivationKeyEnhanced === 'function') {
+        return window.validateActivationKeyEnhanced(key);
+    }
+    
+    // Fallback validation (original logic)
     const cleanKey = key.replace(/-/g, '').toUpperCase();
     const formattedKey = key.toUpperCase();
 
@@ -1063,7 +1069,7 @@ window.validateActivationKey = function (key) {
     }
 
     const isUsed = isUsedLocally || isUsedInAdmin;
-    console.log('Global key validation:', {
+    console.log('Basic key validation (fallback):', {
         key: cleanKey,
         inValidList: true,
         usedLocally: isUsedLocally,
