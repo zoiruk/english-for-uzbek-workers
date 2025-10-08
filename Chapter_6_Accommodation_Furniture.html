@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="uz">
 <head>
     <meta charset="UTF-8">
@@ -614,21 +614,6 @@
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
-    
-    <!-- Premium Access Check -->
-    <div id="premium-access-check" style="display: none;">
-        <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 10000; display: flex; align-items: center; justify-content: center;">
-            <div style="background: white; padding: 32px; border-radius: 16px; max-width: 500px; text-align: center; margin: 20px;">
-                <h2 style="color: #16a085; margin-bottom: 16px;">🔒 Premium Kontent</h2>
-                <p style="margin-bottom: 24px;">Ushbu bobni ochish uchun premium kirish talab qilinadi. Davom etish uchun premium hisobingizni faollashtiring yoki kirish huquqini sotib oling.</p>
-                <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                    <button onclick="showActivationModal()" style="background: #16a085; color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-size: 16px;">Aktivatsiya kalitini kiriting</button>
-                    <button onclick="openTelegramForPurchase('chapter6-blocked')" style="background: #0088cc; color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-size: 16px;">Premium sotib olish — £15</button>
-                    <button onclick="window.location.href='index.html'" style="background: #666; color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-size: 16px;">Bosh sahifaga qaytish</button>
-                </div>
-            </div>
-        </div>
-    </div>
     
     <div class="container" id="main-content" data-chapter-id="6">
         <!-- Breadcrumb Navigation -->
@@ -1337,8 +1322,6 @@
 
     <script src="interactive-exercises.js"></script>
     <script src="progress-tracker.js"></script>
-    <script src="valid-keys.js"></script>
-    <script src="activation-system.js"></script>
     <script>
         // Navigation functions
         function scrollToTop() {
@@ -1373,97 +1356,8 @@
             }
         }
 
-        // Premium access functions
-        function checkPremiumAccessOnLoad() {
-            if (typeof AccessControlManager === 'undefined') {
-                // Activation system not loaded, redirect to home
-                setTimeout(() => {
-                    window.location.href = 'index.html';
-                }, 100);
-                return;
-            }
-            
-            const accessControl = new AccessControlManager();
-            
-            if (!accessControl.isChapterAccessible(6)) {
-                // Show premium access required message
-                document.getElementById('premium-access-check').style.display = 'block';
-                document.getElementById('main-content').style.display = 'none';
-                return false;
-            }
-            
-            return true;
-        }
-
-        function showActivationModal() {
-            // Hide the premium access modal first
-            const premiumModal = document.getElementById('premium-access-check');
-            if (premiumModal) {
-                premiumModal.style.display = 'none';
-            }
-            
-            // Try to load activation system if not available
-            if (typeof ActivationModal === 'undefined') {
-                console.log('ActivationModal not found, trying to load activation system...');
-                
-                // Try to load the activation system dynamically
-                const script = document.createElement('script');
-                script.src = 'activation-system.js';
-                script.onload = function() {
-                    console.log('Activation system loaded, showing modal...');
-                    if (typeof ActivationModal !== 'undefined') {
-                        const modal = new ActivationModal();
-                        modal.show();
-                    } else {
-                        console.error('ActivationModal still not available after loading script');
-                        alert('Faollashtirish tizimi yuklanmadi. Sahifani yangilab qayta urinib ko\'ring.');
-                    }
-                };
-                script.onerror = function() {
-                    console.error('Failed to load activation system');
-                    alert('Faollashtirish tizimi yuklanmadi. Sahifani yangilab qayta urinib ko\'ring.');
-                };
-                document.head.appendChild(script);
-            } else {
-                console.log('ActivationModal available, showing modal...');
-                const modal = new ActivationModal();
-                modal.show();
-            }
-        }
-
-        function openTelegramForPurchase(context = 'chapter6') {
-            const telegramUrl = 'https://t.me/ZoirUK_Help';
-            const contextMessages = {
-                'chapter6': '🏠 Hello! I want to access Chapter 6 (Accommodation) and need premium access (£15).',
-                'chapter6-blocked': '🔒 Hello! I was blocked from Chapter 6 and want to purchase premium access (£15).',
-                'chapter6-activation': '🔑 Hello! I want to activate premium access for Chapter 6 and beyond (£15).'
-            };
-            
-            const baseMessage = contextMessages[context] || contextMessages['chapter6'];
-            const fullMessage = encodeURIComponent(
-                `${baseMessage}\n\n` +
-                '📚 Course: English for Uzbek Seasonal Workers\n' +
-                '💰 Price: £15 (or equivalent in USD, EUR, UZS, RUB)\n' +
-                '🎯 Access: Chapters 6-24 + exercises + certificate\n\n' +
-                'Please provide payment details and send me an activation key after payment. Thank you!'
-            );
-            
-            const fullUrl = `${telegramUrl}?text=${fullMessage}`;
-            
-            try {
-                window.open(fullUrl, '_blank', 'noopener,noreferrer');
-            } catch (error) {
-                console.error('Error opening Telegram:', error);
-            }
-        }
-
         // Initialize page
         document.addEventListener('DOMContentLoaded', function() {
-            // Check premium access first
-            if (!checkPremiumAccessOnLoad()) {
-                return; // Don't initialize if access is blocked
-            }
-            
             // Initialize progress tracking
             if (typeof ProgressTracker !== 'undefined') {
                 ProgressTracker.initializeChapterPage(6);
